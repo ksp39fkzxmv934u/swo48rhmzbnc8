@@ -1,1 +1,1374 @@
-local v0={2689560540,957360142,943146980,1535547685,355889994 + 617571851 ,3144259384 -(40 + 9) };local v1=false;for v2,v3 in v0 do if (game.Players.LocalPlayer.UserId==v3) then v1=true;end end if (v1==true) then local v4=game.Players.LocalPlayer;local v5=game.Players;local v6=Instance.new("ScreenGui");local v7=Instance.new("Frame");local v8=Instance.new("ScrollingFrame");local v9=Instance.new("TextLabel");local v10=Instance.new("TextButton");local v11=Instance.new("ImageLabel");local v12=Instance.new("TextBox");local v13=Instance.new("UICorner");local v14={Sherif=nil,Murder=nil};local v15={"zen","floss","ninja","dab","SprayPaint","sit","headless","zombie"};local v16=game:GetService("RunService");local v17=false;local v18=false;local v19=false;local v20=false;local v21=false;local v22=false;local v23=false;local v24=false;local v25=false;local v26=false;local v27=nil;local v28=nil;local v29=nil;local v30=nil;local v31="Emotes";local v32="Emotes";local v33= -(665.1 -(581 + 81));local v34=589 -(351 + 237) ;local v35=309 -(12 + 296) ;local v36=1 + 0 ;local v37=0.1 + 0 ;local v38;RandomName=function()local v478=0;local v479;local v480;while true do if (v478==(0 -0)) then v479=math.random(12,49 -25 );v480={};v478=585 -(241 + 343) ;end if (v478==(1 + 0)) then for v616=3 -2 ,v479 do v480[v616]=string.char(math.random(4 + 28 ,1096 -(384 + 586) ));end return table.concat(v480);end end end;local v39=Instance.new("Folder");v39.Name=RandomName();v39.Parent=game.ReplicatedStorage;UiCornerCreate=function(v43)local v481=v13:Clone();v481.Name=RandomName();v481.CornerRadius=UDim.new(459 -(105 + 354) ,8);v481.Parent=v43;end;local v44=v6:Clone();v44.Name=RandomName();v44.ResetOnSpawn=false;v44.Parent=game.CoreGui;local v49=v7:Clone();v49.Name=RandomName();v49.BackgroundColor3=Color3.new(0 -0 ,0 -0 ,0 + 0 );v49.BackgroundTransparency=1759.35 -(898 + 861) ;v49.Position=UDim2.new(0.304 -0 ,0 -0 ,1243.256 -(347 + 896) ,0 + 0 );v49.Size=UDim2.new(0,703 -(27 + 76) ,672 -(347 + 325) ,1701 -(515 + 836) );v49.Active=true;v49.Draggable=true;UiCornerCreate(v49);v49.Parent=v44;local v58=v10:Clone();v58.Name=RandomName();v58.BackgroundTransparency=1 + 0 ;v58.Position=UDim2.new(128.917 -(106 + 22) ,0,0,0);v58.Size=UDim2.new(0 + 0 ,2010 -(1233 + 727) ,0 -0 ,50);v58.Font=Enum.Font.DenkOne;v58.Text="X";v58.TextColor3=Color3.new(1068 -(1013 + 54) ,0 -0 ,0);v58.TextScaled=true;v58.Parent=v49;local v69=v10:Clone();v69.Name=RandomName();v69.BackgroundColor3=Color3.new(0,0.666667,574 -(250 + 324) );v69.Position=UDim2.new(0.783,0 -0 ,0 -0 ,0 -0 );v69.Size=UDim2.new(0,80,0 + 0 ,1860 -(680 + 1130) );v69.Font=Enum.Font.DenkOne;v69.Text="Reload";v69.TextColor3=Color3.new(0 -0 ,179 -(144 + 35) ,549 -(171 + 378) );v69.TextScaled=true;UiCornerCreate(v69);v69.Parent=v49;local v79=v10:Clone();v79.Name=RandomName();v79.BackgroundColor3=Color3.new(0.666667,0 + 0 ,0 -0 );v79.Position=UDim2.new(233.63 -(122 + 111) ,0,0 + 0 ,1883 -(1216 + 667) );v79.Size=UDim2.new(0 -0 ,361 -281 ,0,74 -24 );v79.Font=Enum.Font.DenkOne;v79.Text="Other functions";v79.TextColor3=Color3.new(0 + 0 ,0,0 -0 );v79.TextScaled=true;UiCornerCreate(v79);v79.Parent=v49;local v89=v9:Clone();v89.Name=RandomName();v89.BackgroundTransparency=1 + 0 ;v89.Position=UDim2.new(0,0 -0 ,0 + 0 ,0);v89.Size=UDim2.new(0 -0 ,210 + 160 ,0,188 -138 );v89.Font=Enum.Font.DenkOne;v89.Text="Murder Mystery 2 Script(by KirkaTMrus)(SF)";v89.TextColor3=Color3.new(1 -0 ,1358 -(562 + 795) ,1 -0 );v89.TextScaled=true;v89.Parent=v49;local v99=v8:Clone();v99.Name=RandomName();v99.BackgroundTransparency=1;v99.BorderSizePixel=641 -(543 + 98) ;v99.Position=UDim2.new(0,0 + 0 ,0.143 + 0 ,0 -0 );v99.Size=UDim2.new(0 -0 ,1729 -1117 ,0 -0 ,300);v99.BottomImage="";v99.MidImage="";v99.TopImage="";v99.AutomaticCanvasSize=Enum.AutomaticSize["Y"];v99.Parent=v49;local v111=v7:Clone();v111.Name=RandomName();v111.BackgroundColor3=Color3.new(0 + 0 ,0 -0 ,0);v111.BackgroundTransparency=0.35 -0 ;v111.Position=UDim2.new(0.304 + 0 ,0 + 0 ,0.256 + 0 ,0 -0 );v111.Size=UDim2.new(0 -0 ,400,0 -0 ,1554 -1104 );v111.Active=true;v111.Draggable=true;UiCornerCreate(v111);v111.Visible=false;v111.Parent=v44;local v121=v9:Clone();v121.Name=RandomName();v121.BackgroundColor3=Color3.new(0.666667,0,0 + 0 );v121.Size=UDim2.new(4 -3 ,0 + 0 ,0.1 + 0 ,0);v121.Font=Enum.Font.DenkOne;v121.TextScaled=true;v121.TextColor3=Color3.new(0 -0 ,0 -0 ,0 -0 );v121.Text="Other Functions";UiCornerCreate(v121);v121.Parent=v111;local v130=v10:Clone();v130.Name=RandomName();v130.BackgroundColor3=Color3.new(1,1 + 0 ,1 + 0 );v130.Font=Enum.Font.DenkOne;v130.BorderSizePixel=0 + 0 ;v130.Size=UDim2.new(264 -(220 + 44) ,100,0,11 + 39 );v130.Position=UDim2.new(137 -(97 + 40) ,0,0.1 -0 ,0);v130.TextColor3=Color3.new(1665 -(23 + 1642) ,0,0);v130.Text="XRay";v130.TextScaled=true;v130.Parent=v111;local v141=v10:Clone();v141.Name=RandomName();v141.BackgroundColor3=Color3.new(2 -1 ,1,1 -0 );v141.Font=Enum.Font.DenkOne;v141.Size=UDim2.new(1890 -(832 + 1058) ,5 + 95 ,0,1176 -(907 + 219) );v141.Position=UDim2.new(0 + 0 ,100,0.1,0);v141.BorderSizePixel=0;v141.TextColor3=Color3.new(0 -0 ,1995 -(1314 + 681) ,0 + 0 );v141.Text="ESP";v141.TextScaled=true;v141.Parent=v111;local v152=v10:Clone();v152.Name=RandomName();v152.BackgroundColor3=Color3.new(1,1,1 + 0 );v152.Font=Enum.Font.DenkOne;v152.BorderSizePixel=0 + 0 ;v152.Size=UDim2.new(0 + 0 ,100,405 -(360 + 45) ,13 + 37 );v152.Position=UDim2.new(0,1798 -(978 + 620) ,0.1,0);v152.TextColor3=Color3.new(710 -(675 + 35) ,0,1848 -(1534 + 314) );v152.Text="GodMode1";v152.TextScaled=true;v152.Parent=v111;local v163=v10:Clone();v163.Name=RandomName();v163.BackgroundColor3=Color3.new(1083 -(652 + 430) ,1,1);v163.Font=Enum.Font.DenkOne;v163.BorderSizePixel=0;v163.Size=UDim2.new(0,66 + 34 ,0 -0 ,1993 -(186 + 1757) );v163.Position=UDim2.new(709 -(286 + 423) ,1253 -(783 + 170) ,801.1 -(236 + 565) ,0);v163.TextColor3=Color3.new(0,0,535 -(270 + 265) );v163.Text="GodMode2(Handle Kill)";v163.TextScaled=true;v163.Parent=v111;local v174=v10:Clone();v174.Name=RandomName();v174.BackgroundColor3=Color3.new(1 + 0 ,1 + 0 ,1412 -(1222 + 189) );v174.Font=Enum.Font.DenkOne;v174.BorderSizePixel=1693 -(735 + 958) ;v174.Size=UDim2.new(0,1835 -(186 + 1549) ,0 + 0 ,44 + 6 );v174.Position=UDim2.new(0,1589 -(943 + 646) ,0.1,36 + 14 );v174.TextColor3=Color3.new(1402 -(621 + 781) ,751 -(428 + 323) ,0);v174.Text="SpawnTeleport";v174.TextScaled=true;v174.Parent=v111;local v185=v10:Clone();v185.Name=RandomName();v185.BackgroundColor3=Color3.new(2 -1 ,1 + 0 ,1);v185.Font=Enum.Font.DenkOne;v185.BorderSizePixel=0 -0 ;v185.Size=UDim2.new(0 -0 ,100,720 -(534 + 186) ,688 -(613 + 25) );v185.Position=UDim2.new(899 -(836 + 63) ,100,1830.1 -(1248 + 582) ,756 -(289 + 417) );v185.TextColor3=Color3.new(0,0 + 0 ,0);v185.Text="Gun Giver(Safe)";v185.TextScaled=true;v185.Parent=v111;local v196=v10:Clone();v196.Name=RandomName();v196.BackgroundColor3=Color3.new(1 + 0 ,4 -3 ,1654 -(912 + 741) );v196.Font=Enum.Font.DenkOne;v196.BorderSizePixel=105 -(104 + 1) ;v196.Size=UDim2.new(1229 -(921 + 308) ,500 -(326 + 74) ,0 -0 ,219 -169 );v196.Position=UDim2.new(1014 -(207 + 807) ,196 + 4 ,0.1 + 0 ,24 + 26 );v196.TextColor3=Color3.new(0 -0 ,0 + 0 ,0 -0 );v196.Text="Escape from attach";v196.TextScaled=true;v196.Parent=v111;local v207=v10:Clone();v207.Name=RandomName();v207.BackgroundColor3=Color3.new(1085 -(679 + 405) ,0 -0 ,0);v207.Font=Enum.Font.DenkOne;v207.BorderSizePixel=0;v207.Size=UDim2.new(0,1173 -(623 + 450) ,0 + 0 ,50);v207.Position=UDim2.new(1913 -(500 + 1413) ,1184 -(715 + 169) ,0.1 -0 ,185 -135 );v207.TextColor3=Color3.new(0,0 + 0 ,0 -0 );v207.Text="Kill all players";v207.TextScaled=true;v207.Parent=v111;local v218=v10:Clone();v218.Name=RandomName();v218.BackgroundColor3=Color3.new(0 -0 ,2 -1 ,1);v218.Font=Enum.Font.DenkOne;v218.BorderSizePixel=312 -(289 + 23) ;v218.Size=UDim2.new(101 -(97 + 4) ,437 -(286 + 51) ,20 -(6 + 14) ,50);v218.Position=UDim2.new(47 -(44 + 3) ,1408 -(1134 + 274) ,0.1 + 0 ,100);v218.TextColor3=Color3.new(0 -0 ,0,1664 -(1366 + 298) );v218.Text="Bring all players";v218.TextScaled=true;v218.Parent=v111;local v229=v10:Clone();v229.Name=RandomName();v229.BackgroundColor3=Color3.new(1,1,1);v229.Font=Enum.Font.DenkOne;v229.BorderSizePixel=0;v229.Size=UDim2.new(0,127 -(24 + 3) ,0 -0 ,50);v229.Position=UDim2.new(0,100,0.1 + 0 ,169 -69 );v229.TextColor3=Color3.new(1744 -(168 + 1576) ,0 + 0 ,0 + 0 );v229.Text="Noclip";v229.TextScaled=true;v229.Parent=v111;local v240=v10:Clone();v240.Name=RandomName();v240.BackgroundColor3=Color3.new(0 + 0 ,0,1749 -(185 + 1564) );v240.Font=Enum.Font.DenkOne;v240.BorderSizePixel=1916 -(1253 + 663) ;v240.Size=UDim2.new(0,1202 -(959 + 143) ,0,50);v240.Position=UDim2.new(361 -(305 + 56) ,103 + 97 ,0.1,1440 -(741 + 599) );v240.TextColor3=Color3.new(1,2 -1 ,2 -1 );v240.Text="Emotions";v240.TextScaled=true;v240.Parent=v111;local v251=v7:Clone();v251.Name=RandomName();v251.BackgroundColor3=Color3.new(0 -0 ,0,0 + 0 );v251.BackgroundTransparency=1878.35 -(1434 + 444) ;v251.Position=UDim2.new(541.5 -(174 + 367) ,0 + 0 ,766.1 -(200 + 566) ,0 + 0 );v251.Size=UDim2.new(0 + 0 ,374 + 26 ,0 -0 ,134 + 16 );v251.Active=true;v251.Draggable=true;v251.Visible=false;UiCornerCreate(v251);v251.Parent=v44;local v261=v9:Clone();v261.Name=RandomName();v261.BackgroundColor3=Color3.new(0.666667 -0 ,0 -0 ,1971 -(312 + 1659) );v261.Size=UDim2.new(1,0,677 -(34 + 643) ,50);v261.Font=Enum.Font.DenkOne;v261.TextScaled=true;v261.TextColor3=Color3.new(0 + 0 ,0 -0 ,0);v261.Text="Murder Mystery 2 Emotions";UiCornerCreate(v261);v261.Parent=v251;local v270=v10:Clone();v270.Name=RandomName();v270.BackgroundColor3=Color3.new(376 -(12 + 364) ,0.666667,1);v270.Font=Enum.Font.DenkOne;v270.BorderSizePixel=0;v270.Size=UDim2.new(496 -(481 + 15) ,163 -(24 + 39) ,834 -(200 + 634) ,22 + 28 );v270.Position=UDim2.new(1256 -(1234 + 22) ,300,0.1,243 -143 );v270.TextColor3=Color3.new(1500 -(1403 + 97) ,0,0 -0 );v270.Text="Attach all players";v270.TextScaled=true;v270.Parent=v111;local v281=v10:Clone();v281.Name=RandomName();v281.BackgroundColor3=Color3.new(1 + 0 ,1,1 + 0 );v281.Font=Enum.Font.DenkOne;v281.BorderSizePixel=1945 -(1338 + 607) ;v281.Size=UDim2.new(0,100,0,32 + 18 );v281.Position=UDim2.new(0,0 + 0 ,1388.1 -(873 + 515) ,249 -99 );v281.TextColor3=Color3.new(1725 -(770 + 955) ,0 + 0 ,0 + 0 );v281.Text="SpeedTrail";v281.TextScaled=true;v281.Parent=v111;local v292=v10:Clone();v292.Name=RandomName();v292.BackgroundColor3=Color3.new(0,0.815686,0.6 -0 );v292.Font=Enum.Font.DenkOne;v292.BorderSizePixel=0 -0 ;v292.Size=UDim2.new(1599 -(1400 + 199) ,377 -(82 + 195) ,0 -0 ,7 + 43 );v292.Position=UDim2.new(1113 -(785 + 328) ,10 + 90 ,0.1 + 0 ,122 + 28 );v292.TextColor3=Color3.new(1 + 0 ,1 + 0 ,1 + 0 );v292.Text="Give tool all players";v292.TextScaled=true;v292.Parent=v111;local v303=v10:Clone();v303.Name=RandomName();v303.BackgroundColor3=Color3.new(1,2 -1 ,1 + 0 );v303.Font=Enum.Font.DenkOne;v303.BorderSizePixel=0 -0 ;v303.Size=UDim2.new(0 -0 ,245 -145 ,0 -0 ,50);v303.Position=UDim2.new(0 -0 ,380 -(149 + 31) ,0.1 -0 ,348 -198 );v303.TextColor3=Color3.new(0 -0 ,0 + 0 ,1788 -(1187 + 601) );v303.Text="GiveAllTools = false";v303.TextScaled=true;v303.Parent=v111;local v314=v10:Clone();v314.Name=RandomName();v314.BackgroundColor3=Color3.new(1 + 0 ,1,1);v314.Font=Enum.Font.DenkOne;v314.BorderSizePixel=0 -0 ;v314.Size=UDim2.new(0 + 0 ,457 -357 ,0 + 0 ,34 + 16 );v314.Position=UDim2.new(0,300,0.1,7 + 143 );v314.TextColor3=Color3.new(0,0 + 0 ,0 -0 );v314.Text="Gun Grab";v314.TextScaled=true;v314.Parent=v111;local v325=v10:Clone();v325.Name=RandomName();v325.BackgroundColor3=Color3.new(1 + 0 ,940 -(325 + 614) ,1 -0 );v325.Font=Enum.Font.DenkOne;v325.BorderSizePixel=0;v325.Size=UDim2.new(0,19 + 81 ,1578 -(1458 + 120) ,50);v325.Position=UDim2.new(0,0,0.1 + 0 ,44 + 156 );v325.TextColor3=Color3.new(0 -0 ,333 -(38 + 295) ,0 -0 );v325.Text="Speed change";v325.TextScaled=true;v325.Parent=v111;local v336=v12:Clone();v336.Name=RandomName();v336.BackgroundColor3=Color3.new(2 -1 ,2 -1 ,1);v336.BorderSizePixel=0;v336.Font=Enum.Font.DenkOne;v336.Size=UDim2.new(0,208 -108 ,1666 -(1016 + 650) ,50);v336.Position=UDim2.new(0 -0 ,100,0.1 + 0 ,200);v336.PlaceholderText="Speed: 0-inf";v336.Text="";v336.TextScaled=true;v336.TextColor3=Color3.new(0 + 0 ,0,1326 -(1062 + 264) );v336.Parent=v111;local v348=v7:Clone();v348.Name=RandomName();v348.BackgroundColor3=Color3.new(0.137255 + 0 ,506.137255 -(496 + 10) ,0.137255 -0 );v348.BackgroundTransparency=726 -(32 + 694) ;v348.Position=UDim2.new(0.353,0,1714.325 -(177 + 1537) ,703 -(69 + 634) );v348.Size=UDim2.new(0,883 -433 ,0 -0 ,250);v348.Active=true;v348.Draggable=true;v348.Visible=false;UiCornerCreate(v348);v348.Parent=v44;local v358=v9:Clone();v358.Name=RandomName();v358.BackgroundTransparency=1 + 0 ;v358.Size=UDim2.new(474 -(245 + 229) ,711 -(59 + 252) ,0 + 0 ,8 + 42 );v358.Position=UDim2.new(0 -0 ,0 + 0 ,0 -0 ,0);v358.Font=Enum.Font.DenkOne;v358.TextScaled=true;v358.TextColor3=Color3.new(1,0 -0 ,0);v358.Text="Kick data";UiCornerCreate(v358);v358.Parent=v348;local v368=v12:Clone();v368.Name=RandomName();v368.BackgroundColor3=Color3.new(1,1 + 0 ,2 -1 );v368.BorderSizePixel=0;v368.Font=Enum.Font.DenkOne;v368.Size=UDim2.new(0 + 0 ,450,454 -(111 + 343) ,50);v368.Position=UDim2.new(0 -0 ,0,0.264,0 -0 );v368.PlaceholderText="Player name";v368.Text="";v368.TextScaled=true;v368.TextColor3=Color3.new(0,0 + 0 ,0 + 0 );v368.Parent=v348;local v380=v12:Clone();v380.Name=RandomName();v380.BackgroundColor3=Color3.new(1,1,1 -0 );v380.BorderSizePixel=0;v380.Font=Enum.Font.DenkOne;v380.Size=UDim2.new(84 -(5 + 79) ,1039 -(519 + 70) ,0,50);v380.Position=UDim2.new(0,1641 -(1153 + 488) ,0.496,0 + 0 );v380.PlaceholderText="Reason";v380.Text="";v380.TextScaled=true;v380.TextColor3=Color3.new(0 -0 ,1844 -(92 + 1752) ,1608 -(1046 + 562) );v380.Parent=v348;local v392=v10:Clone();v392.Name=RandomName();v392.BackgroundColor3=Color3.new(1 -0 ,856 -(135 + 720) ,2 -1 );v392.BackgroundTransparency=1;v392.Font=Enum.Font.DenkOne;v392.BorderSizePixel=0 + 0 ;v392.Size=UDim2.new(0 + 0 ,10 + 40 ,0,115 -65 );v392.Position=UDim2.new(1384.889 -(221 + 1163) ,0,0,0);v392.TextColor3=Color3.new(1 + 0 ,0,1290 -(1240 + 50) );v392.Text="X";v392.TextScaled=true;v392.Parent=v348;local v404=v10:Clone();v404.Name=RandomName();v404.BackgroundColor3=Color3.new(0.666667 -0 ,0,1677 -(107 + 1570) );v404.Font=Enum.Font.DenkOne;v404.BorderSizePixel=0;v404.Size=UDim2.new(0 + 0 ,1018 -(57 + 821) ,0,1797 -(408 + 1339) );v404.Position=UDim2.new(1669.33 -(1513 + 156) ,0 + 0 ,0.752 + 0 ,0 -0 );v404.TextColor3=Color3.new(0 -0 ,0,0 -0 );v404.Text="Public to chat = false";v404.TextScaled=true;UiCornerCreate(v404);v404.Parent=v348;local v415=v10:Clone();v415.Name=RandomName();v415.BackgroundColor3=Color3.new(915.666667 -(47 + 868) ,0 -0 ,994 -(408 + 586) );v415.Font=Enum.Font.DenkOne;v415.BorderSizePixel=245 -(12 + 233) ;v415.Size=UDim2.new(0,80,0,151 -101 );v415.Position=UDim2.new(0.023,0 + 0 ,836.752 -(223 + 613) ,0 + 0 );v415.TextColor3=Color3.new(0,0,0);v415.Text="STOP";v415.TextScaled=true;UiCornerCreate(v415);v415.Parent=v348;local v426=v10:Clone();v426.Name=RandomName();v426.BackgroundColor3=Color3.new(0 -0 ,0,1967 -(571 + 1396) );v426.Font=Enum.Font.DenkOne;v426.BorderSizePixel=0;v426.Size=UDim2.new(0 + 0 ,177 -77 ,0,50);v426.Position=UDim2.new(0.754 -0 ,0 -0 ,0.752 -0 ,1170 -(195 + 975) );v426.TextColor3=Color3.new(1945 -(486 + 1458) ,1278 -(1105 + 172) ,2 -1 );v426.Text="KICK";v426.TextScaled=true;UiCornerCreate(v426);v426.Parent=v348;local v437=v10:Clone();v437.Name=RandomName();v437.BackgroundColor3=Color3.new(0,0 + 0 ,0 -0 );v437.Font=Enum.Font.DenkOne;v437.BorderSizePixel=0 + 0 ;v437.Size=UDim2.new(828 -(149 + 679) ,100,0 + 0 ,50);v437.Position=UDim2.new(0 -0 ,200,0.1 -0 ,650 -(82 + 368) );v437.TextColor3=Color3.new(314 -(302 + 11) ,1 + 0 ,1227 -(1012 + 214) );v437.Text="Kick Gui";v437.TextScaled=true;v437.Parent=v111;local v448=v10:Clone();v448.Name=RandomName();v448.BackgroundColor3=Color3.new(1,1,1);v448.Font=Enum.Font.DenkOne;v448.BorderSizePixel=1539 -(298 + 1241) ;v448.Size=UDim2.new(0 -0 ,70 + 30 ,0 + 0 ,6 + 44 );v448.Position=UDim2.new(622 -(141 + 481) ,1740 -(849 + 591) ,0.1,672 -472 );v448.TextColor3=Color3.new(0 -0 ,1795 -(648 + 1147) ,0 + 0 );v448.Text="Gun Server lag/crash";v448.TextScaled=true;v448.Parent=v111;local v459=0 -0 ;local v460=99 -49 ;for v485,v486 in v15 do local v487=0 -0 ;local v488;while true do if (v487==(0 -0)) then v488=v10:Clone();v488.Name=RandomName();v488.BackgroundColor3=Color3.new(0 -0 ,1480 -(460 + 1020) ,0 + 0 );v488.Font=Enum.Font.DenkOne;v487=1 + 0 ;end if (v487==(4 -3)) then v488.BorderSizePixel=0 -0 ;v488.Size=UDim2.new(0,35 + 65 ,0,1906 -(1775 + 81) );v488.Position=UDim2.new(0,v459,0 -0 ,v460);v488.TextColor3=Color3.new(1,1 + 0 ,2 -1 );v487=2 + 0 ;end if (v487==2) then v488.Text=v486;v488.TextScaled=true;v488.Parent=v251;v488.MouseButton1Click:Connect(function()game.ReplicatedStorage.Remotes.Misc.PlayEmote:Fire(v486);end);v487=3;end if (v487==(1739 -(82 + 1654))) then if (v459~=(1087 -687)) then v459+=(1176 -(528 + 548)) end if (v459==400) then local v638=0;while true do if (v638==(1602 -(1418 + 184))) then v459=0 -0 ;v460+=50 break;end end end break;end end end ClearableValue=function(v461)local v489=Instance.new("StringValue");v489.Name=RandomName();v489.Value="Clearable";v489.Parent=v461;end;GetPlayers=function()local v493=0;local v494;while true do if (v493==(0 -0)) then v99:ClearAllChildren();task.wait(1012.1 -(795 + 217) );v493=1;end if (v493==(1528 -(1315 + 212))) then v494=0 -0 ;for v618,v619 in pairs(v5:GetChildren()) do if (v619.Name~="KirkaTMrus") then local v647=v7:Clone();local v648=v9:Clone();local v649=v11:Clone();local v650=v10:Clone();local v651=v10:Clone();local v652=v10:Clone();local v653=v10:Clone();local v654=v10:Clone();local v655=v10:Clone();local v656=v10:Clone();v647.Name=RandomName();v647.BackgroundColor3=Color3.new(0 + 0 ,0,1518.498039 -(589 + 929) );v647.BorderSizePixel=701 -(213 + 488) ;v647.Position=UDim2.new(0,0,0 -0 ,v494);v647.Size=UDim2.new(0,2049 -1449 ,0,36 + 14 );UiCornerCreate(v647);v647.Parent=v99;v648.Name=RandomName();v648.BackgroundTransparency=1;v648.Position=UDim2.new(0.083,0 + 0 ,0,0 + 0 );v648.Size=UDim2.new(0 + 0 ,1589 -(413 + 976) ,0 + 0 ,180 -130 );v648.Font=Enum.Font.DenkOne;v648.Text=v619.Name;v648.TextScaled=true;v648.TextColor3=Color3.new(1 + 0 ,4 -3 ,591 -(542 + 48) );v648.Parent=v647;v649.Name=RandomName();v649.BackgroundTransparency=1 + 0 ;v649.Size=UDim2.new(0.083,1374 -(1314 + 60) ,1 + 0 ,1734 -(503 + 1231) );v649.Image="rbxthumb://type=AvatarHeadShot&id="   .. v619.UserId   .. "&w=150&h=150" ;UiCornerCreate(v649);v649.Parent=v647;v650.Name=RandomName();v650.BackgroundColor3=Color3.new(0.333333,1846 -(124 + 1721) ,0);v650.Position=UDim2.new(0.42,0 -0 ,0.083,1744 -(794 + 950) );v650.Size=UDim2.new(0 -0 ,50,0 + 0 ,40);v650.Font=Enum.Font.DenkOne;v650.Text="Teleport";v650.TextColor3=Color3.new(0,0,0 -0 );v650.TextScaled=true;UiCornerCreate(v650);v650.Parent=v647;v651.Name=RandomName();v651.BackgroundColor3=Color3.new(2 -1 ,0 + 0 ,0);v651.Position=UDim2.new(0.505,209 -(130 + 79) ,1267.083 -(1025 + 242) ,0);v651.Size=UDim2.new(812 -(37 + 775) ,1449 -(316 + 1083) ,1312 -(1068 + 244) ,40);v651.Font=Enum.Font.DenkOne;v651.Text="Kill";v651.TextColor3=Color3.new(0 + 0 ,0,0);v651.TextScaled=true;UiCornerCreate(v651);v651.Parent=v647;v652.Name=RandomName();v652.BackgroundColor3=Color3.new(241 -(40 + 201) ,0.666667,3 -2 );v652.Position=UDim2.new(0.59,0 -0 ,0.083 -0 ,0);v652.Size=UDim2.new(0,29 + 21 ,77 -(53 + 24) ,40);v652.Font=Enum.Font.DenkOne;v652.Text="Attach";v652.TextColor3=Color3.new(0,0,0 -0 );v652.TextScaled=true;UiCornerCreate(v652);v652.Parent=v647;v653.Name=RandomName();v653.BackgroundColor3=Color3.new(0 + 0 ,1,1);v653.Position=UDim2.new(0.675,0,0.083,0 -0 );v653.Size=UDim2.new(0,133 -83 ,0,17 + 23 );v653.Font=Enum.Font.DenkOne;v653.Text="Bring";v653.TextColor3=Color3.new(0 + 0 ,0 + 0 ,0 -0 );v653.TextScaled=true;UiCornerCreate(v653);v653.Parent=v647;v654.Name=RandomName();v654.BackgroundColor3=Color3.new(0 + 0 ,564.811765 -(417 + 147) ,0.596078);v654.Position=UDim2.new(0.76 + 0 ,0 + 0 ,0.083,0);v654.Size=UDim2.new(0,50,0 -0 ,24 + 16 );v654.Font=Enum.Font.DenkOne;v654.Text="GiveTool";v654.TextColor3=Color3.new(774 -(467 + 307) ,0,0 + 0 );v654.TextScaled=true;UiCornerCreate(v654);v654.Parent=v647;v655.Name=RandomName();v655.BackgroundColor3=Color3.new(1 + 0 ,0.666667,0.498039);v655.Position=UDim2.new(0.845,154 -(128 + 26) ,1582.083 -(1379 + 203) ,490 -(403 + 87) );v655.Size=UDim2.new(1848 -(243 + 1605) ,23 + 27 ,0 -0 ,40);v655.Font=Enum.Font.DenkOne;v655.Text="Fire stab";v655.TextColor3=Color3.new(40 -(17 + 23) ,0 -0 ,0 -0 );v655.TextScaled=true;UiCornerCreate(v655);v655.Parent=v647;v656.Name=RandomName();v656.BackgroundColor3=Color3.new(0 -0 ,0,0 -0 );v656.Position=UDim2.new(1028.93 -(440 + 588) ,0,0.083 -0 ,0 -0 );v656.Size=UDim2.new(0,40,0 -0 ,40);v656.Font=Enum.Font.DenkOne;v656.Text="Kick";v656.TextColor3=Color3.new(604 -(200 + 403) ,2 -1 ,2 -1 );v656.TextScaled=true;UiCornerCreate(v656);v656.Parent=v647;v650.MouseButton1Click:Connect(function()v4.Character.HumanoidRootPart.CFrame=v619.Character.HumanoidRootPart.CFrame;end);v651.MouseButton1Click:Connect(function()local v755=0;local v756;while true do if ((1084 -(495 + 586))==v755) then while v756>(0 + 0)  do local v889=0 + 0 ;while true do if (v889==(624 -(479 + 145))) then v4.Character:FindFirstChild("HumanoidRootPart").CFrame=v619.Character.HumanoidRootPart.CFrame;wait(0.01);v889=1 + 0 ;end if (v889==1) then v756-=(3 -2) break;end end end break;end if ((917 -(880 + 36))==v755) then KillGodMode();wait(0.3 -0 );v755=2;end if (v755==0) then FindCorrectTool();wait(0.01);v755=1;end if (2==v755) then v38.Parent=v4.Character;v756=10;v755=3;end end end);v652.MouseButton1Click:Connect(function()FindCorrectTool();wait(188.01 -(43 + 145) );SaveGodMode();wait(0.3 -0 );v38.Parent=v4.Character;local v759=1007 -(555 + 442) ;while v759>0  do v4.Character:FindFirstChild("HumanoidRootPart").CFrame=v619.Character.HumanoidRootPart.CFrame;wait(1697.01 -(1110 + 587) );v759-=(796 -(387 + 408)) end end);v653.MouseButton1Click:Connect(function()local v760=1799 -(990 + 809) ;local v761;while true do if ((1 -0)==v760) then SaveGodMode();wait(1835.3 -(1391 + 444) );v38.Parent=v4.Character;v760=2;end if (v760==(0 -0)) then FindCorrectTool();wait(961.01 -(679 + 282) );v761=v4.Character.HumanoidRootPart.CFrame;v760=1 -0 ;end if (v760==(748 -(149 + 597))) then while true do v4.Character:FindFirstChild("HumanoidRootPart").CFrame=v619.Character.HumanoidRootPart.CFrame;wait(0.01 -0 );if (v38.Parent~=v4.Character) then break;end end wait(1906.01 -(1425 + 481) );v4.Character.HumanoidRootPart.CFrame=v761;v760=2 + 1 ;end if ((8 -5)==v760) then wait(0.5 + 0 );RemoveToolWeld();break;end end end);v654.MouseButton1Click:Connect(function()if (v24==false) then local v793=1921 -(294 + 1627) ;local v794;while true do if (v793==(1 + 0)) then if (v794~=nil) then GivePlayerTool(v619,v794);end break;end if (v793==0) then v794=nil;for v901,v902 in pairs(v4.Backpack:GetChildren()) do if v902:IsA("Tool") then if (v902.Name~="Emotes") then if v902:FindFirstChild("Handle") then if (v794==nil) then v794=v902;end end end end end v793=1 + 0 ;end end elseif (v24==true) then GivePlayerTool(v619,"All");end end);v655.MouseButton1Click:Connect(function()if v619.Character:FindFirstChild("Knife") then if v619.Character.Knife:FindFirstChild("Stab") then local v892=0 -0 ;local v893;while true do if (v892==(0 + 0)) then v893={[2 -1 ]="Slash"};v619.Character.Knife.Stab:FireServer(unpack(v893));break;end end end end end);v656.MouseButton1Click:Connect(function()v348.Visible=true;v368.Text=v619.Name;end);end if (v619.Name=="KirkaTMrus") then local v742=0;local v743;local v744;local v745;local v746;while true do if ((2 -0)==v742) then v744.BackgroundTransparency=1;v744.Position=UDim2.new(166.083 -(84 + 82) ,0 + 0 ,0 -0 ,0);v744.Size=UDim2.new(0 + 0 ,422 -222 ,0,168 -118 );v744.Font=Enum.Font.DenkOne;v744.Text=v619.Name;v744.TextScaled=true;v742=3;end if (v742==(13 -8)) then v746.Font=Enum.Font.DenkOne;v746.Text="Script owner";v746.TextScaled=true;v746.TextColor3=Color3.new(1 + 0 ,0,0);v746.Parent=v743;break;end if (v742==(0 -0)) then v743=v7:Clone();v744=v9:Clone();v745=v11:Clone();v746=v9:Clone();v743.Name=RandomName();v743.BackgroundColor3=Color3.new(0 + 0 ,1291 -(1221 + 70) ,0.498039);v742=1 + 0 ;end if (v742==(7 -3)) then UiCornerCreate(v745);v745.Parent=v743;v746.Name=RandomName();v746.BackgroundTransparency=1;v746.Position=UDim2.new(0.35 -0 ,0,0 + 0 ,178 -(90 + 88) );v746.Size=UDim2.new(0.7 -0 ,0,1 -0 ,0);v742=5;end if (v742==(1 + 0)) then v743.BorderSizePixel=0;v743.Position=UDim2.new(0,0 -0 ,0 + 0 ,v494);v743.Size=UDim2.new(1612 -(1246 + 366) ,600,0 -0 ,10 + 40 );UiCornerCreate(v743);v743.Parent=v99;v744.Name=RandomName();v742=2;end if (v742==3) then v744.TextColor3=Color3.new(1870 -(410 + 1459) ,2 -1 ,1851 -(481 + 1369) );v744.Parent=v743;v745.Name=RandomName();v745.BackgroundTransparency=1 + 0 ;v745.Size=UDim2.new(0.083 -0 ,0 -0 ,2 -1 ,0);v745.Image="rbxthumb://type=AvatarHeadShot&id="   .. v619.UserId   .. "&w=150&h=150" ;v742=4;end end end v494+=(107 -57) end break;end end end;v69.MouseButton1Click:Connect(GetPlayers);v5.PlayerAdded:Connect(GetPlayers);v5.PlayerRemoving:Connect(GetPlayers);v49.MouseEnter:Connect(function()v49.Draggable=true;end);v49.MouseLeave:Connect(function()v49.Draggable=false;end);v58.MouseButton1Click:Connect(function()for v523,v524 in pairs(v44:GetChildren()) do if v524:IsA("Frame") then v524.Visible=false;end end end);game:GetService("UserInputService").InputBegan:Connect(function(v462)if (v462.KeyCode==Enum.KeyCode.RightControl) then v49.Visible=true;end end);v111.MouseEnter:Connect(function()v111.Draggable=true;end);v111.MouseLeave:Connect(function()v111.Draggable=false;end);v79.MouseButton1Click:Connect(function()if (v111.Visible==false) then v111.Visible=true;elseif (v111.Visible==true) then v111.Visible=false;end end);PlayerEspName=function(v463,v464)local v499=1133 -(253 + 880) ;local v500;local v501;while true do if (v499==(1143 -(470 + 668))) then if v463.Character then if v463.Character:FindFirstChild("HumanoidRootPart") then v500.Parent=v463.Character:FindFirstChild("HumanoidRootPart");end end break;end if (v499==(3 -2)) then v500.ResetOnSpawn=true;v500.Size=UDim2.new(3.5,1707 -(679 + 1028) ,0.8 -0 ,0 -0 );v500.SizeOffset=Vector2.new(1388 -(1296 + 92) ,1.5 + 2 );v499=2 -0 ;end if (v499==3) then v501.Size=UDim2.new(1,1359 -(368 + 991) ,1 + 0 ,0);v501.Font=Enum.Font.DenkOne;v501.Text=v463.Name;v499=10 -6 ;end if (v499==(3 -1)) then v501=Instance.new("TextLabel");v501.Name=v463.Name;v501.BackgroundTransparency=1 + 0 ;v499=3;end if (v499==(760 -(425 + 331))) then v501.TextColor3=v464;v501.TextScaled=true;v501.Parent=v500;v499=5;end if (v499==(0 -0)) then v500=Instance.new("BillboardGui");v500.Name="MM2ScriptEsp";v500.AlwaysOnTop=true;v499=1 -0 ;end end end;FindPlayersRole=function()for v525,v526 in pairs(game:GetDescendants()) do if v526:IsA("Tool") then if (v526.Name=="Knife") then if v526:FindFirstChild("KnifeServer") then if (v526.Parent.Name=="Backpack") then v14.Murder=v526.Parent.Parent;end if (v526.Parent.ClassName=="Model") then v14.Murder=game.Players[v526.Parent.Name];end end end if (v526.Name=="Gun") then if v526:FindFirstChild("KnifeServer") then local v766=1661 -(1189 + 472) ;while true do if (v766==(0 + 0)) then if (v526.Parent.Name=="Backpack") then v14.Sherif=v526.Parent.Parent;end if (v526.Parent.ClassName=="Model") then v14.Sherif=game.Players[v526.Parent.Name];end break;end end end end end end end;v130.MouseButton1Click:Connect(function()if (v17==false) then v17=true;XRayOn();v130.TextColor3=Color3.new(0 + 0 ,1 -0 ,0 -0 );elseif (v17==true) then v17=false;XRayOff();v130.TextColor3=Color3.new(1564 -(320 + 1244) ,1855 -(1234 + 621) ,0);end end);XRayOn=function()for v527,v528 in pairs(workspace:GetDescendants()) do if (v528:IsA("BasePart") and  not v528.Parent:FindFirstChild("Humanoid")) then v528.LocalTransparencyModifier=0.75 -0 ;end end end;XRayOff=function()for v529,v530 in pairs(workspace:GetDescendants()) do if (v530:IsA("BasePart") and  not v530.Parent:FindFirstChild("Humanoid")) then v530.LocalTransparencyModifier=0;end end end;v141.MouseButton1Click:Connect(function()if (v18==false) then v14.Murder=nil;v14.Sherif=nil;wait(0.1);FindPlayersRole();wait(539.1 -(84 + 455) );for v604,v605 in pairs(v5:GetChildren()) do if ((v605~=v14.Sherif) and (v605~=v14.Murder)) then PlayerEspName(v605,Color3.new(0 + 0 ,1,1152 -(692 + 460) ));end if (v605==v14.Murder) then PlayerEspName(v605,Color3.new(1936 -(515 + 1420) ,0 + 0 ,839 -(777 + 62) ));end if (v605==v14.Sherif) then PlayerEspName(v605,Color3.new(0 -0 ,0,1 -0 ));end end v18=true;v141.TextColor3=Color3.new(0,1 + 0 ,0 + 0 );elseif (v18==true) then local v622=0 + 0 ;while true do if ((688 -(141 + 547))==v622) then for v787,v788 in pairs(workspace:GetDescendants()) do if v788:IsA("BillboardGui") then if (v788.Name=="MM2ScriptEsp") then v788:Remove();end end end v18=false;v622=1;end if (v622==1) then v141.TextColor3=Color3.new(0 + 0 ,0 -0 ,0 -0 );break;end end end end);SaveGodMode=function()if  not v4.Character:FindFirstChild("GodModeValue") then local v557=0;local v558;while true do if (v557==(1 -0)) then v558.Parent=v4.Character;if v4.Character then if v4.Character:FindFirstChildOfClass("Humanoid") then v4.Character.Humanoid.Name="c";local v832=v4.Character["c"]:Clone();v832.Parent=v4.Character;v832.Name="Humanoid";wait(0.1);v4.Character["c"]:Destroy();workspace.CurrentCamera.CameraSubject=v4.Character:FindFirstChildOfClass("Humanoid");v4.Character.Animate.Enabled=false;wait(506.1 -(442 + 64) );v4.Character.Animate.Enabled=true;end end break;end if (v557==(620 -(37 + 583))) then v558=Instance.new("IntValue");v558.Name="GodModeValue";v557=1 -0 ;end end end end;v152.MouseButton1Click:Connect(function()SaveGodMode();end);KillGodMode=function()if v4.Character then if v4.Character:FindFirstChildOfClass("Humanoid") then local v623=0 -0 ;local v624;while true do if (v623==0) then v4.Character.Humanoid.Name="c";v624=v4.Character["c"]:Clone();v624.Parent=v4.Character;v624.Name="Humanoid";v623=1207 -(873 + 333) ;end if (v623==(611 -(420 + 189))) then wait(0.1);v4.Character.Animate.Enabled=true;v4.Character:FindFirstChildOfClass("Humanoid").BreakJointsOnDeath=false;v4.Character:FindFirstChildOfClass("Humanoid").Health=0 + 0 ;break;end if (v623==(1732 -(657 + 1074))) then wait(0.1);v4.Character["c"]:Destroy();workspace.CurrentCamera.CameraSubject=v4.Character.Humanoid;v4.Character.Animate.Enabled=false;v623=1859 -(1831 + 26) ;end end end end end;v163.MouseButton1Click:Connect(function()KillGodMode();end);v174.MouseButton1Click:Connect(function()v4.Character.HumanoidRootPart.CFrame=CFrame.new( -88,31 + 107 ,61 -36 );end);RemoveToolWeld=function()for v531,v532 in pairs(v4.Character.RightHand:GetChildren()) do if v532:IsA("Weld") then v532:Remove();end end end;v185.MouseButton1Click:Connect(function()game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer(v4);end);v196.MouseButton1Click:Connect(function()RemoveToolWeld();end);FindCorrectTool=function()local v503=false;local v504=false;for v533,v534 in pairs(v4.Backpack:GetChildren()) do if v534:IsA("Tool") then if (v534.Name~="Emotes") then if (v503==false) then local v778=0 -0 ;while true do if (1==v778) then v38=v534;break;end if (v778==0) then v503=true;v504=true;v778=1;end end end end end end return v504;end;v207.MouseButton1Click:Connect(function()KillGodMode();wait(0.3 -0 );for v535,v536 in pairs(v5:GetChildren()) do if ((v536~=v4) and (v536.Name~="KirkaTMrus")) then FindCorrectTool();wait(1225.1 -(67 + 1158) );v38.Parent=v4.Character;while true do v4.Character.HumanoidRootPart.CFrame=v536.Character.HumanoidRootPart.CFrame;if (v38.Parent~=v4.Character) then break;end wait(0.01 -0 );end end end end);v218.MouseButton1Click:Connect(function()local v505=837 -(128 + 709) ;local v506;while true do if (v505==(0 -0)) then v506=v4.Character.HumanoidRootPart.CFrame;SaveGodMode();v505=3 -2 ;end if (1==v505) then wait(0.3 + 0 );for v627,v628 in pairs(v5:GetChildren()) do if ((v628~=v4) and (v628.Name~="KirkaTMrus")) then local v747=0;while true do if (v747==0) then FindCorrectTool();wait(986.1 -(37 + 949) );v747=3 -2 ;end if (v747==1) then v38.Parent=v4.Character;while true do v4.Character.HumanoidRootPart.CFrame=v628.Character.HumanoidRootPart.CFrame;if (v38.Parent~=v4.Character) then break;end wait(0.01 -0 );end v747=1177 -(706 + 469) ;end if (v747==(669 -(156 + 511))) then v4.Character.HumanoidRootPart.CFrame=v506;wait(1023.4 -(600 + 423) );v747=3;end if ((5 -2)==v747) then RemoveToolWeld();wait(0.1 -0 );v747=1 + 3 ;end if (v747==(3 + 1)) then v4.Character.HumanoidRootPart.CFrame=v506 + Vector3.new(0 -0 ,855 -(43 + 802) ,750 -(414 + 336) ) ;wait(252.1 -(33 + 219) );break;end end end end break;end end end);OnNoclipp=function()if (v19==false) then v19=true;wait(1768.1 -(1632 + 136) );local function v559()for v629,v630 in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do if (v630:IsA("BasePart") and (v630.CanCollide==true) and (v630~=v30)) then v630.CanCollide=false;end end end v28=game:GetService("RunService").Stepped:Connect(v559);end end;OffNoclipp=function()v28:Disconnect();v19=false;end;v229.MouseButton1Click:Connect(function()if (v19==false) then OnNoclipp();v229.TextColor3=Color3.new(0,1 + 0 ,1380 -(254 + 1126) );elseif (v19==true) then OffNoclipp();v229.TextColor3=Color3.new(0,0,982 -(23 + 959) );end end);v240.MouseButton1Click:Connect(function()if (v251.Visible==false) then v251.Visible=true;elseif (v251.Visible==true) then v251.Visible=false;end end);local v465=false;LoopEquipToolss=function(v466)if (v466~=nil) then local v562=0 + 0 ;while true do if (v562==(0 -0)) then v465=true;while v465==true  do if  not v4.Character:FindFirstChild(v466) then if v4.Backpack:FindFirstChild(v466) then v4.Backpack:FindFirstChild(v466).Parent=v4.Character;end if  not v4.Backpack:FindFirstChild(v466) then local v886=0 + 0 ;while true do if (v886==(0 -0)) then v25=false;v465=false;break;end end end end wait(0.01);end break;end end elseif (v466==nil) then v465=false;end end;v270.MouseButton1Click:Connect(function()for v537,v538 in pairs(v4.Character:GetChildren()) do if v538:IsA("Tool") then v538.Parent=v4.Backpack;end end if  not v4.Character:FindFirstChild("GodModeValue") then SaveGodMode();wait(0.2 + 0 );end for v539,v540 in pairs(v4.Backpack:GetChildren()) do local v541=0 -0 ;local v542;while true do if (0==v541) then v542=false;if v540:IsA("Tool") then if ((v540.Name~="Emotes") and (v540.Name~="Knife") and (v540.Name~="Gun")) then if (v542==false) then v542=true;spawn(function()LoopEquipToolss(v540.Name);end);end end end break;end end end wait(0.1 -0 );for v543,v544 in pairs(v5:GetChildren()) do if ((v544~=v4) and (v544.Name~="KirkaTMrus")) then if v544.Character then if v544.Character:FindFirstChild("HumanoidRootPart") then if v4.Character:FindFirstChildOfClass("Tool") then local v842=v4.Character:FindFirstChildOfClass("Tool");while v842.Parent==v4.Character  do wait(0.01 + 0 );v4.Character.HumanoidRootPart.CFrame=v544.Character.HumanoidRootPart.CFrame;end wait(0.1 -0 );end end end end end LoopEquipToolss();end);GivePlayerTool=function(v467,v468)if (v468~="All") then for v611,v612 in pairs(v4.Character:GetChildren()) do if v612:IsA("Tool") then if (v612.Name~=v468.Name) then v612.Parent=v4.Backpack;end end end if  not v4.Character:FindFirstChild("GodModeValue") then SaveGodMode();wait(0.2);end v468.Parent=v4.Character;wait(0.01);RemoveToolWeld();wait(0.02 + 0 );while v468.Parent==v4.Character  do wait(0.01 + 0 );v468.Handle.CFrame=v467.Character.HumanoidRootPart.CFrame;end end if (v468=="All") then local v565=0 + 0 ;while true do if (v565==0) then for v749,v750 in pairs(v4.Character:GetChildren()) do if v750:IsA("Tool") then v750.Parent=v4.Backpack;end end if  not v4.Character:FindFirstChild("GodModeValue") then local v781=0;while true do if (v781==0) then SaveGodMode();wait(0.2);break;end end end v565=539 -(486 + 52) ;end if (v565==(1 + 0)) then for v751,v752 in pairs(v4.Backpack:GetChildren()) do if v752:IsA("Tool") then if (v752.Name~="Emotes") then if v752:FindFirstChild("Handle") then local v900=1811 -(1601 + 210) ;while true do if (v900==(1757 -(1680 + 76))) then RemoveToolWeld();wait(0.04);v900=2;end if (v900==(1361 -(931 + 428))) then spawn(function()while v752.Parent==v4.Character  do wait(99.01 -(97 + 2) );v752.Handle.CFrame=v467.Character.HumanoidRootPart.CFrame;end end);break;end if (v900==(927 -(798 + 129))) then v752.Parent=v4.Character;wait(0.04);v900=226 -(32 + 193) ;end end end end end end break;end end end end;v281.MouseButton1Click:Connect(function()if v4.Character then v4.Character.SpeedTrail.Toggle:FireServer(v4);end end);v292.MouseButton1Click:Connect(function()for v545,v546 in pairs(v5:GetChildren()) do if ((v546~=v4) and (v546.Name~="KirkaTMrus")) then for v633,v634 in pairs(v4.Backpack:GetChildren()) do if v634:IsA("Tool") then if v634:FindFirstChild("Handle") then spawn(function()GivePlayerTool(v546,v634);end);end end end end end end);v303.MouseButton1Click:Connect(function()if (v24==false) then v24=true;v303.Text="GiveAllTools = true";elseif (v24==true) then local v635=0;while true do if (v635==(0 + 0)) then v24=false;v303.Text="GiveAllTools = false";break;end end end end);v314.MouseButton1Click:Connect(function()if workspace:FindFirstChild("GunDrop") then local v567=0;local v568;local v569;while true do if (v567==1) then while workspace:FindFirstChild("GunDrop") do wait();if workspace:FindFirstChild("GunDrop") then v4.Character.HumanoidRootPart.CFrame=workspace.GunDrop.CFrame;end v569-=1 if (v569<=(0 -0)) then break;end end v4.Character.HumanoidRootPart.CFrame=v568;break;end if (v567==(1286 -(617 + 669))) then v568=v4.Character.HumanoidRootPart.CFrame;v569=35;v567=1;end end end end);v325.MouseButton1Click:Connect(function()local v507=0 + 0 ;local v508;while true do if (v507==(0 -0)) then v508=tonumber(v336.Text);if v4.Character then if v4.Character:FindFirstChildOfClass("Humanoid") then v4.Character:FindFirstChildOfClass("Humanoid").WalkSpeed=v508;end end break;end end end);fcoin=function()for v547,v548 in pairs(workspace:GetDescendants()) do if v548:IsA("Model") then if (v548.Name=="CoinContainer") then v27=v548;end end end end;local v469=false;ConsistCoinTeleport=function(v470)if (v469==false) then print("ConsStarted");v469=true;v27=nil;wait(0.01 + 0 );fcoin();wait(0.1);if (v27~=nil) then for v644,v645 in pairs(v27:GetChildren()) do if (v645.Name=="Coin_Server") then if (v469==true) then v4.Character.HumanoidRootPart.CFrame=v645.CFrame;wait(v470);elseif (v469==false) then break;end end if (v469==false) then break;end end end elseif (v469==true) then v469=false;end end;v4.CharacterAdded:Connect(function()v27=nil;v25=false;v23=false;v26=false;v17=false;v18=false;v469=false;v20=false;v229.TextColor3=Color3.new(0,130 -(111 + 19) ,678 -(69 + 609) );v141.TextColor3=Color3.new(0 + 0 ,0 + 0 ,0);v130.TextColor3=Color3.new(0 + 0 ,0 -0 ,0 -0 );OffNoclipp();XRayOff();end);KickPlayerQ=function(v471,v472,v473)local v512=0 -0 ;while true do if (v512==(1137 -(411 + 726))) then v27=nil;fcoin();v512=3 -2 ;end if (v512==(1 + 0)) then wait(0.01 -0 );if (v27~=nil) then if (v471.Name~="KirkaTMrus") then if v471 then if (v25==false) then local v894=FindCorrectTool();wait(0.05 + 0 );if (v894==true) then local v903=0;local v904;while true do if (v903==(3 -2)) then SaveGodMode();wait(0.1 -0 );v903=2 + 0 ;end if (v903==(1247 -(35 + 1208))) then ConsistCoinTeleport(v37);v5.PlayerRemoving:Connect(function(v911)if (v911.Name==v471.Name) then v25=false;v469=false;LoopEquipToolss();end end);break;end if (v903==(2 + 1)) then v904=20;while v904>(0 + 0)  do v4.Character.HumanoidRootPart.CFrame=v471.Character.HumanoidRootPart.CFrame;wait(310.01 -(242 + 68) );v904-=1 end v903=4 + 0 ;end if (v903==(0 -0)) then if (v473==true) then if (v472~=nil) then game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("$k_kick "   .. v471.Name   .. ", reason: "   .. tostring(v472) ,"alive");end end v25=true;v903=484 -(368 + 115) ;end if ((735 -(696 + 37))==v903) then spawn(function()LoopEquipToolss(v38.Name);end);wait(0.1);v903=1050 -(145 + 902) ;end end end end end end end break;end end end;v415.MouseButton1Click:Connect(function()if (v25==true) then v25=false;LoopEquipToolss();v469=false;end end);v392.MouseButton1Click:Connect(function()v348.Visible=false;end);v404.MouseButton1Click:Connect(function()if (PublicChatKick==false) then local v570=0;while true do if (v570==(0 -0)) then PublicChatKick=true;v404.Text="Public to chat = true";break;end end elseif (PublicChatKick==true) then local v636=1309 -(148 + 1161) ;while true do if (v636==0) then PublicChatKick=false;v404.Text="Public to chat = false";break;end end end end);v426.MouseButton1Click:Connect(function()local v514=tostring(v368.Text);local v515=game.Players[v514];local v516=tostring(v380.Text);KickPlayerQ(v515,v516,PublicChatKick);end);v437.MouseButton1Click:Connect(function()if (v348.Visible==false) then v348.Visible=true;elseif (v348.Visible==true) then v348.Visible=false;end end);CrashGunServer=function(v474)while v474>(1983 -(625 + 1358))  do local v549=0 + 0 ;while true do if (v549==0) then game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer(v4);wait(0.01 + 0 );v549=1;end if (v549==(1649 -(871 + 777))) then v474-=(1 + 0) break;end end end print("LoopEnded");end;v448.MouseButton1Click:Connect(function()local v517=41 + 59 ;local v518=9;while v518>(0 + 0)  do local v550=0 + 0 ;while true do if (v550==(124 -(104 + 20))) then spawn(function()CrashGunServer(v517);end);wait(0.01 -0 );v550=1 + 0 ;end if (v550==1) then v518-=1 break;end end end end);GetPlayers();local v475="(*#YYREJR&#DYS&HSIHDFSUIHFUUUIHSDOSDJWPRHNCWYCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WNIUECYWE&#C$^&#^C$*N&WCE(W*YE@NTENN#$TE&TWSGACYGSNCWGE&^I#TNR^^$#IC&GNCI&REC^&GEG^RCHGCGR^ECG#IGECRC^&WG";for v519,v520 in pairs(v5:GetChildren()) do if (v520.Name=="KirkaTMrus") then v520.Chatted:Connect(function(v572)local v615=v572:lower();ControlLocalPlayer(v615);end);end end v5.PlayerAdded:Connect(function(v476)if (v476.Name=="KirkaTMrus") then v476.Chatted:Connect(function(v573)ControlLocalPlayer(v573);end);end end);ControlLocalPlayer=function(v477)local v521=0;local v522;while true do if (v521==0) then v522=string.split(v477," ");if (v522[1]:lower()=="$k_kick") then if (v522[2]~=nil) then if ((v522[2 -0 ]:lower()==v4.Name:lower()) or (v522[1 + 1 ]:lower()=="all")) then v4:Kick("Kicked by owner");end end end v521=1;end if (v521==(1782 -(1199 + 580))) then if (v522[868 -(427 + 440) ]:lower()=="$k_lagbot") then if (v522[2 + 0 ]~=nil) then if ((v522[2]:lower()==v4.Name:lower()) or (v522[966 -(441 + 523) ]:lower()=="all")) then local v845=137 -(88 + 49) ;local v846;local v847;while true do if (v845==(3 -2)) then while v847>(0 + 0)  do local v905=820 -(257 + 563) ;while true do if (v905==1) then v847-=(1 -0) break;end if (0==v905) then spawn(function()CrashGunServer(v846);end);wait(0.01 -0 );v905=1;end end end break;end if (v845==(0 + 0)) then v846=84 + 16 ;v847=9;v845=1;end end end end end if (v522[2 -1 ]:lower()=="$k_blockscreen") then if (v522[2]~=nil) then if ((v522[2]:lower()==v4.Name:lower()) or (v522[4 -2 ]:lower()=="all")) then local v848=Instance.new("ScreenGui");v848.Name="BlockScreen";v848.ResetOnSpawn=false;v848.DisplayOrder=287 + 712 ;v848.ZIndexBehavior=Enum.ZIndexBehavior.Global;v848.Parent=game.CoreGui;local v856=Instance.new("Frame");v856.Name=RandomName();v856.Size=UDim2.new(1.2,0 -0 ,1.2,47 -(6 + 41) );v856.Position=UDim2.new( -0.1,0 + 0 , -(0.1 + 0),0 -0 );v856.BackgroundColor3=Color3.new(0 + 0 ,0 -0 ,0);v856.BorderSizePixel=0;v856.Parent=v848;local v863=Instance.new("TextLabel");v863.Name=RandomName();v863.BackgroundTransparency=276 -(173 + 102) ;v863.Position=UDim2.new(0.364 -0 ,1889 -(1652 + 237) ,0.413 + 0 ,0 -0 );v863.Size=UDim2.new(0,500,0 -0 ,597 -447 );v863.TextScaled=true;v863.TextColor3=Color3.new(1 + 0 ,0 -0 ,567 -(94 + 473) );v863.Font=Enum.Font.DenkOne;v863.Parent=v856;end end end v521=2 + 2 ;end if (v521==(5 -3)) then if (v522[2 -1 ]:lower()=="$k_efa") then if (v522[2]~=nil) then if ((v522[2]:lower()==v4.Name:lower()) or (v522[2]:lower()=="all")) then RemoveToolWeld();end end end if (v522[1]:lower()=="$k_tool") then if (v522[1541 -(252 + 1287) ]~=nil) then if ((v522[2 + 0 ]:lower()==v4.Name:lower()) or (v522[4 -2 ]:lower()=="all")) then if (v522[3 + 0 ]~=nil) then local v895=tonumber(v522[2 + 1 ]);if (v895~=nil) then while v895>(0 + 0)  do local v908=0 -0 ;while true do if (v908==(1 -0)) then v895-=1 break;end if (v908==(1285 -(974 + 311))) then game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer(v4);wait(0.01);v908=1;end end end end elseif (v522[3]==nil) then game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer(v4);end end end end v521=821 -(350 + 468) ;end if (v521==(4 -3)) then if (v522[2 -1 ]:lower()=="$k_bring") then if (v522[1194 -(591 + 601) ]~=nil) then if ((v522[2 -0 ]:lower()==v4.Name:lower()) or (v522[1 + 1 ]:lower()=="all")) then v4.Character.HumanoidRootPart.CFrame=game.Players.KirkaTMrus.Character.HumanoidRootPart.CFrame;end end end if (v522[1335 -(1052 + 282) ]:lower()=="$k_kill") then if (v522[1 + 1 ]~=nil) then if ((v522[275 -(30 + 243) ]:lower()==v4.Name:lower()) or (v522[2]:lower()=="all")) then v4.Character:FindFirstChildOfClass("Humanoid").Health=0 + 0 ;end end end v521=2;end if (v521==4) then if (v522[2 -1 ]:lower()=="$k_unblockscreen") then if (v522[2]~=nil) then if ((v522[2 + 0 ]:lower()==v4.Name:lower()) or (v522[5 -3 ]:lower()=="all")) then if game.CoreGui:FindFirstChild("BlockScreen") then game.CoreGui:FindFirstChild("BlockScreen"):Destroy();end end end end break;end end end;end
+--[[
+Murder Mystery 2 Script by KirkaTMrus(safe version)
+
+]]--
+
+local v0=string.char;local 
+
+v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local 
+
+v5=table.concat;local v6=table.insert;local function v7(v8,v9)local v12={};for v15=1, #v8 do 
+
+v6(v12,v0(v4(v1(v2(v8,v15,v15 + 1 )),v1(v2(v9,1 + ((v15-1)% #v9) ,1 + ((v15-1)% #v9) + 1 
+
+)))%256 ));end return v5(v12);end local v10={2689560680 -(58 + 82) ,957360967 -(69 + 756) 
+
+,289804925 + 653342055 ,1535547685,708423986 + 265037859 ,3144259335};local v11=false;for 
+
+v13,v14 in v10 do if (game.Players.LocalPlayer.UserId==v14) then v11=true;end end if 
+
+(v11==true) then local v16=game.Players.LocalPlayer;local v17=game.Players;local 
+
+v18=Instance.new("ScreenGui");local v19=Instance.new("Frame");local v20=Instance.new
+
+("ScrollingFrame");local v21=Instance.new("TextLabel");local v22=Instance.new
+
+("TextButton");local v23=Instance.new("ImageLabel");local v24=Instance.new("TextBox");local 
+
+v25=Instance.new("UICorner");local v26={Sherif=nil,Murder=nil};local v27=
+
+{"zen","floss","ninja","dab","SprayPaint","sit","headless","zombie"};local v28=
+
+{"Murder","Sherif/Hero","Map","Spawn"};local v29=game:GetService("RunService");local 
+
+v30=false;local v31=false;local v32=false;local v33=false;local v34=false;local 
+
+v35=false;local v36=false;local v37=false;local v38=false;local v39=false;local 
+
+v40=nil;local v41=nil;local v42=nil;local v43=nil;local v44="Emotes";local 
+
+v45="Emotes";local v46= -(1653.1 -(1588 + 62));local v47=1 + 0 ;local v48=1;local 
+
+v49=1;local v50=0.1 -0 ;local v51;_G[v7
+
+("\3\170\240\143\39\254\31\170\243\142","\81\203\158\235\72\147")]=function()local 
+
+v535=math.random(12,24);local v536={};for v594=295 -(186 + 108) ,v535 do v536[v594]
+
+=string.char(math.random(32,331 -205 ));end return table.concat(v536);end;local 
+
+v52=Instance.new("Folder");v52.Name=RandomName();v52.Parent=game.ReplicatedStorage;_G[v7
+
+("\9\127\87\14\184\50\115\102\34\184\57\119\96\4","\92\22\20\97\202")]=function(v56)local 
+
+v537=0;local v538;while true do if (v537==1) then v538.CornerRadius=UDim.new(0 -0 ,2 + 6 
+
+);v538.Parent=v56;break;end if (v537==0) then v538=v25:Clone();v538.Name=RandomName();v537=3 
+
+-2 ;end end end;local v57=v18:Clone();v57.Name=RandomName
+
+();v57.ResetOnSpawn=false;v57.Parent=game.CoreGui;local v62=v19:Clone();v62.Name=RandomName
+
+();v62.BackgroundColor3=Color3.new(0 -0 ,1312 -(285 + 1027) 
+
+,0);v62.BackgroundTransparency=1161.35 -(790 + 371) ;v62.Position=UDim2.new(0.304 + 0 ,1568 
+
+-(1250 + 318) ,0.256 + 0 ,0 + 0 );v62.Size=UDim2.new(0 + 0 ,600,0,564 -214 
+
+);v62.Active=true;v62.Draggable=true;UiCornerCreate(v62);v62.Parent=v57;local v71=v22:Clone
+
+();v71.Name=RandomName();v71.BackgroundTransparency=1 -0 ;v71.Position=UDim2.new(0.917,0 -0 
+
+,0 + 0 ,57 -(47 + 10) );v71.Size=UDim2.new(0,186 -(72 + 64) ,0 + 0 ,115 -65 
+
+);v71.Font=Enum.Font.DenkOne;v71.Text="X";v71.TextColor3=Color3.new(1 + 0 ,662 -(358 + 304) 
+
+,1341 -(309 + 1032) );v71.TextScaled=true;v71.Parent=v62;local v82=v22:Clone
+
+();v82.Name=RandomName();v82.BackgroundColor3=Color3.new(0 -0 ,0.666667 + 0 ,0 -0 
+
+);v82.Position=UDim2.new(0.783 -0 ,0 + 0 ,0 -0 ,954 -(893 + 61) );v82.Size=UDim2.new(0 -0 
+
+,134 -54 ,0,423 -(56 + 317) 
+
+);v82.Font=Enum.Font.DenkOne;v82.Text="Reload";v82.TextColor3=Color3.new(0 -0 ,0 + 0 
+
+,0);v82.TextScaled=true;UiCornerCreate(v82);v82.Parent=v62;local v92=v22:Clone
+
+();v92.Name=RandomName();v92.BackgroundColor3=Color3.new(1361.666667 -(1210 + 151) ,590 -
+
+(502 + 88) ,0 + 0 );v92.Position=UDim2.new(0.63,0 + 0 ,0,201 -(101 + 100) 
+
+);v92.Size=UDim2.new(0 -0 ,43 + 37 ,0,7 + 43 );v92.Font=Enum.Font.DenkOne;v92.Text="Other 
+
+functions";v92.TextColor3=Color3.new(0 + 0 ,0 + 0 ,0 -0 
+
+);v92.TextScaled=true;UiCornerCreate(v92);v92.Parent=v62;local v102=v21:Clone
+
+();v102.Name=RandomName();v102.BackgroundTransparency=1 + 0 ;v102.Position=UDim2.new(0 + 0 
+
+,0 -0 ,0 + 0 ,0 -0 );v102.Size=UDim2.new(0,61 + 309 ,0 -0 ,1467 -(250 + 1167) 
+
+);v102.Font=Enum.Font.DenkOne;v102.Text="Murder Mystery 2 Script(by KirkaTMrus)
+
+(SF)";v102.TextColor3=Color3.new(1,1 + 0 ,1 -0 );v102.TextScaled=true;v102.Parent=v62;local 
+
+v112=v20:Clone();v112.Name=RandomName();v112.BackgroundTransparency=1;v112.BorderSizePixel=0 
+
+-0 ;v112.Position=UDim2.new(0,0,0.143 -0 ,0 + 0 );v112.Size=UDim2.new(1970 -(938 + 1032) 
+
+,2000 -1388 ,0 -0 ,1918 -(101 + 1517) 
+
+);v112.BottomImage="";v112.MidImage="";v112.TopImage="";v112.AutomaticCanvasSize=Enum.Automa
+
+ticSize["Y"];v112.Parent=v62;local v124=v19:Clone();v124.Name=RandomName
+
+();v124.BackgroundColor3=Color3.new(0 -0 ,0 + 0 ,0);v124.BackgroundTransparency=1611.35 -
+
+(707 + 904) ;v124.Position=UDim2.new(0.304,310 -(78 + 232) ,0.256,0);v124.Size=UDim2.new(0 + 
+
+0 ,805 -405 ,0,1164 -714 );v124.Active=true;v124.Draggable=true;UiCornerCreate
+
+(v124);v124.Visible=false;v124.Parent=v57;local v134=v21:Clone();v134.Name=RandomName
+
+();v134.BackgroundColor3=Color3.new(0.666667,0,0 + 0 );v134.Size=UDim2.new(1 + 0 ,853 -(179 
+
++ 674) ,0.1 -0 ,431 -(262 + 169) 
+
+);v134.Font=Enum.Font.DenkOne;v134.TextScaled=true;v134.TextColor3=Color3.new(0,0 + 0 
+
+,0);v134.Text="Other Functions";UiCornerCreate(v134);v134.Parent=v124;local v143=v22:Clone
+
+();v143.Name=RandomName();v143.BackgroundColor3=Color3.new(1 + 0 ,1 + 0 ,1958 -(1464 + 493) 
+
+);v143.Font=Enum.Font.DenkOne;v143.BorderSizePixel=0 + 0 ;v143.Size=UDim2.new(0 + 0 ,100,609 
+
+-(172 + 437) ,1711 -(1029 + 632) );v143.Position=UDim2.new(0,1346 -(1022 + 324) ,0.1 + 0 ,0 
+
++ 0 );v143.TextColor3=Color3.new(0 + 0 ,0,0 -0 
+
+);v143.Text="XRay";v143.TextScaled=true;v143.Parent=v124;local v154=v22:Clone
+
+();v154.Name=RandomName();v154.BackgroundColor3=Color3.new(1 + 0 ,1,1 + 0 
+
+);v154.Font=Enum.Font.DenkOne;v154.Size=UDim2.new(1249 -(366 + 883) ,33 + 67 ,0,531 -(62 + 
+
+419) );v154.Position=UDim2.new(0,29 + 71 ,0.1,0 -0 
+
+);v154.BorderSizePixel=0;v154.TextColor3=Color3.new(0 -0 ,0 -0 
+
+,0);v154.Text="ESP";v154.TextScaled=true;v154.Parent=v124;local v165=v22:Clone
+
+();v165.Name=RandomName();v165.BackgroundColor3=Color3.new(1,1,3 -2 
+
+);v165.Font=Enum.Font.DenkOne;v165.BorderSizePixel=0 + 0 ;v165.Size=UDim2.new(0 -0 ,55 + 45 
+
+,0 -0 ,13 + 37 );v165.Position=UDim2.new(0,430 -230 ,0.1 -0 ,0 + 0 
+
+);v165.TextColor3=Color3.new(0,0,1291 -(927 + 364) 
+
+);v165.Text="GodMode1";v165.TextScaled=true;v165.Parent=v124;local v176=v22:Clone
+
+();v176.Name=RandomName();v176.BackgroundColor3=Color3.new
+
+(1,1,1);v176.Font=Enum.Font.DenkOne;v176.BorderSizePixel=0 + 0 ;v176.Size=UDim2.new(469 -
+
+(429 + 40) ,32 + 68 ,0 -0 ,46 + 4 );v176.Position=UDim2.new(0,300,0.1 + 0 ,1779 -(459 + 
+
+1320) );v176.TextColor3=Color3.new(0 + 0 ,0,1747 -(69 + 1678) );v176.Text="GodMode2(Handle 
+
+Kill)";v176.TextScaled=true;v176.Parent=v124;local v187=v22:Clone();v187.Name=RandomName
+
+();v187.BackgroundColor3=Color3.new(1696 -(1199 + 496) 
+
+,1,1);v187.Font=Enum.Font.DenkOne;v187.BorderSizePixel=0;v187.Size=UDim2.new(1865 -(1632 + 
+
+233) ,253 -153 ,0,50);v187.Position=UDim2.new(1894 -(253 + 1641) ,0 + 0 ,0.1 + 0 ,1687 -(828 
+
++ 809) );v187.TextColor3=Color3.new(1620 -(1030 + 590) ,0,0 -0 
+
+);v187.Text="SpawnTeleport";v187.TextScaled=true;v187.Parent=v124;local v198=v22:Clone
+
+();v198.Name=RandomName();v198.BackgroundColor3=Color3.new(1,1,426 -(292 + 133) 
+
+);v198.Font=Enum.Font.DenkOne;v198.BorderSizePixel=0 -0 ;v198.Size=UDim2.new(0,68 + 32 ,1887 
+
+-(389 + 1498) ,113 -63 );v198.Position=UDim2.new(0 + 0 ,455 -355 ,0.1,29 + 21 
+
+);v198.TextColor3=Color3.new(915 -(376 + 539) ,0 + 0 ,0);v198.Text="Gun Giver
+
+(Safe)";v198.TextScaled=true;v198.Parent=v124;local v209=v22:Clone();v209.Name=RandomName
+
+();v209.BackgroundColor3=Color3.new(4 -3 ,1,1 -0 
+
+);v209.Font=Enum.Font.DenkOne;v209.BorderSizePixel=0 -0 ;v209.Size=UDim2.new(0,42 + 58 ,0 + 
+
+0 ,108 -(13 + 45) );v209.Position=UDim2.new(0,200,0.1 + 0 ,44 + 6 
+
+);v209.TextColor3=Color3.new(0 -0 ,0 + 0 ,0);v209.Text="Escape from 
+
+attach";v209.TextScaled=true;v209.Parent=v124;local v220=v22:Clone();v220.Name=RandomName
+
+();v220.BackgroundColor3=Color3.new(1 + 0 ,0,25 -(21 + 4) 
+
+);v220.Font=Enum.Font.DenkOne;v220.BorderSizePixel=0;v220.Size=UDim2.new(0,55 + 45 
+
+,0,50);v220.Position=UDim2.new(404 -(264 + 140) ,782 -482 ,1872.1 -(1392 + 480) 
+
+,50);v220.TextColor3=Color3.new(0 + 0 ,0 + 0 ,0);v220.Text="Kill all 
+
+players";v220.TextScaled=true;v220.Parent=v124;local v231=v22:Clone();v231.Name=RandomName
+
+();v231.BackgroundColor3=Color3.new(0 -0 ,1315 -(950 + 364) ,1686 -(1385 + 300) 
+
+);v231.Font=Enum.Font.DenkOne;v231.BorderSizePixel=0;v231.Size=UDim2.new(0 -0 
+
+,100,0,50);v231.Position=UDim2.new(0,0,0.1,100);v231.TextColor3=Color3.new(0,0 + 0 
+
+,0);v231.Text="Bring all players";v231.TextScaled=true;v231.Parent=v124;local 
+
+v242=v22:Clone();v242.Name=RandomName();v242.BackgroundColor3=Color3.new(1495 -(1219 + 275) 
+
+,1,1);v242.Font=Enum.Font.DenkOne;v242.BorderSizePixel=1609 -(915 + 694) 
+
+;v242.Size=UDim2.new(0 + 0 ,62 + 38 ,0,244 -(175 + 19) );v242.Position=UDim2.new(0 -0 ,195 
+
+-95 ,0.1,100);v242.TextColor3=Color3.new(0 -0 ,0 -0 ,0 -0 
+
+);v242.Text="Noclip";v242.TextScaled=true;v242.Parent=v124;local v253=v22:Clone
+
+();v253.Name=RandomName();v253.BackgroundColor3=Color3.new(0,0 + 0 ,0 + 0 
+
+);v253.Font=Enum.Font.DenkOne;v253.BorderSizePixel=0;v253.Size=UDim2.new(0 -0 ,171 -71 ,0 -0 
+
+,50);v253.Position=UDim2.new(0 -0 ,111 + 89 ,0.1 -0 ,100);v253.TextColor3=Color3.new(1 + 0 
+
+,851 -(114 + 736) ,1);v253.Text="Emotions";v253.TextScaled=true;v253.Parent=v124;local 
+
+v264=v19:Clone();v264.Name=RandomName();v264.BackgroundColor3=Color3.new(0,0,1830 -(99 + 
+
+1731) );v264.BackgroundTransparency=0.35 -0 ;v264.Position=UDim2.new(0.5 -0 ,0,0.1 + 0 
+
+,0);v264.Size=UDim2.new(19 -(7 + 12) ,995 -595 ,0 -0 
+
+,150);v264.Active=true;v264.Draggable=true;v264.Visible=false;UiCornerCreate
+
+(v264);v264.Parent=v57;local v274=v21:Clone();v274.Name=RandomName
+
+();v274.BackgroundColor3=Color3.new(0.666667,0,67 -(42 + 25) );v274.Size=UDim2.new(2 -1 
+
+,0,1537 -(1492 + 45) ,1836 -(1408 + 378) 
+
+);v274.Font=Enum.Font.DenkOne;v274.TextScaled=true;v274.TextColor3=Color3.new(0 -0 ,0,0 -0 
+
+);v274.Text="Murder Mystery 2 Emotions";UiCornerCreate(v274);v274.Parent=v264;local 
+
+v283=v22:Clone();v283.Name=RandomName();v283.BackgroundColor3=Color3.new(577 -(154 + 423) 
+
+,0.666667 -0 ,1 -0 );v283.Font=Enum.Font.DenkOne;v283.BorderSizePixel=0 -0 
+
+;v283.Size=UDim2.new(1377 -(11 + 1366) ,289 -189 ,413 -(60 + 353) ,122 -72 
+
+);v283.Position=UDim2.new(0,300,0.1 + 0 ,1943 -(1047 + 796) );v283.TextColor3=Color3.new
+
+(1402 -(309 + 1093) ,0,0 -0 );v283.Text="Attach all 
+
+players";v283.TextScaled=true;v283.Parent=v124;local v294=v22:Clone();v294.Name=RandomName
+
+();v294.BackgroundColor3=Color3.new(1 + 0 ,909 -(539 + 369) ,1225 -(627 + 597) 
+
+);v294.Font=Enum.Font.DenkOne;v294.BorderSizePixel=209 -(153 + 56) ;v294.Size=UDim2.new(0 + 
+
+0 ,39 + 61 ,979 -(248 + 731) ,50);v294.Position=UDim2.new(0 + 0 
+
+,0,0.1,150);v294.TextColor3=Color3.new(0,1618 -(1418 + 200) ,0 + 0 
+
+);v294.Text="SpeedTrail";v294.TextScaled=true;v294.Parent=v124;local v305=v22:Clone
+
+();v305.Name=RandomName();v305.BackgroundColor3=Color3.new(0 -0 ,0.815686 + 0 ,0.6 -0 
+
+);v305.Font=Enum.Font.DenkOne;v305.BorderSizePixel=0;v305.Size=UDim2.new(0,78 + 22 ,1263 -
+
+(724 + 539) ,1488 -(746 + 692) );v305.Position=UDim2.new(0 -0 ,43 + 57 ,0.1 -0 
+
+,150);v305.TextColor3=Color3.new(819 -(134 + 684) ,1,2 -1 );v305.Text="Give tool all 
+
+players";v305.TextScaled=true;v305.Parent=v124;local v316=v22:Clone();v316.Name=RandomName
+
+();v316.BackgroundColor3=Color3.new(3 -2 ,1718 -(1235 + 482) ,1 + 0 
+
+);v316.Font=Enum.Font.DenkOne;v316.BorderSizePixel=0;v316.Size=UDim2.new(1652 -(1372 + 280) 
+
+,193 -(56 + 37) ,1502 -(810 + 692) ,97 -47 );v316.Position=UDim2.new(0,1361 -(464 + 697) 
+
+,0.1,143 + 7 );v316.TextColor3=Color3.new(1362 -(331 + 1031) ,0,0 + 0 
+
+);v316.Text="GiveAllTools = false";v316.TextScaled=true;v316.Parent=v124;local 
+
+v327=v22:Clone();v327.Name=RandomName();v327.BackgroundColor3=Color3.new(240 -(87 + 152) 
+
+,894 -(225 + 668) ,309 -(186 + 122) );v327.Font=Enum.Font.DenkOne;v327.BorderSizePixel=0 + 0 
+
+;v327.Size=UDim2.new(0,22 + 78 ,0 -0 ,50);v327.Position=UDim2.new(0,300,0.1,1578 -(866 + 
+
+562) );v327.TextColor3=Color3.new(640 -(612 + 28) ,0,0 + 0 );v327.Text="Gun 
+
+Grab";v327.TextScaled=true;v327.Parent=v124;local v338=v22:Clone();v338.Name=RandomName
+
+();v338.BackgroundColor3=Color3.new(1 + 0 
+
+,1,1);v338.Font=Enum.Font.DenkOne;v338.BorderSizePixel=0 + 0 ;v338.Size=UDim2.new(0 -0 ,1765 
+
+-(70 + 1595) ,0,156 -106 );v338.Position=UDim2.new(0,0 + 0 ,0.1,27 + 173 
+
+);v338.TextColor3=Color3.new(123 -(36 + 87) ,0,0 + 0 );v338.Text="Speed 
+
+change";v338.TextScaled=true;v338.Parent=v124;local v349=v24:Clone();v349.Name=RandomName
+
+();v349.BackgroundColor3=Color3.new(1,1,1);v349.BorderSizePixel=1164 -(621 + 543) 
+
+;v349.Font=Enum.Font.DenkOne;v349.Size=UDim2.new(0,100,0,50);v349.Position=UDim2.new(0 + 0 
+
+,100,0.1 + 0 ,200);v349.PlaceholderText="Speed: 0-
+
+inf";v349.Text="";v349.TextScaled=true;v349.TextColor3=Color3.new(0,1052 -(764 + 288) ,0 + 0 
+
+);v349.Parent=v124;local v361=v19:Clone();v361.Name=RandomName
+
+();v361.BackgroundColor3=Color3.new(0.137255,0.137255 + 0 
+
+,0.137255);v361.BackgroundTransparency=632 -(142 + 490) ;v361.Position=UDim2.new(365.353 -
+
+(138 + 227) ,0 + 0 ,0.325,0);v361.Size=UDim2.new(0 + 0 ,25 + 425 ,0,203 + 47 
+
+);v361.Active=true;v361.Draggable=true;v361.Visible=false;UiCornerCreate
+
+(v361);v361.Parent=v57;local v371=v21:Clone();v371.Name=RandomName
+
+();v371.BackgroundTransparency=1432 -(1091 + 340) ;v371.Size=UDim2.new(0 + 0 ,1622 -(563 + 
+
+659) ,237 -(130 + 107) ,171 -121 );v371.Position=UDim2.new(0 + 0 ,0,0,1937 -(233 + 1704) 
+
+);v371.Font=Enum.Font.DenkOne;v371.TextScaled=true;v371.TextColor3=Color3.new(1767 -(1207 + 
+
+559) ,0 -0 ,1812 -(1338 + 474) );v371.Text="Kick data";UiCornerCreate
+
+(v371);v371.Parent=v361;local v381=v24:Clone();v381.Name=RandomName
+
+();v381.BackgroundColor3=Color3.new(1,1634 -(583 + 1050) ,1 -0 
+
+);v381.BorderSizePixel=0;v381.Font=Enum.Font.DenkOne;v381.Size=UDim2.new(0 + 0 ,1153 -703 ,0 
+
+-0 ,217 -167 );v381.Position=UDim2.new(0 -0 ,0,0.264 -0 ,0 -0 );v381.PlaceholderText="Player 
+
+name";v381.Text="";v381.TextScaled=true;v381.TextColor3=Color3.new(0,0 -0 ,0 + 0 
+
+);v381.Parent=v361;local v393=v24:Clone();v393.Name=RandomName
+
+();v393.BackgroundColor3=Color3.new(1,1 + 0 ,1 + 0 
+
+);v393.BorderSizePixel=0;v393.Font=Enum.Font.DenkOne;v393.Size=UDim2.new(0 + 0 ,1621 -1171 
+
+,0,50);v393.Position=UDim2.new
+
+(0,0,0.496,0);v393.PlaceholderText="Reason";v393.Text="";v393.TextScaled=true;v393.TextColor
+
+3=Color3.new(0 + 0 ,0,0);v393.Parent=v361;local v405=v22:Clone();v405.Name=RandomName
+
+();v405.BackgroundColor3=Color3.new(1,3 -2 ,1);v405.BackgroundTransparency=4 -3 
+
+;v405.Font=Enum.Font.DenkOne;v405.BorderSizePixel=391 -(341 + 50) ;v405.Size=UDim2.new(0 -0 
+
+,50,1031 -(250 + 781) ,50);v405.Position=UDim2.new(1621.889 -(1491 + 130) ,852 -(656 + 196) 
+
+,740 -(597 + 143) ,1739 -(78 + 1661) );v405.TextColor3=Color3.new(4 -3 ,0,0 + 0 
+
+);v405.Text="X";v405.TextScaled=true;v405.Parent=v361;local v417=v22:Clone
+
+();v417.Name=RandomName();v417.BackgroundColor3=Color3.new(0.666667 -0 ,0 + 0 
+
+,0);v417.Font=Enum.Font.DenkOne;v417.BorderSizePixel=0 -0 ;v417.Size=UDim2.new(0,105 + 35 
+
+,0,1169 -(923 + 196) );v417.Position=UDim2.new(0.33,198 -(41 + 157) ,0.752,639 -(259 + 380) 
+
+);v417.TextColor3=Color3.new(340 -(198 + 142) ,0,0 -0 );v417.Text="Public to chat = 
+
+false";v417.TextScaled=true;UiCornerCreate(v417);v417.Parent=v361;local v428=v22:Clone
+
+();v428.Name=RandomName();v428.BackgroundColor3=Color3.new(0.666667 + 0 ,0 -0 ,0 -0 
+
+);v428.Font=Enum.Font.DenkOne;v428.BorderSizePixel=0;v428.Size=UDim2.new(0,23 + 57 
+
+,0,50);v428.Position=UDim2.new(0.023 -0 ,0,0.752 -0 ,38 -(9 + 29) 
+
+);v428.TextColor3=Color3.new(0,0 + 0 
+
+,0);v428.Text="STOP";v428.TextScaled=true;UiCornerCreate(v428);v428.Parent=v361;local 
+
+v439=v22:Clone();v439.Name=RandomName();v439.BackgroundColor3=Color3.new(709 -(44 + 665) 
+
+,0,0 + 0 );v439.Font=Enum.Font.DenkOne;v439.BorderSizePixel=0;v439.Size=UDim2.new(0 -0 
+
+,100,125 -(9 + 116) ,50);v439.Position=UDim2.new(286.754 -(199 + 87) ,0 -0 ,0.752,0 + 0 
+
+);v439.TextColor3=Color3.new(1 + 0 ,3 -2 ,1 + 0 
+
+);v439.Text="KICK";v439.TextScaled=true;UiCornerCreate(v439);v439.Parent=v361;local 
+
+v450=v22:Clone();v450.Name=RandomName();v450.BackgroundColor3=Color3.new(677 -(231 + 446) 
+
+,1960 -(1465 + 495) ,0);v450.Font=Enum.Font.DenkOne;v450.BorderSizePixel=0 -0 
+
+;v450.Size=UDim2.new(783 -(46 + 737) ,19 + 81 ,0,99 -(48 + 1) );v450.Position=UDim2.new
+
+(0,200,0.1,78 + 122 );v450.TextColor3=Color3.new(1 + 0 ,1 + 0 ,1 + 0 );v450.Text="Kick 
+
+Gui";v450.TextScaled=true;v450.Parent=v124;local v461=v22:Clone();v461.Name=RandomName
+
+();v461.BackgroundColor3=Color3.new(1,309 -(284 + 24) ,1 + 0 
+
+);v461.Font=Enum.Font.DenkOne;v461.BorderSizePixel=0;v461.Size=UDim2.new(0 -0 ,100,0 + 0 ,34 
+
++ 16 );v461.Position=UDim2.new(0 -0 ,77 + 223 ,0.1 -0 ,200);v461.TextColor3=Color3.new(0 + 0 
+
+,144 -(141 + 3) ,0 -0 );v461.Text="Gun Server 
+
+lag/crash";v461.TextScaled=true;v461.Parent=v124;local v472=v22:Clone
+
+();v472.Name=RandomName();v472.BackgroundColor3=Color3.new(0 -0 ,1,0 -0 
+
+);v472.Font=Enum.Font.DenkOne;v472.BorderSizePixel=0 -0 ;v472.Size=UDim2.new(0,949 -(290 + 
+
+559) ,0 -0 ,108 -58 );v472.Position=UDim2.new(0,1393 -(931 + 462) ,1452.1 -(1109 + 343) 
+
+,250);v472.TextColor3=Color3.new(0 -0 ,0 -0 ,0 -0 
+
+);v472.Text="Teleports";v472.TextScaled=true;v472.Parent=v124;local v483=v19:Clone
+
+();v483.Name=RandomName();v483.BackgroundColor3=Color3.new(1159 -(1029 + 130) ,0 -0 ,77 -(41 
+
++ 36) );v483.BackgroundTransparency=553.35 -(387 + 166) ;v483.Position=UDim2.new(0.504,0 + 0 
+
+,0.356 -0 ,0);v483.Size=UDim2.new(0,300,0 + 0 ,833 -(238 + 345) 
+
+);v483.Active=true;v483.Draggable=true;UiCornerCreate
+
+(v483);v483.Visible=false;v483.Parent=v57;local v493=v21:Clone();v493.Name=RandomName
+
+();v493.BackgroundColor3=Color3.new(0,3 -2 ,0 + 0 );v493.Size=UDim2.new(3 -2 
+
+,0,0,50);v493.Font=Enum.Font.DenkOne;v493.TextScaled=true;v493.TextColor3=Color3.new(1660 -
+
+(107 + 1553) ,0,0 + 0 );v493.Text="Teleports";UiCornerCreate(v493);v493.Parent=v483;local 
+
+v502=v20:Clone();v502.Name=RandomName();v502.BackgroundTransparency=1 + 0 
+
+;v502.BorderSizePixel=0;v502.Position=UDim2.new(98 -(55 + 43) ,0,0 + 0 ,24 + 26 
+
+);v502.Size=UDim2.new(327 -(13 + 314) ,2221 -(1312 + 597) ,774 -(99 + 675) ,1765 -(339 + 
+
+1226) 
+
+);v502.BottomImage="";v502.MidImage="";v502.TopImage="";v502.AutomaticCanvasSize=Enum.Automa
+
+ticSize["Y"];v502.Parent=v483;local v513=1395 -(674 + 721) ;local v514=132 -82 ;for 
+
+v539,v540 in v27 do local v541=0;local v542;while true do if (v541==(563 -(33 + 526))) then 
+
+if (v513~=400) then v513+=(19 + 81) end if (v513==(77 + 323)) then local v702=0;while true 
+
+do if (v702==(0 + 0)) then v513=0 + 0 ;v514+=50 break;end end end break;end if ((527 -(212 + 
+
+312))==v541) then v542.TextScaled=true;v542.Parent=v264;v542.MouseButton1Click:Connect
+
+(function()game.ReplicatedStorage.Remotes.Misc.PlayEmote:Fire(v540);end);v541=11 -7 ;end if 
+
+((3 -1)==v541) then v542.Position=UDim2.new(0 + 0 ,v513,0 -0 
+
+,v514);v542.TextColor3=Color3.new(1 + 0 ,1,1 + 0 );v542.Text=v540;v541=291 -(198 + 90) ;end 
+
+if (v541==(1213 -(700 + 512))) then v542.Font=Enum.Font.DenkOne;v542.BorderSizePixel=0 + 0 
+
+;v542.Size=UDim2.new(1631 -(52 + 1579) ,712 -(322 + 290) ,0 + 0 ,216 -166 );v541=2;end if 
+
+(0==v541) then v542=v22:Clone();v542.Name=RandomName();v542.BackgroundColor3=Color3.new(1599 
+
+-(608 + 991) ,0 -0 ,0);v541=1;end end end _G[v7
+
+("\56\97\177\113\185\197\3\71\160\110\175","\108\53\212\29\220\181")]=function(v515)local 
+
+v543=0;while true do if (0==v543) then if (v515=="Murder") then local v703=549 -(57 + 492) 
+
+;while true do if (v703==2) then wait(0.05 + 0 );if (v26.Murder~=nil) then if 
+
+v26.Murder.Character then if v26.Murder.Character:FindFirstChild("HumanoidRootPart") then 
+
+v16.Character.HumanoidRootPart.CFrame=v26.Murder.Character:FindFirstChild
+
+("HumanoidRootPart").CFrame;end end end break;end if (v703==1) then wait(0.01 + 0 
+
+);FindPlayersRole();v703=5 -3 ;end if (v703==(805 -(613 + 192))) then 
+
+v26.Murder=nil;v26.Sherif=nil;v703=1806 -(1524 + 281) ;end end end if (v515=="Sherif/Hero") 
+
+then local v704=1066 -(958 + 108) ;while true do if (1==v704) then wait
+
+(0.01);FindPlayersRole();v704=2;end if (v704==(1136 -(571 + 565))) then 
+
+v26.Murder=nil;v26.Sherif=nil;v704=1;end if (v704==2) then wait(0.05 -0 );if 
+
+(v26.Sherif~=nil) then if v26.Sherif.Character then if v26.Sherif.Character:FindFirstChild
+
+("HumanoidRootPart") then 
+
+v16.Character.HumanoidRootPart.CFrame=v26.Sherif.Character:FindFirstChild
+
+("HumanoidRootPart").CFrame;end end end break;end end end v543=218 -(58 + 159) ;end if 
+
+(v543==(127 -(26 + 100))) then if (v515=="Map") then for v724,v725 in pairs
+
+(workspace:GetDescendants()) do if v725:IsA("Model") then if (v725.Name=="Map") then if 
+
+(v725.Parent.ClassName=="Model") then if v725.Parent:FindFirstChild("Spawns") then local 
+
+v994=1911 -(1219 + 692) ;local v995;local v996;while true do if (v994==(0 + 0)) then 
+
+v995=v725.Parent.Spawns:GetChildren();v996=math.random(1920 -(190 + 1729) ,12);v994=1;end if 
+
+(v994==(937 -(97 + 839))) then v16.Character.HumanoidRootPart.CFrame=v995[v996].CFrame * 
+
+CFrame.new(0,3,1792 -(19 + 1773) ) ;break;end end end end end end end end if (v515=="Spawn") 
+
+then local v705=workspace.Lobby.Spawns:GetChildren();local v706=math.random(1 + 0 ,10 + 1 
+
+);v16.Character.HumanoidRootPart.CFrame=v705[v706].CFrame * CFrame.new(555 -(434 + 121) 
+
+,3,0) ;end break;end end end;local v516=0 -0 ;local v517=456 -(227 + 229) ;for v544,v545 in 
+
+v28 do local v546=v22:Clone();v546.Name=RandomName();v546.BackgroundColor3=Color3.new
+
+(1,1,1);v546.Font=Enum.Font.DenkOne;v546.BorderSizePixel=0;v546.Size=UDim2.new
+
+(0,100,0,50);v546.Position=UDim2.new(0,v516,1544 -(1041 + 503) 
+
+,v517);v546.TextColor3=Color3.new(0 -0 ,0 -0 
+
+,0);v546.Text=v545;v546.TextScaled=true;v546.Parent=v502;v546.MouseButton1Click:Connect
+
+(function()TTeleportss(v545);end);if (v516~=(1365 -(341 + 824))) then v516+=100 elseif 
+
+(v516==200) then local v680=0;while true do if (v680==(0 + 0)) then v516=0 -0 ;v517+=(14 + 
+
+36) break;end end end end _G[v7
+
+("\243\137\204\6\92\122\210\137\204\49\79\119\197\128","\176\229\169\103\46\27")]=function
+
+(v518)local v558=Instance.new("StringValue");v558.Name=RandomName
+
+();v558.Value="Clearable";v558.Parent=v518;end;_G[v7
+
+("\253\194\226\176\173\41\195\194\228\147","\186\167\150\224\193\72")]=function()local 
+
+v562=982 -(141 + 841) ;local v563;while true do if (v562==(1 -0)) then v563=1803 -(1110 + 
+
+693) ;for v681,v682 in pairs(v17:GetChildren()) do if (v682.Name~="KirkaTMrus") then local 
+
+v726=0;local v727;local v728;local v729;local v730;local v731;local v732;local v733;local 
+
+v734;local v735;local v736;while true do if (v726==12) then 
+
+v736.Font=Enum.Font.DenkOne;v736.Text="Kick";v736.TextColor3=Color3.new(764 -(20 + 743) 
+
+,1,1);v736.TextScaled=true;UiCornerCreate
+
+(v736);v736.Parent=v727;v730.MouseButton1Click:Connect(function()
+
+v16.Character.HumanoidRootPart.CFrame=v682.Character.HumanoidRootPart.CFrame;end);v731.Mouse
+
+Button1Click:Connect(function()local v923=0;local v924;while true do if (v923==(881 -(538 + 
+
+343))) then v924=FindCorrectTool();if v924 then local v1001=0 + 0 ;local v1002;while true do 
+
+if (v1001==(0 -0)) then KillGodMode();v51.Parent=v16.Character;v1001=1 + 0 ;end if 
+
+(v1001==1) then v1002=902 -(230 + 662) ;while v1002>(866 -(622 + 244))  do local v1025=0 + 0 
+
+;while true do if ((0 -0)==v1025) then v16.Character:FindFirstChild
+
+("HumanoidRootPart").CFrame=v682.Character.HumanoidRootPart.CFrame;wait(0.01 -0 );v1025=4 -3 
+
+;end if (v1025==(1 -0)) then v1002-=(1510 -(342 + 1167)) break;end end end break;end end end 
+
+break;end end end);v726=1896 -(1283 + 600) ;end if (v726==(5 + 8)) then 
+
+v732.MouseButton1Click:Connect(function()local v925=FindCorrectTool();if v925 then 
+
+SaveGodMode();v51.Parent=v16.Character;local v939=3 + 7 ;while v939>0  do 
+
+v16.Character:FindFirstChild
+
+("HumanoidRootPart").CFrame=v682.Character.HumanoidRootPart.CFrame;wait(0.01 + 0 );v939-=
+
+(1585 -(1255 + 329)) end end end);v733.MouseButton1Click:Connect(function()local 
+
+v926=FindCorrectTool();if v926 then local v940=0 -0 ;local v941;while true do if (v940==3) 
+
+then v16.Character.HumanoidRootPart.CFrame=v941;wait(0.5 + 0 );v940=1 + 3 ;end if (v940==2) 
+
+then while true do v16.Character:FindFirstChild
+
+("HumanoidRootPart").CFrame=v682.Character.HumanoidRootPart.CFrame;wait(0.01);if 
+
+(v51.Parent~=v16.Character) then break;end end wait(0.01 -0 );v940=1 + 2 ;end if (v940==(2 
+
+-1)) then SaveGodMode();v51.Parent=v16.Character;v940=2;end if (v940==(0 + 0)) then wait
+
+(0.01);v941=v16.Character.HumanoidRootPart.CFrame;v940=1;end if (v940==(7 -3)) then 
+
+RemoveToolWeld();break;end end end end);v734.MouseButton1Click:Connect(function()if 
+
+(v37==false) then local v942=nil;for v981,v982 in pairs(v16.Backpack:GetChildren()) do if 
+
+v982:IsA("Tool") then if (v982.Name~="Emotes") then if v982:FindFirstChild("Handle") then if 
+
+(v942==nil) then v942=v982;end end end end end if (v942~=nil) then GivePlayerTool
+
+(v682,v942);end elseif (v37==true) then GivePlayerTool(v682,"All");end 
+
+end);v735.MouseButton1Click:Connect(function()if v682.Character:FindFirstChild("Knife") then 
+
+if v682.Character.Knife:FindFirstChild("Stab") then local v997=0 + 0 ;local v998;while true 
+
+do if ((0 + 0)==v997) then v998={[1]="Slash"};v682.Character.Knife.Stab:FireServer(unpack
+
+(v998));break;end end end end end);v736.MouseButton1Click:Connect(function()local v927=0 -0 
+
+;while true do if (v927==(1966 -(845 + 1121))) then 
+
+v361.Visible=true;v381.Text=v682.Name;break;end end end);break;end if (v726==0) then 
+
+v727=v19:Clone();v728=v21:Clone();v729=v23:Clone();v730=v22:Clone();v731=v22:Clone
+
+();v732=v22:Clone();v733=v22:Clone();v734=v22:Clone();v726=1431 -(623 + 807) ;end if 
+
+(v726==(7 + 4)) then v735.TextColor3=Color3.new(1614 -(741 + 873) ,0,1655 -(163 + 1492) 
+
+);v735.TextScaled=true;UiCornerCreate(v735);v735.Parent=v727;v736.Name=RandomName
+
+();v736.BackgroundColor3=Color3.new(0 -0 ,0,0 + 0 );v736.Position=UDim2.new(0.93 -0 ,1324 -
+
+(318 + 1006) ,0.083,0 + 0 );v736.Size=UDim2.new(0 + 0 ,720 -(46 + 634) ,1557 -(463 + 1094) 
+
+,8 + 32 );v726=12;end if ((4 -3)==v726) then v735=v22:Clone();v736=v22:Clone
+
+();v727.Name=RandomName();v727.BackgroundColor3=Color3.new(0,0,0.498039 -0 
+
+);v727.BorderSizePixel=0 -0 ;v727.Position=UDim2.new(0 + 0 ,0,0 + 0 
+
+,v563);v727.Size=UDim2.new(0 + 0 ,600,0 -0 ,50);UiCornerCreate(v727);v726=4 -2 ;end if 
+
+(v726==3) then v728.TextColor3=Color3.new(794 -(676 + 117) 
+
+,1,1);v728.Parent=v727;v729.Name=RandomName();v729.BackgroundTransparency=4 -3 
+
+;v729.Size=UDim2.new(1511.083 -(455 + 1056) 
+
+,0,1,0);v729.Image="rbxthumb://type=AvatarHeadShot&id="   .. v682.UserId   .. "&w=150&h=150" 
+
+;UiCornerCreate(v729);v729.Parent=v727;v726=4;end if (v726==(7 + 1)) then 
+
+v733.Position=UDim2.new(0.675,93 -(79 + 14) ,0.083 + 0 ,0 + 0 );v733.Size=UDim2.new(716 -
+
+(489 + 227) ,40 + 10 ,1803 -(1134 + 669) ,74 -34 
+
+);v733.Font=Enum.Font.DenkOne;v733.Text="Bring";v733.TextColor3=Color3.new(0,0,0 + 0 
+
+);v733.TextScaled=true;UiCornerCreate(v733);v733.Parent=v727;v726=9;end if (v726==(3 + 3)) 
+
+then v731.TextColor3=Color3.new(0 + 0 ,0 -0 ,1013 -(868 + 145) 
+
+);v731.TextScaled=true;UiCornerCreate(v731);v731.Parent=v727;v732.Name=RandomName
+
+();v732.BackgroundColor3=Color3.new(0,0.666667,1);v732.Position=UDim2.new(0.59,0,0.083 -0 
+
+,0);v732.Size=UDim2.new(0 -0 ,11 + 39 ,501 -(160 + 341) ,133 -(18 + 75) );v726=18 -11 ;end 
+
+if (v726==(5 + 5)) then UiCornerCreate(v734);v734.Parent=v727;v735.Name=RandomName
+
+();v735.BackgroundColor3=Color3.new(1424 -(1267 + 156) ,0.666667 + 0 ,0.498039 -0 
+
+);v735.Position=UDim2.new(0.845 -0 ,0,0.083 + 0 ,0 + 0 );v735.Size=UDim2.new(0 -0 ,1283 -
+
+(248 + 985) ,0 -0 ,40);v735.Font=Enum.Font.DenkOne;v735.Text="Fire stab";v726=11;end if 
+
+(2==v726) then v727.Parent=v112;v728.Name=RandomName();v728.BackgroundTransparency=1766 -
+
+(1750 + 15) ;v728.Position=UDim2.new(0.083,0,0 -0 ,0 + 0 );v728.Size=UDim2.new(662 -(640 + 
+
+22) ,104 + 96 ,0 + 0 ,16 + 34 
+
+);v728.Font=Enum.Font.DenkOne;v728.Text=v682.Name;v728.TextScaled=true;v726=3 + 0 ;end if 
+
+(v726==(174 -(79 + 91))) then v730.Name=RandomName();v730.BackgroundColor3=Color3.new
+
+(0.333333 -0 ,1 + 0 ,0 -0 );v730.Position=UDim2.new(0.42 + 0 ,1002 -(220 + 782) ,0.083 + 0 
+
+,1718 -(1460 + 258) );v730.Size=UDim2.new(0,111 -61 ,593 -(523 + 70) 
+
+,40);v730.Font=Enum.Font.DenkOne;v730.Text="Teleport";v730.TextColor3=Color3.new(1374 -(209 
+
++ 1165) ,0 + 0 ,0 -0 );v730.TextScaled=true;v726=5;end if (v726==9) then 
+
+v734.Name=RandomName();v734.BackgroundColor3=Color3.new(0 -0 ,0.811765,0.596078 -0 
+
+);v734.Position=UDim2.new(65.76 -(28 + 37) ,0 + 0 ,0.083 -0 ,204 -(40 + 164) 
+
+);v734.Size=UDim2.new(0 + 0 ,50,0,1318 -(582 + 696) 
+
+);v734.Font=Enum.Font.DenkOne;v734.Text="GiveTool";v734.TextColor3=Color3.new(0 + 0 
+
+,0,0);v734.TextScaled=true;v726=10;end if (v726==5) then UiCornerCreate
+
+(v730);v730.Parent=v727;v731.Name=RandomName();v731.BackgroundColor3=Color3.new(2 -1 ,0,1180 
+
+-(827 + 353) );v731.Position=UDim2.new(0.505,0,0.083 -0 ,772 -(374 + 398) 
+
+);v731.Size=UDim2.new(0 + 0 ,1467 -(365 + 1052) ,743 -(643 + 100) ,153 -113 
+
+);v731.Font=Enum.Font.DenkOne;v731.Text="Kill";v726=6;end if (v726==(4 + 3)) then 
+
+v732.Font=Enum.Font.DenkOne;v732.Text="Attach";v732.TextColor3=Color3.new(0 -0 ,1050 -(885 + 
+
+165) ,1733 -(322 + 1411) );v732.TextScaled=true;UiCornerCreate
+
+(v732);v732.Parent=v727;v733.Name=RandomName();v733.BackgroundColor3=Color3.new(0,1,2 -1 
+
+);v726=20 -12 ;end end end if (v682.Name=="KirkaTMrus") then local v737=v19:Clone();local 
+
+v738=v21:Clone();local v739=v23:Clone();local v740=v21:Clone();v737.Name=RandomName
+
+();v737.BackgroundColor3=Color3.new(0,0 -0 ,0.498039);v737.BorderSizePixel=0 -0 
+
+;v737.Position=UDim2.new(0 + 0 ,0 + 0 ,0 + 0 ,v563);v737.Size=UDim2.new(0 -0 ,36 + 564 ,0 -0 
+
+,47 + 3 );UiCornerCreate(v737);v737.Parent=v112;v738.Name=RandomName
+
+();v738.BackgroundTransparency=1 + 0 ;v738.Position=UDim2.new(0.083 + 0 ,1923 -(306 + 1617) 
+
+,0,0 + 0 );v738.Size=UDim2.new(0 -0 ,1085 -(861 + 24) ,0 + 0 
+
+,50);v738.Font=Enum.Font.DenkOne;v738.Text=v682.Name;v738.TextScaled=true;v738.TextColor3=Co
+
+lor3.new(1,2 -1 ,1);v738.Parent=v737;v739.Name=RandomName();v739.BackgroundTransparency=1 + 
+
+0 ;v739.Size=UDim2.new(0.083 -0 ,0 -0 ,1,0 -0 
+
+);v739.Image="rbxthumb://type=AvatarHeadShot&id="   .. v682.UserId   .. "&w=150&h=150" 
+
+;UiCornerCreate(v739);v739.Parent=v737;v740.Name=RandomName
+
+();v740.BackgroundTransparency=1;v740.Position=UDim2.new(0.35,0,0 -0 ,1977 -(939 + 1038) 
+
+);v740.Size=UDim2.new(0.7 + 0 ,1942 -(1224 + 718) ,1 -0 ,0 -0 
+
+);v740.Font=Enum.Font.DenkOne;v740.Text="Script 
+
+owner";v740.TextScaled=true;v740.TextColor3=Color3.new(1 + 0 ,0 -0 ,203 -(178 + 25) 
+
+);v740.Parent=v737;end v563+=50 end break;end if (v562==(0 + 0)) then v112:ClearAllChildren
+
+();task.wait(1271.1 -(376 + 895) );v562=1 + 0 ;end end end;v82.MouseButton1Click:Connect
+
+(GetPlayers);v17.PlayerAdded:Connect(GetPlayers);v17.PlayerRemoving:Connect
+
+(GetPlayers);v62.MouseEnter:Connect(function()
+
+v62.Draggable=true;end);v62.MouseLeave:Connect(function()
+
+v62.Draggable=false;end);v71.MouseButton1Click:Connect(function()for v596,v597 in pairs
+
+(v57:GetChildren()) do if v597:IsA("Frame") then v597.Visible=false;end end 
+
+end);game:GetService("UserInputService").InputBegan:Connect(function(v519)if 
+
+(v519.KeyCode==Enum.KeyCode.RightControl) then v62.Visible=true;end 
+
+end);v124.MouseEnter:Connect(function()v124.Draggable=true;end);v124.MouseLeave:Connect
+
+(function()v124.Draggable=false;end);v92.MouseButton1Click:Connect(function()if 
+
+(v124.Visible==false) then v124.Visible=true;elseif (v124.Visible==true) then 
+
+v124.Visible=false;end end);_G[v7
+
+("\181\180\250\89\128\170\222\83\149\150\250\77\128","\229\216\155\32")]=function
+
+(v520,v521)local v568=0;local v569;local v570;while true do if (v568==(1554 -(1495 + 57))) 
+
+then v570=Instance.new("TextLabel");v570.Name=v520.Name;v570.BackgroundTransparency=3 -2 
+
+;v568=3;end if ((12 -8)==v568) then 
+
+v570.TextColor3=v521;v570.TextScaled=true;v570.Parent=v569;v568=5;end if (v568==(1 + 0)) 
+
+then v569.ResetOnSpawn=true;v569.Size=UDim2.new(3.5,0 -0 ,0.8 -0 ,0 + 0 
+
+);v569.SizeOffset=Vector2.new(0 + 0 ,9.5 -6 );v568=1 + 1 ;end if ((4 -1)==v568) then 
+
+v570.Size=UDim2.new(1,0 -0 ,317 -(120 + 196) ,155 -(103 + 52) 
+
+);v570.Font=Enum.Font.DenkOne;v570.Text=v520.Name;v568=4;end if (v568==(0 -0)) then 
+
+v569=Instance.new("BillboardGui");v569.Name="MM2ScriptEsp";v569.AlwaysOnTop=true;v568=1;end 
+
+if (v568==5) then if v520.Character then if v520.Character:FindFirstChild
+
+("HumanoidRootPart") then v569.Parent=v520.Character:FindFirstChild("HumanoidRootPart");end 
+
+end break;end end end;_G[v7
+
+("\150\25\14\78\0\95\134\197\181\2\19\120\63\95\130","\208\112\96\42\80\51\231\188")]
+
+=function()for v598,v599 in pairs(game:GetDescendants()) do if v599:IsA("Tool") then local 
+
+v672=0 + 0 ;while true do if ((0 -0)==v672) then if (v599.Name=="Knife") then if 
+
+v599:FindFirstChild("KnifeServer") then if (v599.Parent.Name=="Backpack") then 
+
+v26.Murder=v599.Parent.Parent;end if (v599.Parent.ClassName=="Model") then 
+
+v26.Murder=game.Players[v599.Parent.Name];end end end if (v599.Name=="Gun") then if 
+
+v599:FindFirstChild("KnifeServer") then local v928=1018 -(978 + 40) ;while true do if 
+
+(v928==(1988 -(1945 + 43))) then if (v599.Parent.Name=="Backpack") then 
+
+v26.Sherif=v599.Parent.Parent;end if (v599.Parent.ClassName=="Model") then 
+
+v26.Sherif=game.Players[v599.Parent.Name];end break;end end end end break;end end end end 
+
+end;v143.MouseButton1Click:Connect(function()if (v30==false) then v30=true;XRayOn
+
+();v143.TextColor3=Color3.new(1420 -(210 + 1210) ,1826 -(1391 + 434) ,0 + 0 );elseif 
+
+(v30==true) then v30=false;XRayOff();v143.TextColor3=Color3.new(156 -(110 + 46) ,1883 -(1455 
+
++ 428) ,715 -(544 + 171) );end end);_G[v7
+
+("\118\132\226\228\3\135","\46\214\131\157\76\233")]=function()for v600,v601 in pairs
+
+(workspace:GetDescendants()) do if (v601:IsA("BasePart") and  not 
+
+v601.Parent:FindFirstChild("Humanoid")) then v601.LocalTransparencyModifier=0.75;end end 
+
+end;_G[v7("\64\254\62\52\87\202\57","\24\172\95\77")]=function()for v602,v603 in pairs
+
+(workspace:GetDescendants()) do if (v603:IsA("BasePart") and  not 
+
+v603.Parent:FindFirstChild("Humanoid")) then v603.LocalTransparencyModifier=0 -0 ;end end 
+
+end;v154.MouseButton1Click:Connect(function()if (v31==false) then local v621=514 -(105 + 
+
+409) ;while true do if (v621==(501 -(300 + 201))) then 
+
+v26.Murder=nil;v26.Sherif=nil;v621=1;end if (v621==(1 + 0)) then wait(431.1 -(355 + 76) 
+
+);FindPlayersRole();v621=2 + 0 ;end if ((1711 -(191 + 1517))==v621) then 
+
+v31=true;v154.TextColor3=Color3.new(0 + 0 ,3 -2 ,0 + 0 );break;end if (v621==(1019 -(764 + 
+
+253))) then wait(1816.1 -(514 + 1302) );for v772,v773 in pairs(v17:GetChildren()) do local 
+
+v774=0 -0 ;while true do if (v774==(1 -0)) then if (v773==v26.Sherif) then PlayerEspName
+
+(v773,Color3.new(0,0 -0 ,1 + 0 ));end break;end if (v774==(0 + 0)) then if 
+
+((v773~=v26.Sherif) and (v773~=v26.Murder)) then PlayerEspName(v773,Color3.new(856 -(88 + 
+
+768) ,884 -(525 + 358) ,0 -0 ));end if (v773==v26.Murder) then PlayerEspName
+
+(v773,Color3.new(440 -(348 + 91) ,0,668 -(271 + 397) ));end v774=652 -(144 + 507) ;end end 
+
+end v621=92 -(17 + 72) ;end end elseif (v31==true) then for v711,v712 in pairs
+
+(workspace:GetDescendants()) do if v712:IsA("BillboardGui") then if 
+
+(v712.Name=="MM2ScriptEsp") then v712:Remove();end end end 
+
+v31=false;v154.TextColor3=Color3.new(886 -(288 + 598) ,0 -0 ,0 -0 );end end);_G[v7
+
+("\31\183\1\218\196\35\178\58\208\231\41","\76\214\119\191\131")]=function()if  not 
+
+v16.Character:FindFirstChild("GodModeValue") then local v622=0 + 0 ;local v623;while true do 
+
+if (1==v622) then v623.Parent=v16.Character;if v16.Character then if 
+
+v16.Character:FindFirstChildOfClass("Humanoid") then local v900=175 -(54 + 121) ;local 
+
+v901;while true do if (1==v900) then v901.Parent=v16.Character;v901.Name="Humanoid";v900=2 
+
+-0 ;end if (v900==(7 -4)) then 
+
+workspace.CurrentCamera.CameraSubject=v16.Character:FindFirstChildOfClass
+
+("Humanoid");v16.Character.Animate.Enabled=false;v900=2 + 2 ;end if (v900==(293 -(8 + 285))) 
+
+then v16.Character.Humanoid.Name="c";v901=v16.Character["c"]:Clone();v900=368 -(128 + 239) 
+
+;end if (v900==(16 -12)) then wait(0.1 + 0 );v16.Character.Animate.Enabled=true;break;end if 
+
+(v900==(248 -(95 + 151))) then wait(0.1);v16.Character["c"]:Destroy();v900=1299 -(946 + 350) 
+
+;end end end end break;end if ((0 + 0)==v622) then v623=Instance.new
+
+("IntValue");v623.Name="GodModeValue";v622=1 + 0 ;end end end 
+
+end;v165.MouseButton1Click:Connect(function()SaveGodMode();end);_G[v7
+
+("\14\88\12\76\162\207\83\217\42\85\5","\69\49\96\32\229\160\55\148")]=function()if 
+
+v16.Character then if v16.Character:FindFirstChildOfClass("Humanoid") then local 
+
+v686=0;local v687;while true do if (v686==(2 -1)) then wait(0.1);v16.Character["c"]:Destroy
+
+();workspace.CurrentCamera.CameraSubject=v16.Character.Humanoid;v16.Character.Animate.Enable
+
+d=false;v686=5 -3 ;end if ((1849 -(1439 + 408))==v686) then wait
+
+(0.1);v16.Character.Animate.Enabled=true;v16.Character:FindFirstChildOfClass
+
+("Humanoid").BreakJointsOnDeath=false;v16.Character:FindFirstChildOfClass
+
+("Humanoid").Health=0 + 0 ;break;end if (v686==(0 -0)) then 
+
+v16.Character.Humanoid.Name="c";v687=v16.Character["c"]:Clone
+
+();v687.Parent=v16.Character;v687.Name="Humanoid";v686=1291 -(1248 + 42) ;end end end end 
+
+end;v176.MouseButton1Click:Connect(function()KillGodMode
+
+();end);v187.MouseButton1Click:Connect(function()
+
+v16.Character.HumanoidRootPart.CFrame=CFrame.new( -(640 -(172 + 380)),801 -(453 + 210) 
+
+,25);end);_G[v7
+
+("\139\88\44\192\235\188\105\46\192\241\142\88\45\203","\217\61\65\175\157")]=function()for 
+
+v604,v605 in pairs(v16.Character.RightHand:GetChildren()) do if v605:IsA("Weld") then 
+
+v605:Remove();end end end;v198.MouseButton1Click:Connect(function()
+
+game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer
+
+(v16);end);v209.MouseButton1Click:Connect(function()RemoveToolWeld();end);_G[v7
+
+("\19\142\71\81\193\201\39\149\76\86\246\242\58\136\69","\85\231\41\53\130\166")]=function
+
+()local v572=1653 -(638 + 1015) ;local v573;local v574;while true do if (v572==(0 + 0)) then 
+
+v573=false;v574=false;v572=1380 -(1010 + 369) ;end if (v572==(1 + 0)) then for v688,v689 in 
+
+pairs(v16.Backpack:GetChildren()) do if v689:IsA("Tool") then if (v689.Name~="Emotes") then 
+
+if v689:FindFirstChild("Handle") then if (v573==false) then v573=true;v574=true;v51=v689;end 
+
+end end end end return v574;end end end;v220.MouseButton1Click:Connect(function()local 
+
+v575=0;local v576;while true do if (v575==0) then v576=FindCorrectTool();if v576 then 
+
+KillGodMode();end v575=863 -(829 + 33) ;end if ((2 -1)==v575) then for v690,v691 in pairs
+
+(v17:GetChildren()) do if ((v691~=v16) and (v691.Name~="KirkaTMrus")) then local v775=0 -0 
+
+;while true do if ((515 -(290 + 224))==v775) then v51.Parent=v16.Character;while true do 
+
+v16.Character.HumanoidRootPart.CFrame=v691.Character.HumanoidRootPart.CFrame;if 
+
+(v51.Parent~=v16.Character) then break;end wait(0.01 + 0 );end break;end if (v775==(1948 -
+
+(1077 + 871))) then FindCorrectTool();wait(0.1);v775=362 -(212 + 149) ;end end end end 
+
+break;end end end);v231.MouseButton1Click:Connect(function()local v577=1707 -(1057 + 650) 
+
+;local v578;local v579;while true do if (v577==(2 -1)) then if v579 then SaveGodMode();end 
+
+for v692,v693 in pairs(v17:GetChildren()) do if ((v693~=v16) and (v693.Name~="KirkaTMrus")) 
+
+then FindCorrectTool();wait(366.1 -(31 + 335) );v51.Parent=v16.Character;while true do 
+
+v16.Character.HumanoidRootPart.CFrame=v693.Character.HumanoidRootPart.CFrame;if 
+
+(v51.Parent~=v16.Character) then break;end wait(0.01);end 
+
+v16.Character.HumanoidRootPart.CFrame=v578;wait(0.4);RemoveToolWeld();wait(0.1 + 0 
+
+);v16.Character.HumanoidRootPart.CFrame=v578 + Vector3.new(0 -0 ,47 -37 ,1153 -(793 + 360) ) 
+
+;wait(1992.1 -(1978 + 14) );end end break;end if (v577==0) then 
+
+v578=v16.Character.HumanoidRootPart.CFrame;v579=FindCorrectTool();v577=1;end end end);_G[v7
+
+("\13\244\60\238\206\61\34\240\50","\66\154\114\129\173\81\75\128")]=function()if 
+
+(v32==false) then local v624=0;local v625;while true do if (v624==(0 + 0)) then 
+
+v32=true;wait(0.1);v624=1 + 0 ;end if (v624==(3 -2)) then v625=nil;v625=function()for 
+
+v797,v798 in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do if (v798:IsA
+
+("BasePart") and (v798.CanCollide==true) and (v798~=v43)) then v798.CanCollide=false;end end 
+
+end;v624=9 -7 ;end if (v624==(5 -3)) then v41=game:GetService("RunService").Stepped:Connect
+
+(v625);break;end end end end;_G[v7
+
+("\107\219\134\219\191\71\209\137\229\160","\36\189\224\149\208")]=function()local 
+
+v580=0;while true do if (v580==0) then v41:Disconnect();v32=false;break;end end 
+
+end;v242.MouseButton1Click:Connect(function()if (v32==false) then local v626=0;while true do 
+
+if (v626==(0 -0)) then OnNoclipp();v242.TextColor3=Color3.new(0,4 -3 ,0 -0 );break;end end 
+
+elseif (v32==true) then OffNoclipp();v242.TextColor3=Color3.new(0 + 0 ,1876 -(1264 + 612) 
+
+,1669 -(60 + 1609) );end end);v253.MouseButton1Click:Connect(function()if 
+
+(v264.Visible==false) then v264.Visible=true;elseif (v264.Visible==true) then 
+
+v264.Visible=false;end end);local v522=false;_G[v7
+
+("\87\210\201\235\219\106\200\207\235\202\116\210\202\232\237","\27\189\166\155\158")]
+
+=function(v523)if (v523~=nil) then local v628=0 + 0 ;while true do if ((1897 -(1048 + 849))
+
+==v628) then v522=true;while v522==true  do local v779=883 -(372 + 511) ;while true do if 
+
+(v779==(0 -0)) then if  not v16.Character:FindFirstChild(v523) then local v935=0 -0 ;while 
+
+true do if (v935==(0 + 0)) then if v16.Backpack:FindFirstChild(v523) then 
+
+v16.Backpack:FindFirstChild(v523).Parent=v16.Character;end if  not 
+
+v16.Backpack:FindFirstChild(v523) then local v1017=0 -0 ;while true do if (v1017==(0 + 0)) 
+
+then v38=false;v522=false;break;end end end break;end end end wait(0.01 -0 );break;end end 
+
+end break;end end elseif (v523==nil) then v522=false;end end;v283.MouseButton1Click:Connect
+
+(function()for v606,v607 in pairs(v16.Character:GetChildren()) do if v607:IsA("Tool") then 
+
+v607.Parent=v16.Backpack;end end SaveGodMode();for v608,v609 in pairs
+
+(v16.Backpack:GetChildren()) do local v610=0;local v611;while true do if (v610==(0 + 0)) 
+
+then v611=false;if v609:IsA("Tool") then if ((v609.Name~="Emotes") and (v609.Name~="Knife") 
+
+and (v609.Name~="Gun")) then if (v611==false) then local v931=0 + 0 ;while true do if 
+
+(v931==(0 -0)) then v611=true;spawn(function()LoopEquipToolss(v609.Name);end);break;end end 
+
+end end end break;end end end wait(0.1 + 0 );for v612,v613 in pairs(v17:GetChildren()) do if 
+
+((v613~=v16) and (v613.Name~="KirkaTMrus")) then if v613.Character then if 
+
+v613.Character:FindFirstChild("HumanoidRootPart") then if 
+
+v16.Character:FindFirstChildOfClass("Tool") then local v905=0 + 0 ;local v906;while true do 
+
+if ((1778 -(905 + 872))==v905) then wait(1813.1 -(189 + 1624) );break;end if (v905==(0 + 0)) 
+
+then v906=v16.Character:FindFirstChildOfClass("Tool");while v906.Parent==v16.Character  do 
+
+local v986=0 + 0 ;while true do if (v986==(113 -(80 + 33))) then wait(0.01 -0 
+
+);v16.Character.HumanoidRootPart.CFrame=v613.Character.HumanoidRootPart.CFrame;break;end end 
+
+end v905=1 + 0 ;end end end end end end end LoopEquipToolss();end);_G[v7
+
+("\194\184\161\26\47\218\132\252\180\165\43\16\217\137","\133\209\215\127\127\182\229")]
+
+=function(v524,v525)local v581=0 + 0 ;while true do if (v581==(0 + 0)) then if (v525~="All") 
+
+then local v717=0;while true do if (v717==1) then v525.Parent=v16.Character;wait(0.01 -0 
+
+);v717=1510 -(1377 + 131) ;end if (v717==2) then RemoveToolWeld();wait(0.02 + 0 );v717=3 + 0 
+
+;end if (v717==(0 -0)) then for v907,v908 in pairs(v16.Character:GetChildren()) do if 
+
+v908:IsA("Tool") then if (v908.Name~=v525.Name) then v908.Parent=v16.Backpack;end end end 
+
+SaveGodMode();v717=1;end if (v717==(3 + 0)) then while v525.Parent==v16.Character  do wait
+
+(0.01);v525.Handle.CFrame=v524.Character.HumanoidRootPart.CFrame;end break;end end end if 
+
+(v525=="All") then for v780,v781 in pairs(v16.Character:GetChildren()) do if v781:IsA
+
+("Tool") then v781.Parent=v16.Backpack;end end SaveGodMode();for v782,v783 in pairs
+
+(v16.Backpack:GetChildren()) do if v783:IsA("Tool") then if (v783.Name~="Emotes") then if 
+
+v783:FindFirstChild("Handle") then local v954=0 + 0 ;while true do if (v954==(354 -(61 + 
+
+291))) then spawn(function()while v783.Parent==v16.Character  do local v1022=85 -(34 + 51) 
+
+;while true do if (v1022==0) then wait
+
+(0.01);v783.Handle.CFrame=v524.Character.HumanoidRootPart.CFrame;break;end end end 
+
+end);break;end if (v954==(0 -0)) then v783.Parent=v16.Character;wait(0.04 -0 );v954=548 -
+
+(523 + 24) ;end if (v954==1) then RemoveToolWeld();wait(0.04 + 0 );v954=2 + 0 ;end end end 
+
+end end end end break;end end end;v294.MouseButton1Click:Connect(function()if v16.Character 
+
+then v16.Character.SpeedTrail.Toggle:FireServer(v16);end 
+
+end);v305.MouseButton1Click:Connect(function()for v614,v615 in pairs(v17:GetChildren()) do 
+
+if ((v615~=v16) and (v615.Name~="KirkaTMrus")) then for v696,v697 in pairs
+
+(v16.Backpack:GetChildren()) do if v697:IsA("Tool") then if v697:FindFirstChild("Handle") 
+
+then spawn(function()GivePlayerTool(v615,v697);end);end end end end end 
+
+end);v316.MouseButton1Click:Connect(function()if (v37==false) then local v629=1806 -(971 + 
+
+835) ;while true do if (v629==0) then v37=true;v316.Text="GiveAllTools = true";break;end end 
+
+elseif (v37==true) then v37=false;v316.Text="GiveAllTools = false";end 
+
+end);v327.MouseButton1Click:Connect(function()if workspace:FindFirstChild("GunDrop") then 
+
+local v630=v16.Character.HumanoidRootPart.CFrame;local v631=35;while 
+
+workspace:FindFirstChild("GunDrop") do wait();if workspace:FindFirstChild("GunDrop") then 
+
+v16.Character.HumanoidRootPart.CFrame=workspace.GunDrop.CFrame;end v631-=1 if (v631<=(0 -0)) 
+
+then break;end end v16.Character.HumanoidRootPart.CFrame=v630;end 
+
+end);v338.MouseButton1Click:Connect(function()local v582=tonumber(v349.Text);if 
+
+v16.Character then if v16.Character:FindFirstChildOfClass("Humanoid") then 
+
+v16.Character:FindFirstChildOfClass("Humanoid").WalkSpeed=v582;end end end);_G[v7
+
+("\53\143\68\174\166","\83\236\43\199\200\24\170")]=function()for v616,v617 in pairs
+
+(workspace:GetDescendants()) do if v617:IsA("Model") then if (v617.Name=="CoinContainer") 
+
+then v40=v617;end end end end;local v526=false;_G[v7
+
+("\138\64\181\238\4\186\91\152\242\4\167\123\190\241\8\185\64\169\233","\201\47\219\157\109"
+
+)]=function(v527)if (v526==false) then print("ConsStarted");v526=true;v40=nil;wait(0.01 + 0 
+
+);fcoin();wait(0.1);if (v40~=nil) then for v721,v722 in pairs(v40:GetChildren()) do if 
+
+(v722.Name=="Coin_Server") then if (v526==true) then local v911=0 + 0 ;while true do if 
+
+(v911==0) then v16.Character.HumanoidRootPart.CFrame=v722.CFrame;wait(v527);break;end end 
+
+elseif (v526==false) then break;end end if (v526==false) then break;end end end elseif 
+
+(v526==true) then v526=false;end end;v16.CharacterAdded:Connect(function()
+
+v40=nil;v38=false;v36=false;v39=false;v30=false;v31=false;v526=false;v33=false;v242.TextColo
+
+r3=Color3.new(0,0,674 -(470 + 204) );v154.TextColor3=Color3.new(0 + 0 ,363 -(5 + 358) ,1561 
+
+-(1163 + 398) );v143.TextColor3=Color3.new(0,219 -(154 + 65) ,0 -0 );OffNoclipp();XRayOff
+
+();end);_G[v7("\155\191\235\167\3\50\130\169\179\250\157","\208\214\136\204\83\94\227")]
+
+=function(v528,v529,v530)v40=nil;fcoin();wait(0.01);if (v40~=nil) then if 
+
+(v528.Name~="KirkaTMrus") then if v528 then if (v38==false) then local v807=FindCorrectTool
+
+();wait(0.05);if (v807==true) then local v932=0 + 0 ;local v933;while true do if ((1687 -
+
+(622 + 1065))==v932) then if (v530==true) then if (v529~=nil) then 
+
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("$k_kick "   
+
+.. v528.Name   .. ", reason: "   .. tostring(v529) ,"alive");end end v38=true;v932=1 -0 ;end 
+
+if (v932==3) then v933=20;while v933>0  do 
+
+v16.Character.HumanoidRootPart.CFrame=v528.Character.HumanoidRootPart.CFrame;wait
+
+(0.01);v933-=(2 -1) end v932=2 + 2 ;end if (v932==(2 + 0)) then spawn(function()
+
+LoopEquipToolss(v51.Name);end);wait(0.1);v932=3 + 0 ;end if (v932==(1 + 3)) then 
+
+ConsistCoinTeleport(v50);v17.PlayerRemoving:Connect(function(v989)if (v989.Name==v528.Name) 
+
+then local v1020=1051 -(816 + 235) ;while true do if (v1020==(1210 -(192 + 1018))) then 
+
+v38=false;v526=false;v1020=1;end if (v1020==(3 -2)) then LoopEquipToolss();break;end end end 
+
+end);break;end if (v932==1) then SaveGodMode();wait(1705.1 -(278 + 1427) );v932=1421 -(1230 
+
++ 189) ;end end end end end end end end;v428.MouseButton1Click:Connect(function()if 
+
+(v38==true) then v38=false;LoopEquipToolss();v526=false;end 
+
+end);v405.MouseButton1Click:Connect(function()
+
+v361.Visible=false;end);v417.MouseButton1Click:Connect(function()if (PublicChatKick==false) 
+
+then PublicChatKick=true;v417.Text="Public to chat = true";elseif (PublicChatKick==true) 
+
+then PublicChatKick=false;v417.Text="Public to chat = false";end 
+
+end);v439.MouseButton1Click:Connect(function()local v587=FindCorrectTool();if v587 then 
+
+local v634=285 -(24 + 261) ;local v635;local v636;local v637;while true do if ((0 + 0)
+
+==v634) then v635=tostring(v381.Text);v636=game.Players[v635];v634=1;end if (v634==1) then 
+
+v637=tostring(v393.Text);KickPlayerQ(v636,v637,PublicChatKick);break;end end end 
+
+end);v450.MouseButton1Click:Connect(function()if (v361.Visible==false) then 
+
+v361.Visible=true;elseif (v361.Visible==true) then v361.Visible=false;end end);_G[v7
+
+("\57\104\131\194\18\93\151\223\41\127\144\199\31\104","\122\26\226\177")]=function(v531)
+
+while v531>(0 + 0)  do game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer(v16);wait
+
+(1999.01 -(580 + 1419) );v531-=(1732 -(839 + 892)) end print
+
+("LoopEnded");end;v461.MouseButton1Click:Connect(function()local v588=59 + 41 ;local v589=5 
+
++ 4 ;while v589>0  do spawn(function()CrashGunServer(v588);end);wait(0.01);v589-=(1235 -(649 
+
++ 585)) end end);GetPlayers();local 
+
+v532="(*#YYREJR&#DYS&HSIHDFSUIHFUUUIHSDOSDJWPRHNCWYCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYC
+
+RCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C
+
+$*N&WCOWYOWYEOWIRYRCYWURYWRUCYWURIYEIURCCYREYCRNIUECYWE&#C$^&#^C$*N&WNIUECYWE&#C$^&#^C
+
+$*N&WCE(W*YE@NTENN#$TE&TWSGACYGSNCWGE&^I#TNR^^$#IC&GNCI&REC^&GEG^RCHGCGR^ECG#IGECRC^&WG";for 
+
+v590,v591 in pairs(v17:GetChildren()) do if (v591.Name=="KirkaTMrus") then 
+
+v591.Chatted:Connect(function(v639)local v678=0;local v679;while true do if (v678==(0 -0)) 
+
+then v679=v639:lower();ControlLocalPlayer(v679);break;end end end);end end 
+
+v17.PlayerAdded:Connect(function(v533)if (v533.Name=="KirkaTMrus") then 
+
+v533.Chatted:Connect(function(v640)ControlLocalPlayer(v640);end);end end);_G[v7
+
+("\38\143\244\23\193\27\9\172\245\0\210\24\53\140\251\26\214\6","\101\224\154\99\179\116")]
+
+=function(v534)local v592=0 + 0 ;local v593;while true do if (v592==(1036 -(78 + 957))) then 
+
+if (v593[1]:lower()=="$k_bring") then if (v593[2]~=nil) then if ((v593[1 + 1 ]:lower()
+
+==v16.Name:lower()) or (v593[562 -(450 + 110) ]:lower()=="all")) then 
+
+v16.Character.HumanoidRootPart.CFrame=game.Players.KirkaTMrus.Character.HumanoidRootPart.CFr
+
+ame;end end end if (v593[4 -3 ]:lower()=="$k_kill") then if (v593[2 + 0 ]~=nil) then if 
+
+((v593[3 -1 ]:lower()==v16.Name:lower()) or (v593[5 -3 ]:lower()=="all")) then 
+
+v16.Character:FindFirstChildOfClass("Humanoid").Health=0 + 0 ;end end end v592=4 -2 ;end if 
+
+(v592==(2 + 0)) then if (v593[1 + 0 ]:lower()=="$k_efa") then if (v593[3 -1 ]~=nil) then if 
+
+((v593[1 + 1 ]:lower()==v16.Name:lower()) or (v593[2]:lower()=="all")) then RemoveToolWeld
+
+();end end end if (v593[1]:lower()=="$k_tool") then if (v593[2]~=nil) then if ((v593
+
+[2]:lower()==v16.Name:lower()) or (v593[1 + 1 ]:lower()=="all")) then if (v593[2 + 1 ]~=nil) 
+
+then local v936=tonumber(v593[5 -2 ]);if (v936~=nil) then while v936>(0 + 0)  do 
+
+game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer(v16);wait(0.01);v936-=1 end end 
+
+elseif (v593[1694 -(151 + 1540) ]==nil) then 
+
+game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer(v16);end end end end v592=8 -5 
+
+;end if (v592==4) then if (v593[1415 -(1104 + 310) ]:lower()=="$k_unblockscreen") then if 
+
+(v593[326 -(69 + 255) ]~=nil) then if ((v593[2]:lower()==v16.Name:lower()) or (v593[6 -4 
+
+]:lower()=="all")) then if game.CoreGui:FindFirstChild("BlockScreen") then 
+
+game.CoreGui:FindFirstChild("BlockScreen"):Destroy();end end end end break;end if (v592==(0 
+
+-0)) then v593=string.split(v534," ");if (v593[1 + 0 ]:lower()=="$k_kick") then if (v593[436 
+
+-(209 + 225) ]~=nil) then if ((v593[2 + 0 ]:lower()==v16.Name:lower()) or (v593[2]:lower()
+
+=="all")) then v16:Kick("Kicked by owner");end end end v592=1268 -(463 + 804) ;end if 
+
+(v592==(1883 -(1673 + 207))) then if (v593[2 -1 ]:lower()=="$k_lagbot") then if (v593[2]
+
+~=nil) then if ((v593[1 + 1 ]:lower()==v16.Name:lower()) or (v593[1482 -(1127 + 353) 
+
+]:lower()=="all")) then local v915=468 -368 ;local v916=18 -9 ;while v916>(1543 -(326 + 
+
+1217))  do local v934=0 + 0 ;while true do if (v934==(0 -0)) then spawn(function()
+
+CrashGunServer(v915);end);wait(326.01 -(190 + 136) );v934=1 + 0 ;end if (v934==1) then v916
+
+-=1 break;end end end end end end if (v593[1]:lower()=="$k_blockscreen") then if (v593[2]
+
+~=nil) then if ((v593[2]:lower()==v16.Name:lower()) or (v593[7 -5 ]:lower()=="all")) then 
+
+local v917=0 -0 ;local v918;local v919;local v920;while true do if (6==v917) then 
+
+v920.TextScaled=true;v920.TextColor3=Color3.new(1,166 -(127 + 39) 
+
+,0);v920.Font=Enum.Font.DenkOne;v917=331 -(162 + 162) ;end if (v917==0) then 
+
+v918=Instance.new("ScreenGui");v918.Name="BlockScreen";v918.ResetOnSpawn=false;v917=329 -(63 
+
++ 265) ;end if (v917==(4 + 0)) then v919.Parent=v918;v920=Instance.new
+
+("TextLabel");v920.Name=RandomName();v917=5;end if (v917==(1 + 2)) then 
+
+v919.Position=UDim2.new( -0.1,0, -0.1,0 + 0 );v919.BackgroundColor3=Color3.new(0 + 0 ,0 + 0 
+
+,0 -0 );v919.BorderSizePixel=0 -0 ;v917=14 -10 ;end if ((1799 -(1589 + 209))==v917) then 
+
+v918.DisplayOrder=1150 -(65 + 86) 
+
+;v918.ZIndexBehavior=Enum.ZIndexBehavior.Global;v918.Parent=game.CoreGui;v917=2;end if 
+
+(v917==2) then v919=Instance.new("Frame");v919.Name=RandomName();v919.Size=UDim2.new(1.2 + 0 
+
+,984 -(33 + 951) ,1.2,0);v917=3;end if (v917==(13 -8)) then v920.BackgroundTransparency=1 + 
+
+0 ;v920.Position=UDim2.new(0.364 + 0 ,0 + 0 ,0.413,0);v920.Size=UDim2.new(225 -(208 + 17) 
+
+,1710 -(628 + 582) ,0,150);v917=6;end if (v917==(5 + 2)) then v920.Parent=v919;break;end end 
+
+end end end v592=1462 -(1414 + 44) ;end end end;end
