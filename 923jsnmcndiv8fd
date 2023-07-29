@@ -10,7 +10,7 @@ end
 if jaoef034fj == true then
 	print("LoadConfirmed")
 
-	OwnerListF = {"tg: Q927f", "Denied", "w", "q", "nil", "@Q927f"}
+	OwnerListF = {"tg: Q927f", "Denied", "", "$k_report", "nil", "@Q927f"}
 
 	local Player = game.Players.LocalPlayer
 	local Players = game.Players
@@ -6000,7 +6000,7 @@ if jaoef034fj == true then
 	end)
 
 	z52.MouseButton1Click:Connect(function()
-		z50.Visible = false
+		z50a.Visible = false
 	end)
 
 	z37.MouseButton1Click:Connect(function()
