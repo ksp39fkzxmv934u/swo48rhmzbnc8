@@ -1,3 +1,4 @@
+--Murder Mystery 2 Script by KirkaTMrus(safe version)
 print("LoadStart")
 local owners = {2689560540,957360142,943146980,1535547685,973461845,3144259335,3151754379,2472537376,2206894351,4239778177,1255291722,488569861,1731015740,3804762682}
 local jaoef034fj = false
@@ -1940,6 +1941,34 @@ if jaoef034fj == true then
 	z215T7.Text = "Read anim data"
 	z215T7.TextScaled = true
 	z215T7.Parent = z210
+	
+	z215T8 = TextButton:Clone()
+	z215T8.Name = RandomName()
+	z215T8.BackgroundColor3 = Color3.new(0.666667, 0.666667, 0)
+	z215T8.Font = Enum.Font.DenkOne
+	z215T8.Size = UDim2.new(0, 150, 0, 50)
+	z215T8.BorderSizePixel = 2
+	z215T8.BorderMode = Enum.BorderMode.Inset
+	z215T8.BorderColor3 = Color3.new(1, 1, 0.498039)
+	z215T8.Position = UDim2.new(0, 0, 0, 350)
+	z215T8.TextColor3 = Color3.new(0, 0, 0)
+	z215T8.Text = "Emotions"
+	z215T8.TextScaled = true
+	z215T8.Parent = z210
+
+	z215T9 = TextButton:Clone()
+	z215T9.Name = RandomName()
+	z215T9.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+	z215T9.Font = Enum.Font.DenkOne
+	z215T9.Size = UDim2.new(0, 150, 0, 50)
+	z215T9.BorderSizePixel = 2
+	z215T9.BorderMode = Enum.BorderMode.Inset
+	z215T9.BorderColor3 = Color3.new(1, 1, 0.498039)
+	z215T9.Position = UDim2.new(0, 0, 0, 400)
+	z215T9.TextColor3 = Color3.new(0, 0, 0)
+	z215T9.Text = "Emotions: view"
+	z215T9.TextScaled = true
+	z215T9.Parent = z210
 	--
 
 	z217 = Frame:Clone()
@@ -2981,6 +3010,7 @@ if jaoef034fj == true then
 	z296.Text = "15161938"
 	z296.TextScaled = true
 	z296.TextColor3 = Color3.new(0, 0, 0)
+	z296.ClearTextOnFocus = false
 	UiCornerCreate(z296)
 	z296.Parent = z291
 
@@ -3009,10 +3039,163 @@ if jaoef034fj == true then
 	z298.Text = "Spray gui"
 	z298.TextScaled = true
 	z298.Parent = z8
+	
+	z301 = ScrollingFrame:Clone()
+	z301.Name = RandomName()
+	z301.BackgroundTransparency = 1
+	z301.BorderSizePixel = 0
+	z301.Position = UDim2.new(0.8, 0, 0.1, 0)
+	z301.Size = UDim2.new(0, 162, 0, 450)
+	z301.BottomImage = ""
+	z301.MidImage = ""
+	z301.TopImage = ""
+	z301.AutomaticCanvasSize = Enum.AutomaticSize.Y
+	z301.Visible = false
+	z301.Parent = z206
+
+	z303 = Frame:Clone()
+	z303.Name = RandomName()
+	z303.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+	z303.BackgroundTransparency = 0
+	z303.Position = UDim2.new(0.255, 0, 0.824, 0)
+	z303.Size = UDim2.new(0, 750, 0, 100)
+	z303.ZIndex = 4
+	SetDraggable(z303)
+	z303.Visible = false
+	UiCornerCreate(z303)
+	z303.Parent = z1
+
+	z304 = TextButton:Clone()
+	z304.Name = RandomName()
+	z304.BackgroundColor3 = Color3.new(1, 1, 1)
+	z304.BackgroundTransparency = 1
+	z304.Font = Enum.Font.DenkOne
+	z304.BorderSizePixel = 0
+	z304.Size = UDim2.new(0, 50, 0, 50)
+	z304.Position = UDim2.new(0, 700, 0, 0)
+	z304.ZIndex = 5
+	z304.TextColor3 = Color3.new(1, 0, 0)
+	z304.Text = "X"
+	z304.TextScaled = true
+	z304.Parent = z303
+
+	function EmotionsPlayPl(id)
+		StopAllAnimations()
+		local n = Instance.new("Animation")
+		n.AnimationId = id
+		local m = Player.Character:FindFirstChildOfClass("Humanoid"):LoadAnimation(n)
+		m:Play()
+		Player.Character:FindFirstChildOfClass("Humanoid").Running:Connect(function(spd)
+			if spd > 2 and Player.Character.Animate.Enabled == true then
+				m:Stop()
+				return
+			end
+		end)
+	end
+
+	function SaveBarFEmotions()
+		if not isfile("EmotiData.txt") then
+			writefile("EmotiData.txt", "")
+		end
+		local hug = {}
+		for bt, vc in dg45fdjc do
+			table.insert(hug, tostring(bt).."_"..tostring(setanimdatanm[bt]).."_"..tostring(setanimdataid[bt]).."%")
+		end
+		writefile("EmotiData.txt", table.concat(hug))
+	end
+
+	setanimnameb = nil
+	setanimbid = nil
+	dg45fdjc = {3, 4, 5, 6, 7, 8, 9}
+	setanimdataid = {"nil", "nil", "nil", "nil", "nil", "nil", "nil"}
+	setanimdatanm = {"nil", "nil", "nil", "nil", "nil", "nil", "nil"}
+	g5h8dx = 0
+
+	function ReadBarFEmotions()
+		if isfile("EmotiData.txt") then
+			for _, ed in readfile("EmotiData.txt"):split("%") do
+				if ed:split("_")[1] ~= nil then
+					local nextnum = tonumber(ed:split("_")[1])
+					if nextnum ~= nil then
+						setanimdatanm[nextnum] = ed:split("_")[2]
+						setanimdataid[nextnum] = ed:split("_")[3]
+					end
+				end
+			end
+		end
+	end
+
+	ReadBarFEmotions()
+
+	for ofhe83, xp4f in dg45fdjc do
+		local z305 = TextButton:Clone()
+		z305.Name = RandomName()
+		z305.BackgroundColor3 = Color3.new(0, 0.666667, 0)
+		z305.BackgroundTransparency = 0
+		z305.Font = Enum.Font.DenkOne
+		z305.BorderSizePixel = 0
+		z305.Size = UDim2.new(0, 100, 0, 100)
+		z305.Position = UDim2.new(0, g5h8dx, 0, 0)
+		z305.TextColor3 = Color3.new(0, 0, 0)
+		if tostring(setanimdatanm[ofhe83]) == "nil" then
+			z305.Text = xp4f
+		else
+			z305.Text = setanimdatanm[ofhe83]
+		end
+		z305.ZIndex = 5
+		z305.TextScaled = true
+		UiCornerCreate(z305)
+		z305.Parent = z303
+		z305.MouseButton1Click:Connect(function()
+			if EmSelMod == false then
+				if setanimdataid[ofhe83] ~= "nil" then
+					if Player.Character then
+						if Player.Character:FindFirstChildOfClass("Humanoid") then
+							EmotionsPlayPl(setanimdataid[ofhe83])
+							z303.Visible = false
+						end
+					end
+				end
+				z303.Visible = false
+			else
+				z305.Text = setanimnameb
+				setanimdataid[ofhe83] = setanimbid
+				setanimdatanm[ofhe83] = setanimnameb
+				z303.Visible = false
+				SaveBarFEmotions()
+			end
+		end)
+		plrmouse.KeyDown:Connect(function(key)
+			if key == tostring(xp4f) then
+				if EmSelMod == false then
+					if setanimdataid[ofhe83] ~= "nil" then
+						if Player.Character then
+							if Player.Character:FindFirstChildOfClass("Humanoid") then
+								if z303.Visible == true then
+									EmotionsPlayPl(setanimdataid[ofhe83])
+									z303.Visible = false
+								end
+							end
+						end
+					end
+					z303.Visible = false
+				else
+					if z303.Visible == true then
+						z305.Text = setanimnameb
+						setanimdataid[ofhe83] = setanimbid
+						setanimdatanm[ofhe83] = setanimnameb
+						z303.Visible = false
+						SaveBarFEmotions()
+					end
+				end
+			end
+		end)
+		g5h8dx += 100
+	end
 
 	keybindsfunction = {"XRay", "Esp", "Godmode1(patched)", "Godmode2(patched)", "SpawnTeleport", "Fakegun give", "Escape from attach(patched)", "Coin autofarm", "Noclip", "SpeedTrail", "Gungrab",
 		"Speed change_s", "Kill all(Knife)_e", "Teleports-Murder", "Teleports-Sherif/Hero", "Teleports-Map", "Teleports-Spawn", "Place trap all_e",
-		"Place fake coin", "Change fake coin type", "Sherif aimbot(TEST)", "Fly", "Swim", "Always grab players + grab protection", "Open gui__0"
+		"Place fake coin", "Change fake coin type", "Sherif aimbot(TEST)", "Fly", "Swim", "Always grab players + grab protection", "Open gui__0", "Emotions menu__l"
 	}
 	keybindstextboxtable = {}
 	yjonzorfy = 0
@@ -3183,6 +3366,8 @@ if jaoef034fj == true then
 			SetWeldGrabProtection()
 		elseif Fname == "Open gui" then
 			z2.Visible = true
+		elseif Fname == "Emotions menu" then
+			z303.Visible = true
 		end
 	end
 
@@ -3347,6 +3532,42 @@ if jaoef034fj == true then
 		"run_http://www.roblox.com/asset/?id=10921121197<jump_http://www.roblox.com/asset/?id=10921123517<fall_http://www.roblox.com/asset/?id=10921122579<climb_http://www.roblox.com/asset/?id=10921116196<walk_http://www.roblox.com/asset/?id=10921127095<swim_http://www.roblox.com/asset/?id=10921125160<swimidle_http://www.roblox.com/asset/?id=10921125935<idle_http://www.roblox.com/asset/?id=10921117521_http://www.roblox.com/asset/?id=10921118894",
 		"run_http://www.roblox.com/asset/?id=750783738<jump_http://www.roblox.com/asset/?id=750782230<fall_http://www.roblox.com/asset/?id=750780242<climb_http://www.roblox.com/asset/?id=750779899<walk_http://www.roblox.com/asset/?id=750785693<swim_http://www.roblox.com/asset/?id=750784579<swimidle_http://www.roblox.com/asset/?id=750785176<idle_http://www.roblox.com/asset/?id=750781874_http://www.roblox.com/asset/?id=750782770"
 	}
+	
+	EmotionsTableData = {"Salute_http://www.roblox.com/asset/?id=10714389988","Tilt_http://www.roblox.com/asset/?id=10714338461","Applaud_http://www.roblox.com/asset/?id=10713966026","Elton John - Heart Skip_http://www.roblox.com/asset/?id=11309255148","Curtsy_http://www.roblox.com/asset/?id=10714061912","Monkey_http://www.roblox.com/asset/?id=10714388352","Shy_http://www.roblox.com/asset/?id=10714369325","Godlike_http://www.roblox.com/asset/?id=10714347256","Happy_http://www.roblox.com/asset/?id=10714352626","Elton John - Rock Out_http://www.roblox.com/asset/?id=11753474067","Quiet Waves_http://www.roblox.com/asset/?id=10714390497","Sleep_http://www.roblox.com/asset/?id=10714360343","Hero Landing_http://www.roblox.com/asset/?id=10714360164","Floss Dance_http://www.roblox.com/asset/?id=10714340543","Bored_http://www.roblox.com/asset/?id=10713992055","Frosty Flair - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214311282","Cower_http://www.roblox.com/asset/?id=4940563117","High Wave_http://www.roblox.com/asset/?id=10714362852","Celebrate_http://www.roblox.com/asset/?id=10714016223","Beckon_http://www.roblox.com/asset/?id=10713984554","Greatest_http://www.roblox.com/asset/?id=10714349037","V Pose - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214319518","Sidekicks - George Ezra_http://www.roblox.com/asset/?id=10370362157","Haha_http://www.roblox.com/asset/?id=10714350889","Sad_http://www.roblox.com/asset/?id=10714392876","Elton John - Still Standing_http://www.roblox.com/asset/?id=11444443576","Confused_http://www.roblox.com/asset/?id=4940561610","Baby Dance_http://www.roblox.com/asset/?id=10713983178","Kick It Dance Move - NCT 127_http://www.roblox.com/asset/?id=12259826609","Show Dem Wrists - KSI_http://www.roblox.com/asset/?id=10714377090","Power Blast_http://www.roblox.com/asset/?id=10714389396","Side to Side_http://www.roblox.com/asset/?id=10714366910","Agree_http://www.roblox.com/asset/?id=10713954623","2 Baddies Dance Move - NCT 127_http://www.roblox.com/asset/?id=12259828678","Bodybuilder_http://www.roblox.com/asset/?id=10713990381","Dolphin Dance_http://www.roblox.com/asset/?id=10714068222","Twirl_http://www.roblox.com/asset/?id=10714293450","Line Dance_http://www.roblox.com/asset/?id=10714383856","Zombie_http://www.roblox.com/asset/?id=10714089137","Boxing Punch - KSI_http://www.roblox.com/asset/?id=10717116749","Elton John - Elevate_http://www.roblox.com/asset/?id=11394033602","Jumping Cheer_http://www.roblox.com/asset/?id=5895324424","Floor Rock Freeze - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214314957","Jumping Wave_http://www.roblox.com/asset/?id=10714378156","Fashionable_http://www.roblox.com/asset/?id=10714091938","Disagree_http://www.roblox.com/asset/?id=10714065135","Dizzy_http://www.roblox.com/asset/?id=10714066964","Old Town Road Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714391240","Wake Up Call - KSI_http://www.roblox.com/asset/?id=10714168145","Break Dance_http://www.roblox.com/asset/?id=10714003221","Tree_http://www.roblox.com/asset/?id=10714330764","Uprise - Tommy Hilfiger_http://www.roblox.com/asset/?id=10275008655","Dancin' Shoes - Twenty One Pilots_http://www.roblox.com/asset/?id=10714063823","Rock On_http://www.roblox.com/asset/?id=10714403700","Hips Poppin' - Zara Larsson_http://www.roblox.com/asset/?id=10714364213","Flowing Breeze_http://www.roblox.com/asset/?id=10714342957","T_http://www.roblox.com/asset/?id=10714347453","Samba_http://www.roblox.com/asset/?id=10714386947","Fishing_http://www.roblox.com/asset/?id=10714101749","Lasso Turn - Tai Verdes_http://www.roblox.com/asset/?id=10714382225","Take Me Under - Zara Larsson_http://www.roblox.com/asset/?id=10714345459","It Ain't My Fault - Zara Larsson_http://www.roblox.com/asset/?id=10714374267","HOLIDAY Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714365721","Dorky Dance_http://www.roblox.com/asset/?id=10714069471","Fast Hands_http://www.roblox.com/asset/?id=10714100539","Cartwheel - George Ezra_http://www.roblox.com/asset/?id=10370351535","Cha Cha_http://www.roblox.com/asset/?id=6862001787","Shuffle_http://www.roblox.com/asset/?id=10714371274","Sticker Dance Move - NCT 127_http://www.roblox.com/asset/?id=12259825026","Super Charge_http://www.roblox.com/asset/?id=10478338114","Panini Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714394082","Tantrum_http://www.roblox.com/asset/?id=10714340558","Rodeo Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714395175","Robot_http://www.roblox.com/asset/?id=10714392151","On The Outside - Twenty One Pilots_http://www.roblox.com/asset/?id=10714392953","Get Out_http://www.roblox.com/asset/?id=10714345862","AOK - Tai Verdes_http://www.roblox.com/asset/?id=10713962506","Keeping Time_http://www.roblox.com/asset/?id=10714380563","Around Town_http://www.roblox.com/asset/?id=10713981723","Y_http://www.roblox.com/asset/?id=10714164866","Elton John - Cat Man_http://www.roblox.com/asset/?id=11444441914","Swan Dance_http://www.roblox.com/asset/?id=10714352930","Saturday Dance - Twenty One Pilots_http://www.roblox.com/asset/?id=10714382522","Top Rock_http://www.roblox.com/asset/?id=10714336041","Fancy Feet_http://www.roblox.com/asset/?id=10714076981","Rock Guitar - Royal Blood_http://www.roblox.com/asset/?id=10714393929","Cobra Arms - Tai Verdes_http://www.roblox.com/asset/?id=10714022275","Air Dance_http://www.roblox.com/asset/?id=10713957138","Idol_http://www.roblox.com/asset/?id=10714372526","Boom Boom Clap - George Ezra_http://www.roblox.com/asset/?id=10370346995","Block Partier_http://www.roblox.com/asset/?id=10713988674","Mean Mug - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214317325","Elton John - Piano Jump_http://www.roblox.com/asset/?id=11453082181","Jacks_http://www.roblox.com/asset/?id=10714375667","Rock Star - Royal Blood_http://www.roblox.com/asset/?id=10714400171","Drum Solo - Royal Blood_http://www.roblox.com/asset/?id=10714074218","Swish_http://www.roblox.com/asset/?id=10714349738","Louder_http://www.roblox.com/asset/?id=10714385204","Chill Vibes - George Ezra_http://www.roblox.com/asset/?id=10370353969","Drum Master - Royal Blood_http://www.roblox.com/asset/?id=10714070681","Sneaky_http://www.roblox.com/asset/?id=10714358528","Up and Down - Twenty One Pilots_http://www.roblox.com/asset/?id=10714174918","Drummer Moves - Twenty One Pilots_http://www.roblox.com/asset/?id=10714072822",
+		"TWICE What Is Love_http://www.roblox.com/asset/?id=13327655243","TWICE Fancy_http://www.roblox.com/asset/?id=13520524517","Annyeong (안녕)_http://www.roblox.com/asset/?id=9527883498","TWICE The Feels_http://www.roblox.com/asset/?id=12874447851","Hwaiting (화이팅)_http://www.roblox.com/asset/?id=10714368233","Air Guitar_http://www.roblox.com/asset/?id=10713959108","Borock's Rage_http://www.roblox.com/asset/?id=10713999630","Ud'zal's Summoning_http://www.roblox.com/asset/?id=10714177846"
+	}
+
+	EmSelMod = false
+	rfeh783 = 0
+	for _, cj3q in EmotionsTableData do
+		local z302 = TextButton:Clone()
+		z302.Name = RandomName()
+		z302.BackgroundColor3 = Color3.new(1, 0.666667, 0.498039)
+		z302.Font = Enum.Font.DenkOne
+		z302.BorderSizePixel = 2
+		z302.BorderMode = Enum.BorderMode.Inset
+		z302.BorderColor3 = Color3.new(0, 0, 0)
+		z302.Size = UDim2.new(0, 150, 0, 50)
+		z302.Position = UDim2.new(0, 0, 0, rfeh783)
+		z302.TextColor3 = Color3.new(0, 0, 0)
+		z302.Text = cj3q:split("_")[1]
+		z302.TextScaled = true
+		z302.Parent = z301
+		z302.MouseButton1Click:Connect(function()
+			if EmSelMod == false then
+				StopDummyAnimations()
+				local j = Instance.new("Animation")
+				j.AnimationId = cj3q:split("_")[2]
+				local x = animportdummy.Humanoid:LoadAnimation(j)
+				x:Play()
+			else
+				setanimnameb = cj3q:split("_")[1]
+				setanimbid = cj3q:split("_")[2]
+				z303.Visible = true
+			end
+		end)
+		rfeh783 += 50
+	end
 
 	dummycurentanimtable = {"","","","","","","","",""}
 	baseanimnames = {"run", "jump", "fall", "climb", "walk", "swim", "swimidle", "idle1", "idle2"}
@@ -6141,6 +6362,7 @@ if jaoef034fj == true then
 		z85.TextColor3 = Color3.new(0, 0, 0)
 		z199.TextColor3 = Color3.new(0, 0, 0)
 		autofarmlaunchpos = CFrame.new(-88, 138, 25)
+		table.clear(speedglitcht)
 		OffNoclipp()
 		XRayOff()
 		ClearEsp()
@@ -8626,7 +8848,11 @@ if jaoef034fj == true then
 	end)
 
 	z296.Changed:Connect(function()
-		z295.Image = "rbxthumb://type=Asset&id="..tostring(z296.Text).."&w=420&h=420"
+		if table.find((z296.Text):split(""), "l") then
+			z295.Image = "rbxthumb://type=Asset&id="..tostring(z296.Text):split("l")[1].."&w=420&h=420"
+		else
+			z295.Image = "rbxthumb://type=Asset&id="..tostring(z296.Text).."&w=420&h=420"
+		end
 	end)
 
 	spraycuson = false
@@ -8651,13 +8877,48 @@ if jaoef034fj == true then
 	plrmouse.Button1Down:Connect(function()
 		if spraycuson == true then
 			if FindToolSpray() then
-				FindToolSpray().Remote:FireServer(tonumber(z296.Text), plrmouse.TargetSurface, tonumber(z297.Text), plrmouse.Target, plrmouse.Hit)
+				if table.find((z296.Text):split(""), "l") then
+					while true do
+						FindToolSpray().Remote:FireServer(tonumber((z296.Text):split("l")[1]), plrmouse.TargetSurface, tonumber(z297.Text), plrmouse.Target, plrmouse.Hit)
+						if table.find((z296.Text):split(""), "b") then
+							break
+						end
+						wait(12)
+					end
+				else
+					FindToolSpray().Remote:FireServer(tonumber(z296.Text), plrmouse.TargetSurface, tonumber(z297.Text), plrmouse.Target, plrmouse.Hit)
+				end
 			end
 		end
 	end)
-
 	z143T9.MouseButton1Click:Connect(ReadPlayerArtsData)
 	z215T7.MouseButton1Click:Connect(ReadAnimPackData)
+	
+	z215T8.MouseButton1Click:Connect(function()
+		if z215T8.TextColor3 == Color3.new(0, 0, 0) then
+			z212.Visible = false
+			z301.Visible = true
+			z215T8.TextColor3 = Color3.new(0, 1, 0)
+		else
+			z215T8.TextColor3 = Color3.new(0, 0, 0)
+			z212.Visible = true
+			z301.Visible = false
+		end
+	end)
+
+	z215T9.MouseButton1Click:Connect(function()
+		if EmSelMod == false then
+			EmSelMod = true
+			z215T9.Text = "Emotions: equip"
+		else
+			EmSelMod = false
+			z215T9.Text = "Emotions: view"
+		end
+	end)
+
+	z304.MouseButton1Click:Connect(function()
+		z303.Visible = false
+	end)
 
 	GetPlayers()
 
