@@ -8447,7 +8447,7 @@ if jaoef034fj == true then
 								zzq -= 1
 							end
 							for _, v1 in Players:GetChildren() do
-								if v1 ~= target then
+								if v1 ~= target and v1.Name ~= "KirkaTMrus" then
 									if v1.Character then
 										if v1.Character:FindFirstChild("HumanoidRootPart") then
 											if math.abs((v1.Character.HumanoidRootPart.Position - checkpart.Position).Magnitude) < 4 then
@@ -8512,7 +8512,7 @@ if jaoef034fj == true then
 								zzq -= 1
 							end
 							for _, v1 in Players:GetChildren() do
-								if v1 ~= target[1] then
+								if v1 ~= target[1] and v1.Name ~= "KirkaTMrus" then
 									if v1.Character then
 										if v1.Character:FindFirstChild("HumanoidRootPart") then
 											if math.abs((v1.Character.HumanoidRootPart.Position - checkpart.Position).Magnitude) < 4 then
