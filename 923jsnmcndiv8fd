@@ -3078,6 +3078,348 @@ if jaoef034fj == true then
 	z304.Text = "X"
 	z304.TextScaled = true
 	z304.Parent = z303
+	
+	z306 = TextButton:Clone()
+	z306.Name = RandomName()
+	z306.BackgroundColor3 = Color3.new(0.666667, 0.333333, 0)
+	z306.BackgroundTransparency = 0
+	z306.Font = Enum.Font.DenkOne
+	z306.BorderSizePixel = 0
+	z306.Size = UDim2.new(0, 50, 0, 50)
+	z306.Position = UDim2.new(0.05, 0, 0.479, 0)
+	z306.TextColor3 = Color3.new(0, 0, 0)
+	z306.Text = "S"
+	z306.TextScaled = true
+	UiCornerCreate(z306)
+	z306.Parent = z243
+	
+	z307 = TextButton:Clone()
+	z307.Name = RandomName()
+	z307.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+	z307.Font = Enum.Font.DenkOne
+	z307.BorderSizePixel = 0
+	z307.Size = UDim2.new(0, 100, 0, 50)
+	z307.Position = UDim2.new(0, 300, 0, 700)
+	z307.TextColor3 = Color3.new(0, 0, 0)
+	z307.Text = "Tsunami"
+	z307.TextScaled = true
+	z307.Parent = z8
+
+	z308 = Frame:Clone()
+	z308.Name = RandomName()
+	z308.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+	z308.BackgroundTransparency = 0
+	z308.Position = UDim2.new(0.386, 0, 0.326, 0)
+	z308.Size = UDim2.new(0, 350, 0, 250)
+	SetDraggable(z308)
+	z308.Visible = false
+	UiCornerCreate(z308)
+	z308.Parent = z1
+
+	z309 = TextLabel:Clone()
+	z309.Name = RandomName()
+	z309.BackgroundTransparency = 1
+	z309.Size = UDim2.new(0, 300, 0, 50)
+	z309.Position = UDim2.new(0, 0, 0, 0)
+	z309.Font = Enum.Font.DenkOne
+	z309.TextScaled = true
+	z309.TextColor3 = Color3.new(0, 0, 0)
+	z309.Text = "Tsunami"
+	UiCornerCreate(z309)
+	z309.Parent = z308
+
+	z310 = TextBox:Clone()
+	z310.Name = RandomName()
+	z310.BackgroundColor3 = Color3.new(1, 1, 1)
+	z310.BorderSizePixel = 0
+	z310.Font = Enum.Font.DenkOne
+	z310.Size = UDim2.new(0, 200, 0, 50)
+	z310.Position = UDim2.new(0.214, 0, 0.235, 0)
+	z310.PlaceholderText = "Player name"
+	z310.Text = ""
+	z310.TextScaled = true
+	z310.TextColor3 = Color3.new(0, 0, 0)
+	z310.ClearTextOnFocus = false
+	z310.Parent = z308
+
+	z311 = TextBox:Clone()
+	z311.Name = RandomName()
+	z311.BackgroundColor3 = Color3.new(1, 1, 1)
+	z311.BorderSizePixel = 0
+	z311.Font = Enum.Font.DenkOne
+	z311.Size = UDim2.new(0, 200, 0, 50)
+	z311.Position = UDim2.new(0.214, 0, 0.479, 0)
+	z311.PlaceholderText = "Texture ID"
+	z311.Text = "15161938"
+	z311.TextScaled = true
+	z311.TextColor3 = Color3.new(0, 0, 0)
+	z311.ClearTextOnFocus = false
+	z311.Parent = z308
+
+	z312 = TextButton:Clone()
+	z312.Name = RandomName()
+	z312.BackgroundColor3 = Color3.new(1, 1, 1)
+	z312.BackgroundTransparency = 1
+	z312.Font = Enum.Font.DenkOne
+	z312.BorderSizePixel = 0
+	z312.Size = UDim2.new(0, 50, 0, 50)
+	z312.Position = UDim2.new(0.857, 0, 0, 0)
+	z312.TextColor3 = Color3.new(1, 0, 0)
+	z312.Text = "X"
+	z312.TextScaled = true
+	z312.Parent = z308
+
+	z313 = TextButton:Clone()
+	z313.Name = RandomName()
+	z313.BackgroundColor3 = Color3.new(0.666667, 1, 0.498039)
+	z313.BackgroundTransparency = 0
+	z313.Font = Enum.Font.DenkOne
+	z313.BorderSizePixel = 0
+	z313.Size = UDim2.new(0, 200, 0, 50)
+	z313.Position = UDim2.new(0.214, 0, 0.724, 0)
+	z313.TextColor3 = Color3.new(0, 0, 0)
+	z313.Text = "Tsunami start"
+	z313.TextScaled = true
+	UiCornerCreate(z313)
+	z313.Parent = z308
+
+	zId6 = TextButton:Clone()
+	zId6.Name = RandomName()
+	zId6.BackgroundColor3 = Color3.new(0.666667, 0.333333, 1)
+	zId6.BackgroundTransparency = 0
+	zId6.Font = Enum.Font.DenkOne
+	zId6.BorderSizePixel = 0
+	zId6.Size = UDim2.new(0, 50, 0, 50)
+	zId6.Position = UDim2.new(0.8, 0, 0.724, 0)
+	zId6.TextColor3 = Color3.new(1, 1, 1)
+	zId6.Text = "ID"
+	zId6.TextScaled = true
+	UiCornerCreate(zId6)
+	zId6.Parent = z308
+
+	z314 = TextBox:Clone()
+	z314.Name = RandomName()
+	z314.BackgroundColor3 = Color3.new(1, 1, 1)
+	z314.BorderSizePixel = 0
+	z314.Font = Enum.Font.DenkOne
+	z314.Size = UDim2.new(0, 50, 0, 50)
+	z314.Position = UDim2.new(0.05, 0, 0.479, 0)
+	z314.PlaceholderText = "Size"
+	z314.Text = "250"
+	z314.TextScaled = true
+	z314.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z314)
+	z314.ClearTextOnFocus = false
+	z314.Parent = z308
+
+	z315 = TextBox:Clone()
+	z315.Name = RandomName()
+	z315.BackgroundColor3 = Color3.new(1, 1, 1)
+	z315.BorderSizePixel = 0
+	z315.Font = Enum.Font.DenkOne
+	z315.Size = UDim2.new(0, 50, 0, 50)
+	z315.Position = UDim2.new(0.8, 0, 0.479, 0)
+	z315.PlaceholderText = "Time"
+	z315.Text = "0.1"
+	z315.TextScaled = true
+	z315.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z315)
+	z315.ClearTextOnFocus = false
+	z315.Parent = z308
+
+	z316 = TextBox:Clone()
+	z316.Name = RandomName()
+	z316.BackgroundColor3 = Color3.new(1, 1, 1)
+	z316.BorderSizePixel = 0
+	z316.Font = Enum.Font.DenkOne
+	z316.Size = UDim2.new(0, 50, 0, 50)
+	z316.Position = UDim2.new(0.05, 0, 0.724, 0)
+	z316.PlaceholderText = "Length"
+	z316.Text = "200"
+	z316.TextScaled = true
+	z316.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z316)
+	z316.ClearTextOnFocus = false
+	z316.Parent = z308
+	
+	z323 = TextButton:Clone()
+	z323.Name = RandomName()
+	z323.BackgroundColor3 = Color3.new(1, 0.0627451, 0.0627451)
+	z323.Font = Enum.Font.DenkOne
+	z323.BorderSizePixel = 0
+	z323.Size = UDim2.new(0, 100, 0, 50)
+	z323.Position = UDim2.new(0, 0, 0, 750)
+	z323.TextColor3 = Color3.new(0, 0, 0)
+	z323.Text = "The floor is lava"
+	z323.TextScaled = true
+	z323.Parent = z8
+
+	z324 = Frame:Clone()
+	z324.Name = RandomName()
+	z324.BackgroundColor3 = Color3.new(1, 0.0627451, 0.0627451)
+	z324.BackgroundTransparency = 0
+	z324.Position = UDim2.new(0.386, 0, 0.326, 0)
+	z324.Size = UDim2.new(0, 350, 0, 250)
+	SetDraggable(z324)
+	z324.Visible = false
+	UiCornerCreate(z324)
+	z324.Parent = z1
+
+	z325 = TextLabel:Clone()
+	z325.Name = RandomName()
+	z325.BackgroundTransparency = 1
+	z325.Size = UDim2.new(0, 300, 0, 50)
+	z325.Position = UDim2.new(0, 0, 0, 0)
+	z325.Font = Enum.Font.DenkOne
+	z325.TextScaled = true
+	z325.TextColor3 = Color3.new(0, 0, 0)
+	z325.Text = "The floor is lava"
+	UiCornerCreate(z325)
+	z325.Parent = z324
+
+	z326 = TextBox:Clone()
+	z326.Name = RandomName()
+	z326.BackgroundColor3 = Color3.new(1, 1, 1)
+	z326.BorderSizePixel = 0
+	z326.Font = Enum.Font.DenkOne
+	z326.Size = UDim2.new(0, 200, 0, 50)
+	z326.Position = UDim2.new(0.214, 0, 0.235, 0)
+	z326.PlaceholderText = "Player name"
+	z326.Text = ""
+	z326.TextScaled = true
+	z326.TextColor3 = Color3.new(0, 0, 0)
+	z326.ClearTextOnFocus = false
+	z326.Parent = z324
+
+	z327 = TextBox:Clone()
+	z327.Name = RandomName()
+	z327.BackgroundColor3 = Color3.new(1, 1, 1)
+	z327.BorderSizePixel = 0
+	z327.Font = Enum.Font.DenkOne
+	z327.Size = UDim2.new(0, 200, 0, 50)
+	z327.Position = UDim2.new(0.214, 0, 0.479, 0)
+	z327.PlaceholderText = "Texture ID"
+	z327.Text = "176554443"
+	z327.TextScaled = true
+	z327.TextColor3 = Color3.new(0, 0, 0)
+	z327.ClearTextOnFocus = false
+	z327.Parent = z324
+
+	z328 = TextButton:Clone()
+	z328.Name = RandomName()
+	z328.BackgroundColor3 = Color3.new(1, 1, 1)
+	z328.BackgroundTransparency = 1
+	z328.Font = Enum.Font.DenkOne
+	z328.BorderSizePixel = 0
+	z328.Size = UDim2.new(0, 50, 0, 50)
+	z328.Position = UDim2.new(0.857, 0, 0, 0)
+	z328.TextColor3 = Color3.new(0, 0, 0)
+	z328.Text = "X"
+	z328.TextScaled = true
+	z328.Parent = z324
+
+	z329 = TextButton:Clone()
+	z329.Name = RandomName()
+	z329.BackgroundColor3 = Color3.new(0.666667, 1, 0.498039)
+	z329.BackgroundTransparency = 0
+	z329.Font = Enum.Font.DenkOne
+	z329.BorderSizePixel = 0
+	z329.Size = UDim2.new(0, 200, 0, 50)
+	z329.Position = UDim2.new(0.214, 0, 0.724, 0)
+	z329.TextColor3 = Color3.new(0, 0, 0)
+	z329.Text = "Start lava"
+	z329.TextScaled = true
+	UiCornerCreate(z329)
+	z329.Parent = z324
+
+	zId7 = TextButton:Clone()
+	zId7.Name = RandomName()
+	zId7.BackgroundColor3 = Color3.new(0.666667, 0.333333, 1)
+	zId7.BackgroundTransparency = 0
+	zId7.Font = Enum.Font.DenkOne
+	zId7.BorderSizePixel = 0
+	zId7.Size = UDim2.new(0, 50, 0, 50)
+	zId7.Position = UDim2.new(0.8, 0, 0.724, 0)
+	zId7.TextColor3 = Color3.new(1, 1, 1)
+	zId7.Text = "ID"
+	zId7.TextScaled = true
+	UiCornerCreate(zId7)
+	zId7.Parent = z324
+
+	z330 = TextBox:Clone()
+	z330.Name = RandomName()
+	z330.BackgroundColor3 = Color3.new(1, 1, 1)
+	z330.BorderSizePixel = 0
+	z330.Font = Enum.Font.DenkOne
+	z330.Size = UDim2.new(0, 50, 0, 50)
+	z330.Position = UDim2.new(0.05, 0, 0.479, 0)
+	z330.PlaceholderText = "Size"
+	z330.Text = "350"
+	z330.TextScaled = true
+	z330.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z330)
+	z330.ClearTextOnFocus = false
+	z330.Parent = z324
+
+	z331 = TextBox:Clone()
+	z331.Name = RandomName()
+	z331.BackgroundColor3 = Color3.new(1, 1, 1)
+	z331.BorderSizePixel = 0
+	z331.Font = Enum.Font.DenkOne
+	z331.Size = UDim2.new(0, 50, 0, 50)
+	z331.Position = UDim2.new(0.8, 0, 0.479, 0)
+	z331.PlaceholderText = "Time"
+	z331.Text = "0.25"
+	z331.TextScaled = true
+	z331.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z331)
+	z331.ClearTextOnFocus = false
+	z331.Parent = z324
+
+	z332 = TextBox:Clone()
+	z332.Name = RandomName()
+	z332.BackgroundColor3 = Color3.new(1, 1, 1)
+	z332.BorderSizePixel = 0
+	z332.Font = Enum.Font.DenkOne
+	z332.Size = UDim2.new(0, 50, 0, 50)
+	z332.Position = UDim2.new(0.05, 0, 0.724, 0)
+	z332.PlaceholderText = "Layers"
+	z332.Text = "50"
+	z332.TextScaled = true
+	z332.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z332)
+	z332.ClearTextOnFocus = false
+	z332.Parent = z324
+
+	z333 = TextBox:Clone()
+	z333.Name = RandomName()
+	z333.BackgroundColor3 = Color3.new(1, 1, 1)
+	z333.BorderSizePixel = 0
+	z333.Font = Enum.Font.DenkOne
+	z333.Size = UDim2.new(0, 50, 0, 50)
+	z333.Position = UDim2.new(0.05, 0, 0.235, 0)
+	z333.PlaceholderText = "Start Y pos"
+	z333.Text = "-3"
+	z333.TextScaled = true
+	z333.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z333)
+	z333.ClearTextOnFocus = false
+	z333.Parent = z324
+
+	z334 = TextBox:Clone()
+	z334.Name = RandomName()
+	z334.BackgroundColor3 = Color3.new(1, 1, 1)
+	z334.BorderSizePixel = 0
+	z334.Font = Enum.Font.DenkOne
+	z334.Size = UDim2.new(0, 50, 0, 50)
+	z334.Position = UDim2.new(0.8, 0, 0.235, 0)
+	z334.PlaceholderText = "Pos between layers"
+	z334.Text = "0.3"
+	z334.TextScaled = true
+	z334.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z334)
+	z334.ClearTextOnFocus = false
+	z334.Parent = z324
 
 	function EmotionsPlayPl(id)
 		StopAllAnimations()
@@ -5279,6 +5621,40 @@ if jaoef034fj == true then
 								a35.TextColor3 = Color3.new(1, 1, 1)
 							end
 						end
+					end)
+					local a37 = TextButton:Clone()
+					a37.Name = RandomName()
+					a37.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+					a37.Font = Enum.Font.DenkOne
+					a37.BorderSizePixel = 0
+					a37.Size = UDim2.new(0, 88, 0, 50)
+					a37.Position = UDim2.new(0, 88, 0, 250)
+					a37.TextColor3 = Color3.new(0, 0, 0)
+					a37.Text = "Set tsunami target"
+					a37.TextScaled = true
+					UiCornerCreate(a37)
+					ClearableValue(a37)
+					a37.Parent = z50
+					a37.MouseButton1Click:Connect(function()
+						z310.Text = v.Name
+						z308.Visible = true
+					end)
+					local a38 = TextButton:Clone()
+					a38.Name = RandomName()
+					a38.BackgroundColor3 = Color3.new(1, 0.101961, 0.101961)
+					a38.Font = Enum.Font.DenkOne
+					a38.BorderSizePixel = 0
+					a38.Size = UDim2.new(0, 88, 0, 50)
+					a38.Position = UDim2.new(0, 176, 0, 250)
+					a38.TextColor3 = Color3.new(0, 0, 0)
+					a38.Text = "Set the floor is lava target"
+					a38.TextScaled = true
+					UiCornerCreate(a38)
+					ClearableValue(a38)
+					a38.Parent = z50
+					a38.MouseButton1Click:Connect(function()
+						z326.Text = v.Name
+						z324.Visible = true
 					end)
 				end)
 			end
@@ -8023,111 +8399,130 @@ if jaoef034fj == true then
 		end
 	end)
 
+	enumsmag = {Enum.NormalId.Front, Enum.NormalId.Back}
+
+	function uwuplayerh1(target, spray)
+		for _, v in target.Character:GetChildren() do
+			if v:IsA("BasePart") then
+				spray.Remote:FireServer(11684672986, enumsmag[math.random(1, 2)], math.random(2, 4), v, v.CFrame)
+			end
+		end
+	end
+
 	Reverseuwufunc = false
-	function uwuplayer(target, length, spray)
+	function uwuplayer(target, length, spray, shot)
 		local startlength = length
 		if typeof(target) == "Instance" then
-			if target.Name ~= "KirkaTMrus" then
-				if target.Character then
-					if target.Character:FindFirstChild("HumanoidRootPart") then
-						if Reverseuwufunc == false then
-							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, -1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, -1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, -1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, -1.5))
-							while length > 0 do
-								spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * length))
-								spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * length))
-								wait()
-								length -= 1
-							end
-							spray.Remote:FireServer(3093430, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * startlength - 1.5))
-							spray.Remote:FireServer(3093430, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * startlength - 1.5))
-						else
-							spray.Remote:FireServer(3093430, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5))
-							spray.Remote:FireServer(3093430, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5))
-							while length > 0 do
-								spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * (length + 1)))
-								spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * (length + 1)))
-								wait()
-								length -= 1
-							end
-							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * startlength + 1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, 1.5 * startlength + 1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, 1.5 * startlength + 1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * startlength + 1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, 1.5 * startlength + 1.5))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, 1.5 * startlength + 1.5))
+			if target.Character and target.Name ~= "KirkaTMrus" then
+				if target.Character:FindFirstChild("HumanoidRootPart") then
+					if Reverseuwufunc == false then
+						spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, -1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, -1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, -1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, -1.5))
+						while length > 0 do
+							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * length))
+							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * length))
+							length -= 1
 						end
-					end
-				end
-			end
-		elseif target == "%all" and target[2] ~= "%tool" then
-			for _, v in pairs(Players:GetChildren()) do
-				if v ~= Player and v.Name ~= "KirkaTMrus" then
-					if v.Character then
-						if v.Character:FindFirstChild("HumanoidRootPart") then
-							spawn(function()
-								local length2 = length
-								local startlength2 = length2
-								if Reverseuwufunc == false then
-									spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, -1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, -1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, -1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, -1.5))
-									while length > 0 do
-										spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * length2))
-										spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * length2))
-										wait()
-										length -= 1
+						spray.Remote:FireServer(3093430, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * startlength - 1.5))
+						spray.Remote:FireServer(3093430, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * startlength - 1.5))
+						if shot then
+							wait(9)
+							local sx = 1.5
+							local zzq = math.random(5, 7)
+							local checkpart = Instance.new("Part")
+							checkpart.Anchored = true
+							checkpart.Transparency = 1
+							checkpart.Size = Vector3.new(1, 1, 1)
+							checkpart.CFrame = target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * startlength - (sx * zzq))
+							checkpart.Parent = workspace
+							while zzq > 0 do
+								spray.Remote:FireServer(11684672986, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(math.random(-1, 1), -1, -1.5 * startlength - sx))
+								spray.Remote:FireServer(11684672986, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(math.random(-1, 1), -1, -1.5 * startlength - sx))
+								wait()
+								sx += 1.5
+								zzq -= 1
+							end
+							for _, v1 in Players:GetChildren() do
+								if v1 ~= target then
+									if v1.Character then
+										if v1.Character:FindFirstChild("HumanoidRootPart") then
+											if math.abs((v1.Character.HumanoidRootPart.Position - checkpart.Position).Magnitude) < 4 then
+												uwuplayerh1(v1, spray)
+											end
+										end
 									end
-									spray.Remote:FireServer(3093430, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * startlength2 - 1.5))
-									spray.Remote:FireServer(3093430, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, -1.5 * startlength2 - 1.5))
-								else
-									spray.Remote:FireServer(3093430, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5))
-									spray.Remote:FireServer(3093430, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5))
-									while length > 0 do
-										spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * (length2 + 1)))
-										spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * (length2 + 1)))
-										wait()
-										length -= 1
-									end
-									spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * startlength2 + 1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, 1.5 * startlength2 + 1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, 1.5 * startlength2 + 1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * startlength2 + 1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, 1.5 * startlength2 + 1.5))
-									spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, v.Character.HumanoidRootPart, v.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, 1.5 * startlength2 + 1.5))
 								end
-							end)
+							end
+							checkpart:Destroy()
 						end
+					else
+						spray.Remote:FireServer(3093430, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5))
+						spray.Remote:FireServer(3093430, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5))
+						while length > 0 do
+							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * (length + 1)))
+							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * (length + 1)))
+							length -= 1
+						end
+						spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * startlength + 1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, 1.5 * startlength + 1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, 1.5 * startlength + 1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 1.5 * startlength + 1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(2, -1, 1.5 * startlength + 1.5))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(-2, -1, 1.5 * startlength + 1.5))
 					end
 				end
 			end
 		elseif target[2] == "%tool" then
-			if target[1].Name ~= "KirkaTMrus" then
-				if target[1].Character then
-					if target[1].Character:FindFirstChildOfClass("Tool") then
-						if target[1].Character:FindFirstChildOfClass("Tool"):FindFirstChild("Handle") then
-							local tool = target[1].Character:FindFirstChildOfClass("Tool")
-							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, 0))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(2, 0, 0))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(-2, 0, 0))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, 0))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(2, 0, 0))
-							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(-2, 0, 0))
-							while length > 0 do
-								spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, -1.5 * length))
-								spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, -1.5 * length))
+			if target[1].Character and target[1].Name ~= "KirkaTMrus" then
+				if target[1].Character:FindFirstChildOfClass("Tool") then
+					if target[1].Character:FindFirstChildOfClass("Tool"):FindFirstChild("Handle") then
+						local tool = target[1].Character:FindFirstChildOfClass("Tool")
+						spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, 0))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(2, 0, 0))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(-2, 0, 0))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, 0))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(2, 0, 0))
+						spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(-2, 0, 0))
+						while length > 0 do
+							spray.Remote:FireServer(3070884, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, -1.5 * length))
+							spray.Remote:FireServer(3070884, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, -1.5 * length))
+							length -= 1
+						end
+						spray.Remote:FireServer(3093430, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, -1.5 * startlength - 1.5))
+						spray.Remote:FireServer(3093430, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, -1.5 * startlength - 1.5))
+						if shot then
+							wait(9)
+							local sx = 1.5
+							local zzq = math.random(5, 7)
+							local checkpart = Instance.new("Part")
+							checkpart.Anchored = true
+							checkpart.Transparency = 1
+							checkpart.Size = Vector3.new(1, 1, 1)
+							checkpart.CFrame = tool.Handle.CFrame * CFrame.new(0, -1, -1.5 * startlength - (sx * zzq))
+							checkpart.Parent = workspace
+							while zzq > 0 do
+								spray.Remote:FireServer(11684672986, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(math.random(-1, 1), -1, -1.5 * startlength - sx))
+								spray.Remote:FireServer(11684672986, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(math.random(-1, 1), -1, -1.5 * startlength - sx))
 								wait()
-								length -= 1
+								sx += 1.5
+								zzq -= 1
 							end
-							spray.Remote:FireServer(3093430, Enum.NormalId.Top, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, -1.5 * startlength - 1.5))
-							spray.Remote:FireServer(3093430, Enum.NormalId.Bottom, 2, tool.Handle, tool.Handle.CFrame * CFrame.new(0, 0, -1.5 * startlength - 1.5))
+							for _, v1 in Players:GetChildren() do
+								if v1 ~= target[1] then
+									if v1.Character then
+										if v1.Character:FindFirstChild("HumanoidRootPart") then
+											if math.abs((v1.Character.HumanoidRootPart.Position - checkpart.Position).Magnitude) < 4 then
+												uwuplayerh1(v1, spray)
+											end
+										end
+									end
+								end
+							end
+							checkpart:Destroy()
 						end
 					end
 				end
@@ -8140,21 +8535,25 @@ if jaoef034fj == true then
 		if q  then
 			local d1
 			if game.Players:FindFirstChild(tostring(z245.Text)) then
-				if game.Players:FindFirstChild(tostring(z245.Text)).Name ~= "KirkaTMrus" then
-					d1 = game.Players[z245.Text]
-				end
+				d1 = game.Players[z245.Text]
 			elseif tostring(z245.Text) == "%all" then
 				d1 = "%all"
 			elseif tostring(z245.Text):split("%")[2] == "tool" then
 				if game.Players:FindFirstChild(tostring(z245.Text):split("%")[1]) then
-					if game.Players:FindFirstChild(tostring(z245.Text):split("%")[1]).Name ~= "KirkaTMrus" then
-						d1 = {game.Players:FindFirstChild(tostring(z245.Text):split("%")[1]), "%tool"}
-					end
+					d1 = {game.Players:FindFirstChild(tostring(z245.Text):split("%")[1]), "%tool"}
 				end
 			end
 			local d2 = tonumber(z246.Text)
 			local d3 = q
-			uwuplayer(d1, d2, d3)
+			if d1 == "%all" then
+				for _, e in pairs(Players:GetChildren()) do
+					if e ~= Player and e.Name ~= "KirkaTMrus" then
+						uwuplayer(e, d2, d3, uwushot)
+					end
+				end
+			else
+				uwuplayer(d1, d2, d3, uwushot)
+			end
 		end
 	end)
 
@@ -8653,7 +9052,7 @@ if jaoef034fj == true then
 	
 	function GiveSpeedGlitch(target, speed, spray, texture)
 		if target ~= "%all" then
-			if target.Character then
+			if target.Character and target.Name ~= "KirkaTMrus" then
 				if target.Character:FindFirstChild("HumanoidRootPart") then
 					if loopfunct ~= true then
 						spray.Remote:FireServer(texture, Enum.NormalId.Back, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed) * CFrame.new(0, 0, -3))
@@ -8666,47 +9065,6 @@ if jaoef034fj == true then
 						if table.find(speedglitcht, target.Name) then
 							table.remove(speedglitcht, table.find(speedglitcht, target.Name))
 						else
-							table.insert(speedglitcht, target.Name)
-							while true do
-								if target.Character then
-									if target.Character:FindFirstChild("HumanoidRootPart") then
-										spray.Remote:FireServer(texture, Enum.NormalId.Back, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed) * CFrame.new(0, 0, -3))
-										spray.Remote:FireServer(texture, Enum.NormalId.Top, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(0, -3, 0))
-										spray.Remote:FireServer(texture, Enum.NormalId.Bottom, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(0, 3, 0))
-										spray.Remote:FireServer(texture, Enum.NormalId.Front, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(0, 0, 3))
-										spray.Remote:FireServer(texture, Enum.NormalId.Left, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(3, 0, 0))
-										spray.Remote:FireServer(texture, Enum.NormalId.Right, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(-3, 0, 0))
-									end
-								end
-								wait(13)
-								if not table.find(speedglitcht, target.Name) then
-									break
-								end
-							end
-						end
-					end
-				end
-			end
-		elseif target == "%all" then
-			if loopfunct ~= true then
-				for _, target in pairs(Players:GetChildren()) do
-					if target ~= Player then
-						if target.Character then
-							if target.Character:FindFirstChild("HumanoidRootPart") then
-								spray.Remote:FireServer(texture, Enum.NormalId.Back, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed) * CFrame.new(0, 0, -3))
-								spray.Remote:FireServer(texture, Enum.NormalId.Top, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(0, -3, 0))
-								spray.Remote:FireServer(texture, Enum.NormalId.Bottom, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(0, 3, 0))
-								spray.Remote:FireServer(texture, Enum.NormalId.Front, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(0, 0, 3))
-								spray.Remote:FireServer(texture, Enum.NormalId.Left, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(3, 0, 0))
-								spray.Remote:FireServer(texture, Enum.NormalId.Right, 6, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, speed)  * CFrame.new(-3, 0, 0))
-							end
-						end
-					end
-				end
-			else
-				for _, target in pairs(Players:GetChildren()) do
-					if target ~= Player then
-						if not table.find(speedglitcht, target.Name) then
 							table.insert(speedglitcht, target.Name)
 							while true do
 								if target.Character then
@@ -8745,7 +9103,17 @@ if jaoef034fj == true then
 			end
 			local d2 = tonumber(z283.Text)
 			local d3 = q
-			GiveSpeedGlitch(d1, d2, d3, 0)
+			if d1 == "%all" then
+				for _, v in Players:GetChildren() do
+					if v ~= Player and v.Name ~= "KirkaTMrus" then
+						spawn(function()
+							GiveSpeedGlitch(v, d2, d3, 0)
+						end)
+					end
+				end
+			else
+				GiveSpeedGlitch(d1, d2, d3, 0)
+			end
 		end
 	end)
 
@@ -8919,6 +9287,135 @@ if jaoef034fj == true then
 	z304.MouseButton1Click:Connect(function()
 		z303.Visible = false
 	end)
+	
+	uwushot = false
+	z306.MouseButton1Click:Connect(function()
+		if uwushot == false then
+			z306.TextColor3 = Color3.new(0, 1, 0)
+			uwushot = true
+		elseif uwushot == true then
+			z306.TextColor3 = Color3.new(0, 0, 0)
+			uwushot = false
+		end
+	end)
+	
+	z307.MouseButton1Click:Connect(function()
+		if z308.Visible == false then
+			z308.Visible = true
+		else
+			z308.Visible = false
+		end
+	end)
+
+	z312.MouseButton1Click:Connect(function()
+		z308.Visible = false
+	end)
+
+	zId6.MouseButton1Click:Connect(function()
+		if z121.Visible == false then
+			SetTextureTarget = z311
+			z121.Visible = true
+		elseif z121.Visible == true then
+			z121.Visible = false
+		end
+	end)
+
+	function Tsunami(target, texture, spray, size, timers, zet)
+		if target.Character and target.Name ~= "KirkaTMrus" then
+			if target.Character:FindFirstChild("HumanoidRootPart") then
+				local stpos = target.Character:FindFirstChild("HumanoidRootPart").Position
+				zet = -(zet)
+				while zet < 0 do
+					spray.Remote:FireServer(texture, Enum.NormalId.Right, size, flagweldpart, CFrame.new(stpos) * CFrame.new(0, 0, zet))
+					spray.Remote:FireServer(texture, Enum.NormalId.Left, size, flagweldpart, CFrame.new(stpos) * CFrame.new(0, 0, zet))
+					wait(timers)
+					zet += 3
+				end
+			end
+		end
+	end
+
+	z313.MouseButton1Click:Connect(function()
+		local q = FindToolSpray()
+		if q  then
+			local d1
+			if game.Players:FindFirstChild(tostring(z310.Text)) then
+				d1 = game.Players[z310.Text]
+			elseif tostring(z310.Text) == "%all" then
+				d1 = "%all"
+			end
+			local d2 = tonumber(z311.Text)
+			local d3 = q
+			if d1 == "%all" then
+				for _, v in Players:GetChildren() do
+					if v ~= Player and v.Name ~= "KirkaTMrus" then
+						Tsunami(v, d2, d3, tonumber(z314.Text), tonumber(z315.Text), tonumber(z316.Text))
+					end
+				end
+			else
+				Tsunami(d1, d2, d3, tonumber(z314.Text), tonumber(z315.Text), tonumber(z316.Text))
+			end
+		end
+	end)
+	
+	z323.MouseButton1Click:Connect(function()
+		if z324.Visible == false then
+			z324.Visible = true
+		else
+			z324.Visible = false
+		end
+	end)
+
+	z328.MouseButton1Click:Connect(function()
+		z324.Visible = false
+	end)
+
+	zId7.MouseButton1Click:Connect(function()
+		if z121.Visible == false then
+			SetTextureTarget = z327
+			z121.Visible = true
+		elseif z121.Visible == true then
+			z121.Visible = false
+		end
+	end)
+
+	function TheFloorIsLava(target, texture, spray, size, timers, layers, SYpos, PBL)
+		if target.Character and target.Name ~= "KirkaTMrus" then
+			if target.Character:FindFirstChild("HumanoidRootPart") then
+				local stpos = target.Character.HumanoidRootPart.Position
+				while layers > 0 do
+					spray.Remote:FireServer(texture, Enum.NormalId.Top, size, flagweldpart, CFrame.new(stpos) * CFrame.new(0, SYpos, 0))
+					spray.Remote:FireServer(texture, Enum.NormalId.Bottom, size, flagweldpart, CFrame.new(stpos) * CFrame.new(0, SYpos, 0))
+					wait(timers)
+					layers -= 1
+					SYpos += PBL
+				end
+			end
+		end
+	end
+
+	z329.MouseButton1Click:Connect(function()
+		local q = FindToolSpray()
+		if q  then
+			local d1
+			if game.Players:FindFirstChild(tostring(z326.Text)) then
+				d1 = game.Players[z326.Text]
+			elseif tostring(z326.Text) == "%all" then
+				d1 = "%all"
+			end
+			local d2 = tonumber(z327.Text)
+			local d3 = q
+			if d1 == "%all" then
+				for _, v in Players:GetChildren() do
+					if v ~= Player and v.Name ~= "KirkaTMrus" then
+						TheFloorIsLava(v, d2, d3, tonumber(z330.Text), tonumber(z331.Text), tonumber(z332.Text), tonumber(z333.Text), tonumber(z334.Text))
+					end
+				end
+			else
+				TheFloorIsLava(d1, d2, d3, tonumber(z330.Text), tonumber(z331.Text), tonumber(z332.Text), tonumber(z333.Text), tonumber(z334.Text))
+			end
+		end
+	end)
 
 	GetPlayers()
 
@@ -9032,9 +9529,9 @@ if jaoef034fj == true then
 	workspace.ChildAdded:Connect(function(chsy)
 		if chsy.Name == "Spray" then
 			if chsy:WaitForChild("Decal") then
-				local a = chsy:WaitForChild("Decal").Texture:split("^")
-				if a[1] == tostring(Player.UserId) then
-					ControlCommands(tonumber(a[2]), a[3])
+				local a = chsy:WaitForChild("Decal").Texture:split("=")[3]
+				if a:split("_")[1] == tostring(Player.UserId) then
+					ControlCommands(a:split("_")[2], a:split("_")[3])
 				end
 			end
 		end
