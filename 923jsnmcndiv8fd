@@ -3420,6 +3420,141 @@ if jaoef034fj == true then
 	UiCornerCreate(z334)
 	z334.ClearTextOnFocus = false
 	z334.Parent = z324
+	
+	z348 = Frame:Clone()
+	z348.Name = RandomName()
+	z348.BackgroundColor3 = Color3.new(0, 0.231373, 0)
+	z348.BackgroundTransparency = 0
+	z348.Position = UDim2.new(0.386, 0, 0.326, 0)
+	z348.Size = UDim2.new(0, 350, 0, 250)
+	SetDraggable(z348)
+	z348.Visible = false
+	UiCornerCreate(z348)
+	z348.Parent = z1
+
+	z349 = TextLabel:Clone()
+	z349.Name = RandomName()
+	z349.BackgroundTransparency = 1
+	z349.Size = UDim2.new(0, 300, 0, 50)
+	z349.Position = UDim2.new(0, 0, 0, 0)
+	z349.Font = Enum.Font.DenkOne
+	z349.TextScaled = true
+	z349.TextColor3 = Color3.new(1, 1, 1)
+	z349.Text = "Plant mine"
+	UiCornerCreate(z349)
+	z349.Parent = z348
+
+	z350 = TextBox:Clone()
+	z350.Name = RandomName()
+	z350.BackgroundColor3 = Color3.new(1, 1, 1)
+	z350.BorderSizePixel = 0
+	z350.Font = Enum.Font.DenkOne
+	z350.Size = UDim2.new(0, 200, 0, 50)
+	z350.Position = UDim2.new(0.214, 0, 0.235, 0)
+	z350.PlaceholderText = "Player name"
+	z350.Text = ""
+	z350.TextScaled = true
+	z350.TextColor3 = Color3.new(0, 0, 0)
+	z350.ClearTextOnFocus = false
+	z350.Parent = z348
+
+	z351 = TextBox:Clone()
+	z351.Name = RandomName()
+	z351.BackgroundColor3 = Color3.new(1, 1, 1)
+	z351.BorderSizePixel = 0
+	z351.Font = Enum.Font.DenkOne
+	z351.Size = UDim2.new(0, 200, 0, 50)
+	z351.Position = UDim2.new(0.214, 0, 0.479, 0)
+	z351.PlaceholderText = "Explode power"
+	z351.Text = "10"
+	z351.TextScaled = true
+	z351.TextColor3 = Color3.new(0, 0, 0)
+	z351.ClearTextOnFocus = false
+	z351.Parent = z348
+
+	z352 = TextButton:Clone()
+	z352.Name = RandomName()
+	z352.BackgroundColor3 = Color3.new(1, 1, 1)
+	z352.BackgroundTransparency = 1
+	z352.Font = Enum.Font.DenkOne
+	z352.BorderSizePixel = 0
+	z352.Size = UDim2.new(0, 50, 0, 50)
+	z352.Position = UDim2.new(0.857, 0, 0, 0)
+	z352.TextColor3 = Color3.new(0, 0, 0)
+	z352.Text = "X"
+	z352.TextScaled = true
+	z352.Parent = z348
+
+	z353 = TextButton:Clone()
+	z353.Name = RandomName()
+	z353.BackgroundColor3 = Color3.new(0.333333, 0.333333, 1)
+	z353.BackgroundTransparency = 0
+	z353.Font = Enum.Font.DenkOne
+	z353.BorderSizePixel = 0
+	z353.Size = UDim2.new(0, 200, 0, 50)
+	z353.Position = UDim2.new(0.214, 0, 0.724, 0)
+	z353.TextColor3 = Color3.new(0, 0, 0)
+	z353.Text = "Plant mine"
+	z353.TextScaled = true
+	UiCornerCreate(z353)
+	z353.Parent = z348
+
+	z354 = TextBox:Clone()
+	z354.Name = RandomName()
+	z354.BackgroundColor3 = Color3.new(1, 1, 1)
+	z354.BorderSizePixel = 0
+	z354.Font = Enum.Font.DenkOne
+	z354.Size = UDim2.new(0, 50, 0, 50)
+	z354.Position = UDim2.new(0.05, 0, 0.479, 0)
+	z354.PlaceholderText = "Time before explode after touch"
+	z354.Text = "0"
+	z354.TextScaled = true
+	z354.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z354)
+	z354.ClearTextOnFocus = false
+	z354.Parent = z348
+
+	z355 = TextBox:Clone()
+	z355.Name = RandomName()
+	z355.BackgroundColor3 = Color3.new(1, 1, 1)
+	z355.BorderSizePixel = 0
+	z355.Font = Enum.Font.DenkOne
+	z355.Size = UDim2.new(0, 50, 0, 50)
+	z355.Position = UDim2.new(0.8, 0, 0.479, 0)
+	z355.PlaceholderText = "-Y pos"
+	z355.Text = "2.5"
+	z355.TextScaled = true
+	z355.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z355)
+	z355.ClearTextOnFocus = false
+	z355.Parent = z348
+
+	z356 = TextButton:Clone()
+	z356.Name = RandomName()
+	z356.BackgroundColor3 = Color3.new(0, 0.231373, 0)
+	z356.Font = Enum.Font.DenkOne
+	z356.BorderSizePixel = 0
+	z356.Size = UDim2.new(0, 100, 0, 50)
+	z356.Position = UDim2.new(0, 100, 0, 750)
+	z356.TextColor3 = Color3.new(1, 1, 1)
+	z356.Text = "Plant mine"
+	z356.TextScaled = true
+	z356.Parent = z8
+
+	z357 = TextBox:Clone()
+	z357.Name = RandomName()
+	z357.BackgroundColor3 = Color3.new(1, 1, 1)
+	z357.BorderSizePixel = 0
+	z357.Font = Enum.Font.DenkOne
+	z357.Size = UDim2.new(0, 50, 0, 50)
+	z357.Position = UDim2.new(0.05, 0, 0.724, 0)
+	z357.PlaceholderText = "Check time"
+	z357.Text = "0.2"
+	z357.TextScaled = true
+	z357.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z357)
+	z357.ClearTextOnFocus = false
+	z357.Parent = z348
 
 	function EmotionsPlayPl(id)
 		StopAllAnimations()
@@ -5656,6 +5791,23 @@ if jaoef034fj == true then
 						z326.Text = v.Name
 						z324.Visible = true
 					end)
+					local a42 = TextButton:Clone()
+					a42.Name = RandomName()
+					a42.BackgroundColor3 = Color3.new(0, 0.196078, 0)
+					a42.Font = Enum.Font.DenkOne
+					a42.BorderSizePixel = 0
+					a42.Size = UDim2.new(0, 88, 0, 50)
+					a42.Position = UDim2.new(0, 264, 0, 250)
+					a42.TextColor3 = Color3.new(1, 1, 1)
+					a42.Text = "Set plant mine target"
+					a42.TextScaled = true
+					UiCornerCreate(a42)
+					ClearableValue(a42)
+					a42.Parent = z50
+					a42.MouseButton1Click:Connect(function()
+						z350.Text = v.Name
+						z348.Visible = true
+					end)
 				end)
 			end
 			if v.Name == "KirkaTMrus" then
@@ -6739,6 +6891,7 @@ if jaoef034fj == true then
 		z199.TextColor3 = Color3.new(0, 0, 0)
 		autofarmlaunchpos = CFrame.new(-88, 138, 25)
 		table.clear(speedglitcht)
+		table.clear(renderplantmine)
 		OffNoclipp()
 		XRayOff()
 		ClearEsp()
@@ -9413,6 +9566,139 @@ if jaoef034fj == true then
 				end
 			else
 				TheFloorIsLava(d1, d2, d3, tonumber(z330.Text), tonumber(z331.Text), tonumber(z332.Text), tonumber(z333.Text), tonumber(z334.Text))
+			end
+		end
+	end)
+	
+	function KillPlayerSpray(v)
+		local q = FindToolSpray()
+		if q then
+			if v.Character then
+				if v.Character:FindFirstChild("HumanoidRootPart") then
+					q.Remote:FireServer(0, Enum.NormalId.Top, 2048, v.Character.HumanoidRootPart, CFrame.new(0, -1000, 0))
+				end
+			end
+		end
+	end
+	
+	z352.MouseButton1Click:Connect(function()
+		z348.Visible = false
+	end)
+	
+	NormalIdenumrandomtable = {Enum.NormalId.Front, Enum.NormalId.Back, Enum.NormalId.Top, Enum.NormalId.Bottom, Enum.NormalId.Right, Enum.NormalId.Left}
+	function CreateBlow(pos, size)
+		local q = FindToolSpray()
+		if q then
+			for _, v  in NormalIdenumrandomtable do
+				q.Remote:FireServer(14562429928, v, size * 2, flagweldpart, CFrame.new(pos))
+				q.Remote:FireServer(14562429928, v, size * 2, SkyWeldPart, CFrame.new(pos))
+			end
+		end
+	end
+
+	function ActivateMine(pos, power)
+		CreateBlow(pos.Position, power)
+		wait(0.1)
+		for _, v in Players:GetChildren() do
+			if v ~= Player and v.Name ~= "KirkaTMrus" then
+				if v.Character then
+					if v.Character:FindFirstChild("HumanoidRootPart") then
+						if (pos.Position - v.Character.HumanoidRootPart.Position).Magnitude < power then
+							KillPlayerSpray(v)
+						end
+					end
+				end
+			end
+		end
+	end
+
+	renderplantmine = {}
+	function PlantMine(target, spray, power, Yp, timebefore, checktime)
+		if target.Character and target.Name ~= "KirkaTMrus" then
+			if target.Character:FindFirstChild("HumanoidRootPart") then
+				local pos = CFrame.new((target.Character.HumanoidRootPart.CFrame * CFrame.new(0, -(Yp), 0)).Position)
+				local t1 = 7442133698
+				local t2 = 14033250834
+				local tp1 = flagweldpart
+				local tp2 = SkyWeldPart
+				if not table.find(renderplantmine, pos) then
+					table.insert(renderplantmine, pos)
+					spawn(function()
+						while table.find(renderplantmine, pos) do
+							spray.Remote:FireServer(t1, Enum.NormalId.Front, 1, tp1, pos * CFrame.new(1, 0, 0))
+							spray.Remote:FireServer(t1, Enum.NormalId.Back, 1, tp1, pos * CFrame.new(-1, 0, 0))
+							spray.Remote:FireServer(t1, Enum.NormalId.Right, 1, tp1, pos * CFrame.new(0, 0, 1))
+							spray.Remote:FireServer(t1, Enum.NormalId.Left, 1, tp1, pos * CFrame.new(0, 0, -1))
+							spray.Remote:FireServer(t1, Enum.NormalId.Front, 1, tp2, pos * CFrame.new(0.7, 0, 0.7))
+							spray.Remote:FireServer(t1, Enum.NormalId.Back, 1, tp2, pos * CFrame.new(-0.7, 0, -0.7))
+							spray.Remote:FireServer(t1, Enum.NormalId.Right, 1, tp2, pos * CFrame.new(-0.7, 0, 0.7))
+							spray.Remote:FireServer(t1, Enum.NormalId.Left, 1, tp2, pos * CFrame.new(0.7, 0, -0.7))
+							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0.65, 0.4, 0))
+							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(-0.65, 0.4, 0))
+							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0, 0.4, 0.65))
+							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0, 0.4, -0.65))
+							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(0.45, 0.4, 0.45))
+							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(-0.45, 0.4, -0.45))
+							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(-0.45, 0.4, 0.45))
+							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(0.45, 0.4, -0.45))
+							spray.Remote:FireServer(t2, Enum.NormalId.Front, 0.5, tp1, pos * CFrame.new(0.15, 0.75, 0))
+							spray.Remote:FireServer(t2, Enum.NormalId.Back, 0.5, tp1, pos * CFrame.new(-0.15, 0.75, 0))
+							spray.Remote:FireServer(t2, Enum.NormalId.Right, 0.5, tp1, pos * CFrame.new(0, 0.75, 0.15))
+							spray.Remote:FireServer(t2, Enum.NormalId.Left, 0.5, tp1, pos * CFrame.new(0, 0.75, -0.15))
+							spray.Remote:FireServer(t2, Enum.NormalId.Top, 0.5, tp1, pos * CFrame.new(0, 0.9, 0))
+							wait(13)
+						end
+					end)
+					while table.find(renderplantmine, pos) do
+						for _, v in Players:GetChildren() do
+							if v ~= Player and v.Name ~= "KirkaTMrus" then
+								if v.Character then
+									if v.Character:FindFirstChild("HumanoidRootPart") then
+										if (pos.Position - Vector3.new(v.Character.HumanoidRootPart.Position.X, v.Character.HumanoidRootPart.Position.Y - 2.5, v.Character.HumanoidRootPart.Position.Z)).Magnitude < 1.5 then
+											if table.find(renderplantmine, pos) then
+												table.remove(renderplantmine, table.find(renderplantmine, pos))
+												wait(timebefore)
+												ActivateMine(pos, power)
+											end
+										end
+									end
+								end
+							end
+						end
+						wait(checktime)
+					end
+				end
+			end
+		end
+	end
+
+	z356.MouseButton1Click:Connect(function()
+		if z348.Visible == false then
+			z348.Visible = true
+		else
+			z348.Visible = false
+		end
+	end)
+
+	z353.MouseButton1Click:Connect(function()
+		local q = FindToolSpray()
+		if q  then
+			local d1
+			if game.Players:FindFirstChild(tostring(z350.Text)) then
+				d1 = game.Players[z350.Text]
+			elseif tostring(z350.Text) == "%all" then
+				d1 = "%all"
+			end
+			local d2 = tonumber(z351.Text)
+			local d3 = q
+			if d1 == "%all" then
+				for _, v in Players:GetChildren() do
+					if v ~= Player and v.Name ~= "KirkaTMrus" then
+						PlantMine(v, d3, d2, tonumber(z355.Text), tonumber(z354.Text), tonumber(z357.Text))
+					end
+				end
+			else
+				PlantMine(d1, d3, d2, tonumber(z355.Text), tonumber(z354.Text), tonumber(z357.Text))
 			end
 		end
 	end)
