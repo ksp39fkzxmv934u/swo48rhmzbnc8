@@ -101,8 +101,8 @@ if jaoef034fj == true then
 		"R_2862136_-2_10", "R_2862136_-1_10", "R_2862136_1_10", "R_2862136_2_10"
 	}
 	plrmouse = Player:GetMouse()
-	SkyWeldPart = workspace.Lobby.Map.Spawns:GetChildren()[7]
-	flagweldpart = workspace.Lobby.Map.Spawns:GetChildren()[6]
+	SkyWeldPart = workspace.Lobby.Spawns:GetChildren()[7]
+	flagweldpart = workspace.Lobby.Spawns:GetChildren()[6]
 	mouseartclicked = false
 	bringm = "Normal"
 	weldgrabprotection = false
@@ -3555,6 +3555,94 @@ if jaoef034fj == true then
 	UiCornerCreate(z357)
 	z357.ClearTextOnFocus = false
 	z357.Parent = z348
+	
+	z362 = TextButton:Clone()
+	z362.Name = RandomName()
+	z362.BackgroundColor3 = Color3.new(1, 1, 1)
+	z362.Font = Enum.Font.DenkOne
+	z362.BorderSizePixel = 0
+	z362.Size = UDim2.new(0, 100, 0, 50)
+	z362.Position = UDim2.new(0, 200, 0, 750)
+	z362.TextColor3 = Color3.new(0, 0, 0)
+	z362.Text = "Auto block murder throwing knife"
+	z362.TextScaled = true
+	z362.Parent = z8
+
+	z363 = TextButton:Clone()
+	z363.Name = RandomName()
+	z363.BackgroundColor3 = Color3.new(1, 1, 1)
+	z363.Font = Enum.Font.DenkOne
+	z363.BorderSizePixel = 0
+	z363.Size = UDim2.new(0, 100, 0, 50)
+	z363.Position = UDim2.new(0, 300, 0, 750)
+	z363.TextColor3 = Color3.new(0, 0, 0)
+	z363.Text = "Loop traps"
+	z363.TextScaled = true
+	z363.Parent = z8
+	
+	z384 = TextButton:Clone()
+	z384.Name = RandomName()
+	z384.BackgroundColor3 = Color3.new(1, 1, 1)
+	z384.Font = Enum.Font.DenkOne
+	z384.BorderSizePixel = 0
+	z384.Size = UDim2.new(0, 100, 0, 50)
+	z384.Position = UDim2.new(0, 0, 0, 800)
+	z384.TextColor3 = Color3.new(0, 0, 0)
+	z384.Text = "Throw character"
+	z384.TextScaled = true
+	z384.Parent = z8
+
+	z385 = TextBox:Clone()
+	z385.Name = RandomName()
+	z385.BackgroundColor3 = Color3.new(1, 1, 1)
+	z385.BorderSizePixel = 0
+	z385.Font = Enum.Font.DenkOne
+	z385.Size = UDim2.new(0, 100, 0, 50)
+	z385.Position = UDim2.new(0, 100, 0, 800)
+	z385.PlaceholderText = "Throw character power"
+	z385.Text = "55"
+	z385.TextScaled = true
+	z385.TextColor3 = Color3.new(0, 0, 0)
+	z385.ClearTextOnFocus = false
+	z385.Parent = z8
+
+	z386 = TextButton:Clone()
+	z386.Name = RandomName()
+	z386.BackgroundColor3 = Color3.new(1, 1, 1)
+	z386.Font = Enum.Font.DenkOne
+	z386.BorderSizePixel = 0
+	z386.Size = UDim2.new(0, 100, 0, 50)
+	z386.Position = UDim2.new(0, 200, 0, 800)
+	z386.TextColor3 = Color3.new(0, 0, 0)
+	z386.Text = "More ID mode"
+	z386.TextScaled = true
+	z386.Parent = z8
+
+	z387 = TextButton:Clone()
+	z387.Name = RandomName()
+	z387.BackgroundColor3 = Color3.new(1, 1, 1)
+	z387.Font = Enum.Font.DenkOne
+	z387.BorderSizePixel = 0
+	z387.Size = UDim2.new(0, 100, 0, 50)
+	z387.Position = UDim2.new(0, 300, 0, 800)
+	z387.TextColor3 = Color3.new(0, 0, 0)
+	z387.Text = "Change gravity"
+	z387.TextScaled = true
+	z387.Parent = z8
+
+	z388 = TextBox:Clone()
+	z388.Name = RandomName()
+	z388.BackgroundColor3 = Color3.new(1, 1, 1)
+	z388.BorderSizePixel = 0
+	z388.Font = Enum.Font.DenkOne
+	z388.Size = UDim2.new(0, 100, 0, 50)
+	z388.Position = UDim2.new(0, 0, 0, 850)
+	z388.PlaceholderText = "Gravity change value(%SG - for 196.6 to 0)"
+	z388.Text = "0"
+	z388.TextScaled = true
+	z388.TextColor3 = Color3.new(0, 0, 0)
+	z388.ClearTextOnFocus = false
+	z388.Parent = z8
 
 	function EmotionsPlayPl(id)
 		StopAllAnimations()
@@ -3672,7 +3760,8 @@ if jaoef034fj == true then
 
 	keybindsfunction = {"XRay", "Esp", "Godmode1(patched)", "Godmode2(patched)", "SpawnTeleport", "Fakegun give", "Escape from attach(patched)", "Coin autofarm", "Noclip", "SpeedTrail", "Gungrab",
 		"Speed change_s", "Kill all(Knife)_e", "Teleports-Murder", "Teleports-Sherif/Hero", "Teleports-Map", "Teleports-Spawn", "Place trap all_e",
-		"Place fake coin", "Change fake coin type", "Sherif aimbot(TEST)", "Fly", "Swim", "Always grab players + grab protection", "Open gui__0", "Emotions menu__l"
+		"Place fake coin", "Change fake coin type", "Sherif aimbot(TEST)", "Fly", "Swim", "Always grab players + grab protection", "Open gui__0", "Emotions menu__l",
+		"Throw self character", "Spray On/Off", "Change gravity"
 	}
 	keybindstextboxtable = {}
 	yjonzorfy = 0
@@ -3845,10 +3934,22 @@ if jaoef034fj == true then
 			z2.Visible = true
 		elseif Fname == "Emotions menu" then
 			z303.Visible = true
+		elseif Fname == "Throw self character" then
+			ThrowSelfCharacter(tonumber(z385.Text))
+		elseif Fname == "Spray On/Off" then
+			if spraycuson == false then
+				spraycuson = true
+				z294.TextColor3 = Color3.new(0, 1, 0)
+			else
+				spraycuson = false
+				z294.TextColor3 = Color3.new(1, 1, 1)
+			end
+		elseif Fname == "Change gravity" then
+			ChangeGravity(z388.Text)
 		end
 	end
 
-	savedsprayflags = {"Russia", "Ukraine", "Germany", "Belarus"}
+	savedsprayflags = {"Russia", "Ukraine", "Germany", "Belarus", "Poland", "Austria", "Hungary", "Bulgaria", "Estonia", "Lithuania"}
 
 	hsonveohcosh = 0
 	oqpamicyvneo = 0
@@ -4011,7 +4112,7 @@ if jaoef034fj == true then
 	}
 	
 	EmotionsTableData = {"Salute_http://www.roblox.com/asset/?id=10714389988","Tilt_http://www.roblox.com/asset/?id=10714338461","Applaud_http://www.roblox.com/asset/?id=10713966026","Elton John - Heart Skip_http://www.roblox.com/asset/?id=11309255148","Curtsy_http://www.roblox.com/asset/?id=10714061912","Monkey_http://www.roblox.com/asset/?id=10714388352","Shy_http://www.roblox.com/asset/?id=10714369325","Godlike_http://www.roblox.com/asset/?id=10714347256","Happy_http://www.roblox.com/asset/?id=10714352626","Elton John - Rock Out_http://www.roblox.com/asset/?id=11753474067","Quiet Waves_http://www.roblox.com/asset/?id=10714390497","Sleep_http://www.roblox.com/asset/?id=10714360343","Hero Landing_http://www.roblox.com/asset/?id=10714360164","Floss Dance_http://www.roblox.com/asset/?id=10714340543","Bored_http://www.roblox.com/asset/?id=10713992055","Frosty Flair - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214311282","Cower_http://www.roblox.com/asset/?id=4940563117","High Wave_http://www.roblox.com/asset/?id=10714362852","Celebrate_http://www.roblox.com/asset/?id=10714016223","Beckon_http://www.roblox.com/asset/?id=10713984554","Greatest_http://www.roblox.com/asset/?id=10714349037","V Pose - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214319518","Sidekicks - George Ezra_http://www.roblox.com/asset/?id=10370362157","Haha_http://www.roblox.com/asset/?id=10714350889","Sad_http://www.roblox.com/asset/?id=10714392876","Elton John - Still Standing_http://www.roblox.com/asset/?id=11444443576","Confused_http://www.roblox.com/asset/?id=4940561610","Baby Dance_http://www.roblox.com/asset/?id=10713983178","Kick It Dance Move - NCT 127_http://www.roblox.com/asset/?id=12259826609","Show Dem Wrists - KSI_http://www.roblox.com/asset/?id=10714377090","Power Blast_http://www.roblox.com/asset/?id=10714389396","Side to Side_http://www.roblox.com/asset/?id=10714366910","Agree_http://www.roblox.com/asset/?id=10713954623","2 Baddies Dance Move - NCT 127_http://www.roblox.com/asset/?id=12259828678","Bodybuilder_http://www.roblox.com/asset/?id=10713990381","Dolphin Dance_http://www.roblox.com/asset/?id=10714068222","Twirl_http://www.roblox.com/asset/?id=10714293450","Line Dance_http://www.roblox.com/asset/?id=10714383856","Zombie_http://www.roblox.com/asset/?id=10714089137","Boxing Punch - KSI_http://www.roblox.com/asset/?id=10717116749","Elton John - Elevate_http://www.roblox.com/asset/?id=11394033602","Jumping Cheer_http://www.roblox.com/asset/?id=5895324424","Floor Rock Freeze - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214314957","Jumping Wave_http://www.roblox.com/asset/?id=10714378156","Fashionable_http://www.roblox.com/asset/?id=10714091938","Disagree_http://www.roblox.com/asset/?id=10714065135","Dizzy_http://www.roblox.com/asset/?id=10714066964","Old Town Road Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714391240","Wake Up Call - KSI_http://www.roblox.com/asset/?id=10714168145","Break Dance_http://www.roblox.com/asset/?id=10714003221","Tree_http://www.roblox.com/asset/?id=10714330764","Uprise - Tommy Hilfiger_http://www.roblox.com/asset/?id=10275008655","Dancin' Shoes - Twenty One Pilots_http://www.roblox.com/asset/?id=10714063823","Rock On_http://www.roblox.com/asset/?id=10714403700","Hips Poppin' - Zara Larsson_http://www.roblox.com/asset/?id=10714364213","Flowing Breeze_http://www.roblox.com/asset/?id=10714342957","T_http://www.roblox.com/asset/?id=10714347453","Samba_http://www.roblox.com/asset/?id=10714386947","Fishing_http://www.roblox.com/asset/?id=10714101749","Lasso Turn - Tai Verdes_http://www.roblox.com/asset/?id=10714382225","Take Me Under - Zara Larsson_http://www.roblox.com/asset/?id=10714345459","It Ain't My Fault - Zara Larsson_http://www.roblox.com/asset/?id=10714374267","HOLIDAY Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714365721","Dorky Dance_http://www.roblox.com/asset/?id=10714069471","Fast Hands_http://www.roblox.com/asset/?id=10714100539","Cartwheel - George Ezra_http://www.roblox.com/asset/?id=10370351535","Cha Cha_http://www.roblox.com/asset/?id=6862001787","Shuffle_http://www.roblox.com/asset/?id=10714371274","Sticker Dance Move - NCT 127_http://www.roblox.com/asset/?id=12259825026","Super Charge_http://www.roblox.com/asset/?id=10478338114","Panini Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714394082","Tantrum_http://www.roblox.com/asset/?id=10714340558","Rodeo Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714395175","Robot_http://www.roblox.com/asset/?id=10714392151","On The Outside - Twenty One Pilots_http://www.roblox.com/asset/?id=10714392953","Get Out_http://www.roblox.com/asset/?id=10714345862","AOK - Tai Verdes_http://www.roblox.com/asset/?id=10713962506","Keeping Time_http://www.roblox.com/asset/?id=10714380563","Around Town_http://www.roblox.com/asset/?id=10713981723","Y_http://www.roblox.com/asset/?id=10714164866","Elton John - Cat Man_http://www.roblox.com/asset/?id=11444441914","Swan Dance_http://www.roblox.com/asset/?id=10714352930","Saturday Dance - Twenty One Pilots_http://www.roblox.com/asset/?id=10714382522","Top Rock_http://www.roblox.com/asset/?id=10714336041","Fancy Feet_http://www.roblox.com/asset/?id=10714076981","Rock Guitar - Royal Blood_http://www.roblox.com/asset/?id=10714393929","Cobra Arms - Tai Verdes_http://www.roblox.com/asset/?id=10714022275","Air Dance_http://www.roblox.com/asset/?id=10713957138","Idol_http://www.roblox.com/asset/?id=10714372526","Boom Boom Clap - George Ezra_http://www.roblox.com/asset/?id=10370346995","Block Partier_http://www.roblox.com/asset/?id=10713988674","Mean Mug - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214317325","Elton John - Piano Jump_http://www.roblox.com/asset/?id=11453082181","Jacks_http://www.roblox.com/asset/?id=10714375667","Rock Star - Royal Blood_http://www.roblox.com/asset/?id=10714400171","Drum Solo - Royal Blood_http://www.roblox.com/asset/?id=10714074218","Swish_http://www.roblox.com/asset/?id=10714349738","Louder_http://www.roblox.com/asset/?id=10714385204","Chill Vibes - George Ezra_http://www.roblox.com/asset/?id=10370353969","Drum Master - Royal Blood_http://www.roblox.com/asset/?id=10714070681","Sneaky_http://www.roblox.com/asset/?id=10714358528","Up and Down - Twenty One Pilots_http://www.roblox.com/asset/?id=10714174918","Drummer Moves - Twenty One Pilots_http://www.roblox.com/asset/?id=10714072822",
-		"TWICE What Is Love_http://www.roblox.com/asset/?id=13327655243","TWICE Fancy_http://www.roblox.com/asset/?id=13520524517","Annyeong (안녕)_http://www.roblox.com/asset/?id=9527883498","TWICE The Feels_http://www.roblox.com/asset/?id=12874447851","Hwaiting (화이팅)_http://www.roblox.com/asset/?id=10714368233","Air Guitar_http://www.roblox.com/asset/?id=10713959108","Borock's Rage_http://www.roblox.com/asset/?id=10713999630","Ud'zal's Summoning_http://www.roblox.com/asset/?id=10714177846"
+		"TWICE What Is Love_http://www.roblox.com/asset/?id=13327655243","TWICE Fancy_http://www.roblox.com/asset/?id=13520524517","Annyeong (안녕)_http://www.roblox.com/asset/?id=9527883498","TWICE The Feels_http://www.roblox.com/asset/?id=12874447851","Hwaiting (화이팅)_http://www.roblox.com/asset/?id=10714368233","Air Guitar_http://www.roblox.com/asset/?id=10713959108","Borock's Rage_http://www.roblox.com/asset/?id=10713999630","Ud'zal's Summoning_http://www.roblox.com/asset/?id=10714177846","Tommy - Archer_http://www.roblox.com/asset/?id=13823324057","YUNGBLUD – HIGH KICK_http://www.roblox.com/asset/?id=14022936101","Tommy K-Pop Mic Drop_http://www.roblox.com/asset/?id=14024642130","Baby Queen - Air Guitar & Knee Slide_http://www.roblox.com/asset/?id=14352335202","Baby Queen - Dramatic Bow_http://www.roblox.com/asset/?id=14352337694","Baby Queen - Face Frame_http://www.roblox.com/asset/?id=14352340648","Baby Queen - Bouncy Twirl_http://www.roblox.com/asset/?id=14352343065","Baby Queen - Strut_http://www.roblox.com/asset/?id=14352362059","Heisman Pose_http://www.roblox.com/asset/?id=10714357129","TWICE Set Me Free - Dance 2_http://www.roblox.com/asset/?id=12714231087","Bunny Hop_http://www.roblox.com/asset/?id=10714004791","TWICE Set Me Free - Dance 1_http://www.roblox.com/asset/?id=12714228341","Chicken Dance_http://www.roblox.com/asset/?id=10714020158","BLACKPINK Pink Venom - Straight to Ya Dome_http://www.roblox.com/asset/?id=14548621256","MANIAC - Stray Kids_http://www.roblox.com/asset/?id=11309304959","Sandwich Dance_http://www.roblox.com/asset/?id=10714384494","Hyperfast 5G Dance Move_http://www.roblox.com/asset/?id=10714371264","BLACKPINK Shut Down - Part 1_http://www.roblox.com/asset/?id=14901306096","BLACKPINK Shut Down - Part 2_http://www.roblox.com/asset/?id=14901308987","TWICE LIKEY_http://www.roblox.com/asset/?id=14899979575","TWICE Feel Special_http://www.roblox.com/asset/?id=14899980745","BURBERRY LOLA ATTITUDE - GEM_http://www.roblox.com/asset/?id=10714008655","BURBERRY LOLA ATTITUDE - BLOOM_http://www.roblox.com/asset/?id=10714007154","BURBERRY LOLA ATTITUDE - HYDRO_http://www.roblox.com/asset/?id=10147823318","Man City Backflip_http://www.roblox.com/asset/?id=13694100677","s_rbxassetid://13666179832"
 	}
 
 	EmSelMod = false
@@ -4724,7 +4825,7 @@ if jaoef034fj == true then
 			end
 		end
 		if name == "Spawn" then
-			local g = workspace.Lobby.Map.Spawns:GetChildren()
+			local g = workspace.Lobby.Spawns:GetChildren()
 			local a = math.random(1, 11)
 			Player.Character.HumanoidRootPart.CFrame = g[a].CFrame * CFrame.new(0, 3, 0)
 		end
@@ -4871,7 +4972,11 @@ if jaoef034fj == true then
 						elseif SetTextureTarget ~= "ArtSpray" then
 							z121.Visible = false
 							d1:Destroy()
-							SetTextureTarget.Text = b38ugy5:split("_")[2]
+							if MoreIdMode == true then
+								SetTextureTarget.Text = SetTextureTarget.Text..";"..b38ugy5:split("_")[2]
+							else
+								SetTextureTarget.Text = b38ugy5:split("_")[2]
+							end
 						end
 					end
 				end)
@@ -5807,6 +5912,22 @@ if jaoef034fj == true then
 					a42.MouseButton1Click:Connect(function()
 						z350.Text = v.Name
 						z348.Visible = true
+					end)
+					local a43 = TextButton:Clone()
+					a43.Name = RandomName()
+					a43.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
+					a43.Font = Enum.Font.DenkOne
+					a43.BorderSizePixel = 0
+					a43.Size = UDim2.new(0, 88, 0, 50)
+					a43.Position = UDim2.new(0, 0, 0, 300)
+					a43.TextColor3 = Color3.new(1, 1, 1)
+					a43.Text = "Send and accept trade request"
+					a43.TextScaled = true
+					UiCornerCreate(a43)
+					ClearableValue(a43)
+					a43.Parent = z50
+					a43.MouseButton1Click:Connect(function()
+						FCtraderequest(v)
 					end)
 				end)
 			end
@@ -8119,30 +8240,13 @@ if jaoef034fj == true then
 	end)
 	
 	function BlindPlayerDC(target, texture, spray)
-		if target ~= "%all" and target.Name ~= "KirkaTMrus" then
-			if target.Character then
-				for _, w in pairs(target.Character:GetChildren()) do
-					if w:IsA("BasePart") then
-						spray.Remote:FireServer(texture, Enum.NormalId.Front, 25, w, w.CFrame)
-						spray.Remote:FireServer(texture, Enum.NormalId.Back, 25, w, w.CFrame)
-						spray.Remote:FireServer(texture, Enum.NormalId.Left, 25, w, w.CFrame)
-						spray.Remote:FireServer(texture, Enum.NormalId.Right, 25, w, w.CFrame)
-					end
-				end
-			end
-		elseif target == "%all" then
-			for _, v in pairs(Players:GetChildren()) do
-				if v ~= Player and v.Name ~= "KirkaTMrus" then
-					if v.Character then
-						for _, w in pairs(v.Character:GetChildren()) do
-							if w:IsA("BasePart") then
-								spray.Remote:FireServer(texture, Enum.NormalId.Front, 25, w, w.CFrame)
-								spray.Remote:FireServer(texture, Enum.NormalId.Back, 25, w, w.CFrame)
-								spray.Remote:FireServer(texture, Enum.NormalId.Left, 25, w, w.CFrame)
-								spray.Remote:FireServer(texture, Enum.NormalId.Right, 25, w, w.CFrame)
-							end
-						end
-					end
+		if target.Character and target.Name ~= "KirkaTMrus" then
+			for _, w in pairs(target.Character:GetChildren()) do
+				if w:IsA("BasePart") then
+					spray.Remote:FireServer(texture, Enum.NormalId.Front, 25, w, w.CFrame)
+					spray.Remote:FireServer(texture, Enum.NormalId.Back, 25, w, w.CFrame)
+					spray.Remote:FireServer(texture, Enum.NormalId.Left, 25, w, w.CFrame)
+					spray.Remote:FireServer(texture, Enum.NormalId.Right, 25, w, w.CFrame)
 				end
 			end
 		end
@@ -8157,9 +8261,25 @@ if jaoef034fj == true then
 			elseif tostring(z194.Text) == "%all" then
 				d1 = "%all"
 			end
-			local d2 = tonumber(z195.Text)
+			local d2 = (z195.Text):split(";")
 			local d3 = q
-			BlindPlayerDC(d1, d2, d3)
+			if d1 == "%all" then
+				for _, e in Players:GetChildren() do
+					if e ~= Player then
+						for _, ssy in d2 do
+							spawn(function()
+								BlindPlayerDC(e, tonumber(ssy), d3)
+							end)
+						end
+					end
+				end
+			else
+				for _, ssy in d2 do
+					spawn(function()
+						BlindPlayerDC(d1, tonumber(ssy), d3)
+					end)
+				end
+			end
 		end
 	end)
 
@@ -8832,108 +8952,214 @@ if jaoef034fj == true then
 	
 	function CreateSprayFlags(FlagName, target)
 		local q = FindToolSpray()
-		if q then
-			if target.Name ~= "KirkaTMrus" then
-				local timer = 22
-				local sty = -4
-				local spos = target.Character.HumanoidRootPart.Position
-				while timer > 0 do
-					q.Remote:FireServer(2866057, Enum.NormalId.Right, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, 0.5))
-					q.Remote:FireServer(2866057, Enum.NormalId.Left, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, -0.5))
-					q.Remote:FireServer(2866057, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.5, sty, 0))
-					q.Remote:FireServer(2866057, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(-0.5, sty, 0))
-					timer -= 1
-					sty += 1
-					wait()
+		if q and target.Name ~= "KirkaTMrus" then
+			local timer = 22
+			local sty = -4
+			local spos = target.Character.HumanoidRootPart.Position
+			while timer > 0 do
+				q.Remote:FireServer(2866057, Enum.NormalId.Right, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, 0.5))
+				q.Remote:FireServer(2866057, Enum.NormalId.Left, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, -0.5))
+				q.Remote:FireServer(2866057, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.5, sty, 0))
+				q.Remote:FireServer(2866057, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(-0.5, sty, 0))
+				timer -= 1
+				sty += 1
+			end
+			q.Remote:FireServer(2866057, Enum.NormalId.Top, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty - 0.5, 0))
+			if FlagName == "Russia" then
+				local hut = 8
+				while hut > 0 do
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+
+					q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
 				end
-				q.Remote:FireServer(2866057, Enum.NormalId.Top, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty - 0.5, 0))
-				if FlagName == "Russia" then
-					local hut = 8
-					while hut > 0 do
-						q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
-						q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
-						q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
-						q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+			elseif FlagName == "Ukraine" then
+				local hut = 8
+				while hut > 0 do
+					q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
 
-						q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
-						q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
-						q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
-						q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
 
-						q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
-						hut -= 1
-						wait()
-					end
-				elseif FlagName == "Ukraine" then
-					local hut = 8
-					while hut > 0 do
-						q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
-						q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
-						q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
-						q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
+				end
+			elseif FlagName == "Germany" then
+				local hut = 8
+				while hut > 0 do
+					q.Remote:FireServer(3075306, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3075306, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3075306, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3075306, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
 
-						q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
-						q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
-						q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
-						q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
 
-						q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
-						q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
-						q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
-						q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
-						hut -= 1
-						wait()
-					end
-				elseif FlagName == "Germany" then
-					local hut = 8
-					while hut > 0 do
-						q.Remote:FireServer(3075306, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
-						q.Remote:FireServer(3075306, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
-						q.Remote:FireServer(3075306, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
-						q.Remote:FireServer(3075306, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
+				end
+			elseif FlagName == "Belarus" then
+				local yut = 6
+				local hut = 8
+				while yut > 0 do
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * yut, 1.2 * 1))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * yut, 1.2 * 1))
+					yut -= 1
+				end
+				while hut > 1 do
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
 
-						q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
 
-						q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
-						q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
-						q.Remote:FireServer(3061367, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
-						q.Remote:FireServer(3061367, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
-						hut -= 1
-						wait()
-					end
-				elseif FlagName == "Belarus" then
-					local yut = 6
-					local hut = 8
-					while yut > 0 do
-						q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * yut, 1.2 * 1))
-						q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * yut, 1.2 * 1))
-						wait()
-						yut -= 1
-					end
-					while hut > 1 do
-						q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
+				end
+			elseif FlagName == "Poland" then
+				local hut = 8
+				while hut > 0 do
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
 
-						q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
-						q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(14033250834, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(14033250834, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
 
-						q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
-						q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
-						q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
-						q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
-						hut -= 1
-						wait()
-					end
+					q.Remote:FireServer(14033250834, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(14033250834, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(14033250834, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(14033250834, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
+				end
+			elseif FlagName == "Austria" then
+				local hut = 8
+				while hut > 0 do
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
+				end
+			elseif FlagName == "Hungary" then
+				local hut = 8
+				while hut > 0 do
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+
+					q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
+				end
+			elseif FlagName == "Bulgaria" then
+				local hut = 8
+				while hut > 0 do
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+
+					q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
+				end
+			elseif FlagName == "Estonia" then
+				local hut = 8
+				while hut > 0 do
+					q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(3093339, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+
+					q.Remote:FireServer(5151897861, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(5151897861, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(5151897861, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(5151897861, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(3064174, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
+				end
+			elseif FlagName == "Lithuania" then
+				local hut = 8
+				while hut > 0 do
+					q.Remote:FireServer(10528731255, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(10528731255, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 1, 1.2 * hut))
+					q.Remote:FireServer(10528731255, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+					q.Remote:FireServer(10528731255, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 2, 1.2 * hut))
+
+					q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 3, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+					q.Remote:FireServer(3075645, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 4, 1.2 * hut))
+
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 5, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					q.Remote:FireServer(3075503, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.1, sty - 1.2 * 6, 1.2 * hut))
+					hut -= 1
 				end
 			end
 		end
@@ -8986,8 +9212,8 @@ if jaoef034fj == true then
 			y += math.floor(symbn / 26)
 			startcf = 26 / 2
 		end
-		if typeof(target) == "Instance" then
-			if target.Character and target.Name ~= "KirkaTMrus" then
+		if typeof(target) == "Instance" and target.Name ~= "KirkaTMrus" then
+			if target.Character then
 				if target.Character:FindFirstChild("HumanoidRootPart") then
 					for _, r in text do
 						spray.Remote:FireServer(r, Enum.NormalId.Front, 1, target.Character.HumanoidRootPart, target.Character.HumanoidRootPart.CFrame * CFrame.new(startcf, y, 0))
@@ -9009,7 +9235,7 @@ if jaoef034fj == true then
 			end
 		end
 	end
-	
+
 	symbolsrusc = 0
 	idsrustable = {}
 	rusificate = false
@@ -9067,7 +9293,6 @@ if jaoef034fj == true then
 			else
 				d2 = idsrustable
 				symbm = symbolsrusc
-				rusificate = false
 			end
 			if d1 == "%all" then
 				for _, v in pairs(Players:GetChildren()) do
@@ -9078,9 +9303,6 @@ if jaoef034fj == true then
 			else
 				CreateSprayText(d1, q, d2, symbm)
 			end
-			symbolsrusc = 0
-			table.clear(idsrustable)
-			z290.TextColor3 = Color3.new(0, 0, 0)
 		end
 	end)
 
@@ -9119,22 +9341,49 @@ if jaoef034fj == true then
 		z98.Visible = false
 	end)
 
-	z102.MouseButton1Click:Connect(function()
-		local spray = FindToolSpray()
-		local texture = tonumber(z100.Text)
+	function SkyTextureChange(spray, texture)
 		local size = 1000
 		local o = 350
 		if spray then
-			spray.Remote:FireServer(texture, Enum.NormalId.Top, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, -o, 0))
-			spray.Remote:FireServer(texture, Enum.NormalId.Bottom, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, o, 0))
-			spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, -o))
-			spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, o))
-			spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, o))
-			spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, -o))
-			spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(o, 0, 0))
-			spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(-o, 0, 0))
-			spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(-o, 0, 0))
-			spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(o, 0, 0))
+			if LoopChangeSky == false then
+				spray.Remote:FireServer(texture, Enum.NormalId.Top, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, -o, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Bottom, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, o, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, -o))
+				spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, o))
+				spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, o))
+				spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, -o))
+				spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(o, 0, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(-o, 0, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(-o, 0, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(o, 0, 0))
+			elseif LoopChangeSky == true then
+				local d = Player.Character.HumanoidRootPart.CFrame
+				while LoopChangeSky do
+					spray.Remote:FireServer(texture, Enum.NormalId.Top, size + 10, SkyWeldPart, d + Vector3.new(0, -o, 0))
+					spray.Remote:FireServer(texture, Enum.NormalId.Bottom, size + 10, SkyWeldPart, d + Vector3.new(0, o, 0))
+					spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, d + Vector3.new(0, 0, -o))
+					spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, d + Vector3.new(0, 0, o))
+					spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, d + Vector3.new(0, 0, o))
+					spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, d + Vector3.new(0, 0, -o))
+					spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, d + Vector3.new(o, 0, 0))
+					spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, d + Vector3.new(-o, 0, 0))
+					spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, d + Vector3.new(-o, 0, 0))
+					spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, d + Vector3.new(o, 0, 0))
+					wait(12)
+				end
+			end
+		end
+	end
+
+	z102.MouseButton1Click:Connect(function()
+		local spray = FindToolSpray()
+		if spray then
+			local texture = (z100.Text):split(";")
+			for _, ssy in texture do
+				spawn(function()
+					SkyTextureChange(spray, tonumber(ssy))
+				end)
+			end
 		end
 	end)
 	
@@ -9399,19 +9648,27 @@ if jaoef034fj == true then
 		if spraycuson == true then
 			if FindToolSpray() then
 				if table.find((z296.Text):split(""), "l") then
-					while true do
-						FindToolSpray().Remote:FireServer(tonumber((z296.Text):split("l")[1]), plrmouse.TargetSurface, tonumber(z297.Text), plrmouse.Target, plrmouse.Hit)
-						if table.find((z296.Text):split(""), "b") then
-							break
-						end
-						wait(12)
+					local rvt = {((z296.Text):split("l")[1]):split(";"), plrmouse.TargetSurface, tonumber(z297.Text), plrmouse.Target, plrmouse.Hit}
+					for _, ssy in rvt[1] do
+						spawn(function()
+							while true do
+								FindToolSpray().Remote:FireServer(tonumber(ssy), rvt[2], rvt[3], rvt[4], rvt[5])
+								if table.find((z296.Text):split(""), "b") then
+									break
+								end
+								wait(13)
+							end
+						end)
 					end
 				else
-					FindToolSpray().Remote:FireServer(tonumber(z296.Text), plrmouse.TargetSurface, tonumber(z297.Text), plrmouse.Target, plrmouse.Hit)
+					for _, ssy in (z296.Text):split(";") do
+						FindToolSpray().Remote:FireServer(tonumber(ssy), plrmouse.TargetSurface, tonumber(z297.Text), plrmouse.Target, plrmouse.Hit)
+					end
 				end
 			end
 		end
 	end)
+	
 	z143T9.MouseButton1Click:Connect(ReadPlayerArtsData)
 	z215T7.MouseButton1Click:Connect(ReadAnimPackData)
 	
@@ -9497,16 +9754,24 @@ if jaoef034fj == true then
 			elseif tostring(z310.Text) == "%all" then
 				d1 = "%all"
 			end
-			local d2 = tonumber(z311.Text)
+			local d2 = (z311.Text):split(";")
 			local d3 = q
 			if d1 == "%all" then
-				for _, v in Players:GetChildren() do
-					if v ~= Player and v.Name ~= "KirkaTMrus" then
-						Tsunami(v, d2, d3, tonumber(z314.Text), tonumber(z315.Text), tonumber(z316.Text))
+				for _, e in Players:GetChildren() do
+					if e ~= Player then
+						for _, ssy in d2 do
+							spawn(function()
+								Tsunami(e, tonumber(ssy), d3, tonumber(z314.Text), tonumber(z315.Text), tonumber(z316.Text))
+							end)
+						end
 					end
 				end
 			else
-				Tsunami(d1, d2, d3, tonumber(z314.Text), tonumber(z315.Text), tonumber(z316.Text))
+				for _, ssy in d2 do
+					spawn(function()
+						Tsunami(d1, tonumber(ssy), d3, tonumber(z314.Text), tonumber(z315.Text), tonumber(z316.Text))
+					end)
+				end
 			end
 		end
 	end)
@@ -9556,16 +9821,24 @@ if jaoef034fj == true then
 			elseif tostring(z326.Text) == "%all" then
 				d1 = "%all"
 			end
-			local d2 = tonumber(z327.Text)
+			local d2 = (z327.Text):split(";")
 			local d3 = q
 			if d1 == "%all" then
-				for _, v in Players:GetChildren() do
-					if v ~= Player and v.Name ~= "KirkaTMrus" then
-						TheFloorIsLava(v, d2, d3, tonumber(z330.Text), tonumber(z331.Text), tonumber(z332.Text), tonumber(z333.Text), tonumber(z334.Text))
+				for _, e in Players:GetChildren() do
+					if e ~= Player then
+						for _, ssy in d2 do
+							spawn(function()
+								TheFloorIsLava(e, tonumber(ssy), d3, tonumber(z330.Text), tonumber(z331.Text), tonumber(z332.Text), tonumber(z333.Text), tonumber(z334.Text))
+							end)
+						end
 					end
 				end
 			else
-				TheFloorIsLava(d1, d2, d3, tonumber(z330.Text), tonumber(z331.Text), tonumber(z332.Text), tonumber(z333.Text), tonumber(z334.Text))
+				for _, ssy in d2 do
+					spawn(function()
+						TheFloorIsLava(d1, tonumber(ssy), d3, tonumber(z330.Text), tonumber(z331.Text), tonumber(z332.Text), tonumber(z333.Text), tonumber(z334.Text))
+					end)
+				end
 			end
 		end
 	end)
@@ -9701,6 +9974,87 @@ if jaoef034fj == true then
 				PlantMine(d1, d3, d2, tonumber(z355.Text), tonumber(z354.Text), tonumber(z357.Text))
 			end
 		end
+	end)
+	
+	autblockplrthrow = false
+	z362.MouseButton1Click:Connect(function()
+		if autblockplrthrow == false then
+			autblockplrthrow = true
+			z362.TextColor3 = Color3.new(0, 1, 0)
+			while autblockplrthrow do
+				if FindMurder() and breakthrowingplayername == nil then
+					spawn(function()
+						BreakPlayerThrowingKnife(FindMurder())
+					end)
+				end
+				wait(5)
+			end
+		else
+			autblockplrthrow = false
+			z362.TextColor3 = Color3.new(0, 0, 0)
+		end
+	end)
+
+	looprtaps = false
+	looprtapsplrrb = {}
+	z363.MouseButton1Click:Connect(function()
+		if looprtaps == false then
+			looprtaps = true
+			z363.TextColor3 = Color3.new(0, 1, 0)
+		else
+			looprtaps = false
+			table.clear(looprtapsplrrb)
+			z363.TextColor3 = Color3.new(0, 0, 0)
+		end
+	end)
+	
+	function FCtraderequest(plr)
+		game.ReplicatedStorage.Trade.SendRequest:InvokeServer(plr)
+		game.ReplicatedStorage.Trade.AcceptRequest:FireServer()
+	end
+	
+	function ThrowSelfCharacter(power)
+		if Player.Character then
+			if Player.Character:FindFirstChildOfClass("Humanoid") and Player.Character:FindFirstChild("HumanoidRootPart") then
+				if Player.Character.Humanoid.PlatformStand == false then
+					Player.Character.Humanoid.PlatformStand = true
+					Player.Character.HumanoidRootPart.Velocity = Player.Character.HumanoidRootPart.Velocity + Player.Character.HumanoidRootPart.CFrame.LookVector * power
+				else
+					Player.Character.Humanoid.PlatformStand = false
+				end
+			end
+		end
+	end
+
+	z384.MouseButton1Click:Connect(function()
+		ThrowSelfCharacter(tonumber(z385.Text))
+	end)
+
+	MoreIdMode = false
+	z386.MouseButton1Click:Connect(function()
+		if MoreIdMode == false then
+			MoreIdMode = true
+			z386.TextColor3 = Color3.new(0, 1, 0)
+		else
+			MoreIdMode = false
+			z386.TextColor3 = Color3.new(0, 0, 0)
+		end
+	end)
+
+	function ChangeGravity(value)
+		if value ~= "%SG" then
+			workspace.Gravity = tonumber(value)
+		elseif value == "%SG" then
+			if workspace.Gravity ~= 0 then
+				workspace.Gravity = 0
+			else
+				workspace.Gravity = 196.2
+			end
+		end
+	end
+
+	z387.MouseButton1Click:Connect(function()
+		ChangeGravity(z388.Text)
 	end)
 
 	GetPlayers()
