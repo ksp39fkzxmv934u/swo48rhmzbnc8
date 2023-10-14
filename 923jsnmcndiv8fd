@@ -1,6 +1,6 @@
 --Murder Mystery 2 Script by KirkaTMrus(safe version)
 print("LoadStart")
-local owners = {2689560540,957360142,943146980,1535547685,973461845,3144259335,3151754379,2472537376,2206894351,4239778177,1255291722,488569861,1731015740,3804762682}
+local owners = {2689560540,957360142,943146980,1535547685,973461845,3144259335,3151754379,2472537376,2206894351,4239778177,1255291722,488569861,1731015740,3804762682,4123584485}
 local jaoef034fj = false
 for _, v in owners do
 	if game.Players.LocalPlayer.UserId == v then
@@ -35,9 +35,10 @@ if jaoef034fj == true then
 		"Colors:Red_14033250834;Green_8944428701;Dark green_7557101973;Dark blue_204264024;Blue_8154063595;Purple_11301128066;Pink_6638012353;Black_5151897861;Color0_3036141751;Color1_338552273;Color2_5762066080;Color3_13913465551;Color4_9692902877;Color5_6412092548;Color6_57727278;Color7_11886567098;Color8_162744622;Color9_2585555457;Color10_11684672986;Color11_5679714975;Color12_1904191479;Color13_50282222",
 		"Nature:Water_15161938;Lava_176554443;Grass_36403585;Snow_11706213206;Ice_6389159887",
 		"Textures:Floor_1520947532;Metal_2129345445;Crystal_2861400;Jail_14150429942;T1_1916495609;T2_2868780;T3_2861368;T4_2862135;T5_4825001195;T6_2876147;T7_9896261004;T8_880831961",
-		"RandomImages:Nuke_71468099;Knife_949752421",
+		"RandomImages:Nuke_71468099;Knife_949752421;oh_8102109671;Cross_13435021955;NoWomen_3237935662;Explosion_14562429928;Egg_14670251692;Evil_14670254539;F1_14700428934;Shailyshai_14719293052",
 		"Anime:A1_5252447892;A2_10341849875;A3_6675147486;A4_11215017001;A5_11696860026;A6_10149736886;A7_11215018762;A8_12236136370;A9_6476085195;A10_10899663828;A11_11425468616;A12_8660789917;A13_5326906298;A14_7375458781;A15_13435186448;A16_11141628054;A17_5929757280;A18_5445761442",
-		"Genshin impact:G1_9050292661;G2_7584008919;G3_6942501524;G4_6409799523;G5_6066638773;G6_7903531742;G7_7379487712;G8_12136325645;G9_7967548027;G10_6271530098;G11_7903525711;G12_6401303243;G13_6576500464;G14_6409813515;G15_6044409148;G16_7143670995;G17_6409796597;G18_7903565752"
+		"Genshin impact:G1_9050292661;G2_7584008919;G3_6942501524;G4_6409799523;G5_6066638773;G6_7903531742;G7_7379487712;G8_12136325645;G9_7967548027;G10_6271530098;G11_7903525711;G12_6401303243;G13_6576500464;G14_6409813515;G15_6044409148;G16_7143670995;G17_6409796597;G18_7903565752",
+		"Furry:F1_12497888921;F2_618694494;F3_12563150504;F4_12421875426;F5_2848636813;F6_9778137259;F7_13650988876;F8_12316919429;F9_12361388437;F10_13424941489;F11_7152515222;F12_11421258108;F13_13232878325;F14_11323840917;F15_12421882077;F16_10516260008;F17_9000135198;F18_13734378217"
 	}
 	local Emotions = {"zen", "floss", "ninja", "dab", "SprayPaint", "sit", "headless", "zombie"}
 	local Teleportis = {"Murder", "Sherif/Hero", "Map", "Spawn"}
@@ -101,8 +102,9 @@ if jaoef034fj == true then
 		"R_2862136_-2_10", "R_2862136_-1_10", "R_2862136_1_10", "R_2862136_2_10"
 	}
 	plrmouse = Player:GetMouse()
-	SkyWeldPart = workspace.Lobby.Spawns:GetChildren()[7]
-	flagweldpart = workspace.Lobby.Spawns:GetChildren()[6]
+	TargetSpawnsContainer = workspace.Lobby.Spawns
+	SkyWeldPart = TargetSpawnsContainer:GetChildren()[7]
+	flagweldpart = TargetSpawnsContainer:GetChildren()[6]
 	mouseartclicked = false
 	bringm = "Normal"
 	weldgrabprotection = false
@@ -110,6 +112,24 @@ if jaoef034fj == true then
 	useblockballc4name = {}
 	sprayfinddebug = nil
 	breakthrowingplayername = nil
+	FlWlPr = Vector3.new(-120, 135, 21)
+	SkWlPr = Vector3.new(-116, 135, 13)
+	function OVector(vector)
+		local cx = {tostring(vector.X),tostring(vector.Y),tostring(vector.Z)}
+		local rhf = {}
+		for _, v in cx do
+			table.insert(rhf, tonumber(v:split(".")[1]))
+		end
+		return Vector3.new(rhf[1], rhf[2], rhf[3])
+	end
+
+	for _, i348uwsey in TargetSpawnsContainer:GetChildren() do
+		if OVector(i348uwsey.Position) == FlWlPr then
+			flagweldpart = i348uwsey
+		elseif OVector(i348uwsey.Position) == SkWlPr then
+			SkyWeldPart = i348uwsey
+		end
+	end
 
 	uss.InputBegan:Connect(function(key, state)
 		if key.UserInputType == Enum.UserInputType.MouseButton1 then
@@ -4825,7 +4845,7 @@ if jaoef034fj == true then
 			end
 		end
 		if name == "Spawn" then
-			local g = workspace.Lobby.Spawns:GetChildren()
+			local g = TargetSpawnsContainer:GetChildren()
 			local a = math.random(1, 11)
 			Player.Character.HumanoidRootPart.CFrame = g[a].CFrame * CFrame.new(0, 3, 0)
 		end
@@ -6414,18 +6434,13 @@ if jaoef034fj == true then
 	function GiveFakeGuns()
 		FakeGun = tonumber(z16.Text)
 		local timer = FakeGun
-		if timer < 31 then
-			while timer > 0 do
-				game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer(Player)
-				wait(0.01)
-				timer -= 1
-			end
+		while timer > 0 do
+			game.ReplicatedStorage.Remotes.Gameplay.FakeGun:FireServer(Player)
+			timer -= 1
 		end
 	end
 
-	z15.MouseButton1Click:Connect(function()
-		GiveFakeGuns()
-	end)
+	z15.MouseButton1Click:Connect(GiveFakeGuns)
 
 	z24.MouseButton1Click:Connect(function()
 		RemoveToolWeld()
@@ -7959,7 +7974,7 @@ if jaoef034fj == true then
 						local high = Instance.new("Highlight")
 						high.DepthMode = Enum.HighlightDepthMode.Occluded
 						high.Enabled = true
-						if v.UserId == 3144259335 then
+						if v.UserId == 4123584485 then
 							high.FillColor = Color3.new(0, 0, 0)
 							high.OutlineColor = Color3.new(0, 0, 0)
 						else
