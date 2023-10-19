@@ -112,8 +112,10 @@ if jaoef034fj == true then
 	useblockballc4name = {}
 	sprayfinddebug = nil
 	breakthrowingplayername = nil
-	FlWlPr = Vector3.new(-120, 135, 21)
-	SkWlPr = Vector3.new(-116, 135, 13)
+	--FlWlPr = Vector3.new(-120, 135, 21)
+	--SkWlPr = Vector3.new(-116, 135, 13)
+	FlWlPr = Vector3.new(-121, 135, 22)
+	SkWlPr = Vector3.new(-117, 135, 13)
 	function OVector(vector)
 		local cx = {tostring(vector.X),tostring(vector.Y),tostring(vector.Z)}
 		local rhf = {}
@@ -4019,7 +4021,7 @@ if jaoef034fj == true then
 	z264.TextColor3 = Color3.new(0, 0, 0)
 	z264.Parent = z261
 
-	currentcoins = {"BeachBall", "Coin", "Invisible"}
+	currentcoins = {"BeachBall_f", "Coin_t", "Candy_t", "Invisible_f"}
 	afterfarmfunctions = {"Reset"}
 
 	ujeurz78 = 0
@@ -4032,12 +4034,12 @@ if jaoef034fj == true then
 		z238.BorderSizePixel = 0
 		z238.Size = UDim2.new(0, 100, 0, 50)
 		z238.Position = UDim2.new(0, ujeurz78, 0, weif3489)
-		if pqj83 ~= "Invisible" then
-			z238.TextColor3 = Color3.new(0, 1, 0)
-		else
+		if pqj83:split("_")[2] == "f" then
 			z238.TextColor3 = Color3.new(0, 0, 0)
+		else
+			z238.TextColor3 = Color3.new(0, 1, 0)
 		end
-		z238.Text = pqj83
+		z238.Text = pqj83:split("_")[1]
 		UiCornerCreate(z238)
 		z238.TextScaled = true
 		z238.Parent = z235
@@ -4058,6 +4060,9 @@ if jaoef034fj == true then
 		end
 	end
 
+	if ujeurz78 ~= 0 then
+		weif3489 += 50
+	end
 	z239 = TextLabel:Clone()
 	z239.Name = RandomName()
 	z239.BackgroundTransparency = 0
@@ -4846,7 +4851,7 @@ if jaoef034fj == true then
 		end
 		if name == "Spawn" then
 			local g = TargetSpawnsContainer:GetChildren()
-			local a = math.random(1, 11)
+			local a = math.random(1, len(TargetSpawnsContainer:GetChildren()))
 			Player.Character.HumanoidRootPart.CFrame = g[a].CFrame * CFrame.new(0, 3, 0)
 		end
 	end
@@ -6589,7 +6594,7 @@ if jaoef034fj == true then
 		if db == false then return false end
 	end
 
-	autofarmsettings = {"beachball_t", "coin_t", "invisible_f"}
+	autofarmsettings = {"beachball_f", "coin_t", "candy_t", "invisible_f"}
 
 	function FindNearestCoin(container)
 		local coin = nil
@@ -6615,6 +6620,15 @@ if jaoef034fj == true then
 								end
 							end
 						end
+					elseif v.CoinType.Value == "Candy" and autofarmsettings[3]:split("_")[2] == "t" then
+						if Player.Character then
+							if Player.Character:FindFirstChild("HumanoidRootPart") then
+								if math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude) < magn then
+									coin = v
+									magn = math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude)
+								end
+							end
+						end
 					end
 				end
 			end
@@ -6626,34 +6640,38 @@ if jaoef034fj == true then
 	isinvisiblefarm = false
 
 	function AutoFarmInvisible()
+	--[[if Player.Character then
+		local tjfur = Player.Character.HumanoidRootPart.CFrame
+		Player.Character.HumanoidRootPart.CFrame = CFrame.new(-88, 138, 25)
+		wait(0.2)
+		if Player.Character:FindFirstChild("UpperTorso") then
+			if Player.Character.UpperTorso:FindFirstChild("Waist") then
+				Player.Character.UpperTorso:FindFirstChild("Waist"):Destroy()
+			end
+		end
+		if Player.Character:FindFirstChild("LowerTorso") then
+			Player.Character.LowerTorso:Destroy()
+		end
+		for _, v in pairs(Player.Character:GetDescendants()) do
+			if v:IsA("Motor6D") then
+				if v.Name ~= "Neck" then
+					v:Destroy()
+				end
+			end
+		end
+		Player.Character:FindFirstChildOfClass("Humanoid").RequiresNeck = false
+		isinvisiblefarm = true
+		wait(0.2)
+		Player.Character.HumanoidRootPart.CFrame = tjfur
+	end]]--
 		if Player.Character then
-			local tjfur = Player.Character.HumanoidRootPart.CFrame
-			Player.Character.HumanoidRootPart.CFrame = CFrame.new(-88, 138, 25)
-			wait(0.2)
-			if Player.Character:FindFirstChild("UpperTorso") then
-				if Player.Character.UpperTorso:FindFirstChild("Waist") then
-					Player.Character.UpperTorso:FindFirstChild("Waist"):Destroy()
-				end
-			end
-			if Player.Character:FindFirstChild("LowerTorso") then
-				Player.Character.LowerTorso:Destroy()
-			end
-			for _, v in pairs(Player.Character:GetDescendants()) do
-				if v:IsA("Motor6D") then
-					if v.Name ~= "Neck" then
-						v:Destroy()
-					end
-				end
-			end
-			Player.Character:FindFirstChildOfClass("Humanoid").RequiresNeck = false
 			isinvisiblefarm = true
+			game.ReplicatedStorage.Remotes.Gameplay.Stealth:FireServer(true)
 			wait(0.2)
-			Player.Character.HumanoidRootPart.CFrame = tjfur
 		end
 	end
 
 	autofarmlaunchpos = CFrame.new(-88, 138, 25)
-
 
 	function SetCoinAutofarm()
 		if autofarming == false then
