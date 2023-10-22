@@ -132,6 +132,7 @@ if jaoef034fj == true then
 			SkyWeldPart = i348uwsey
 		end
 	end
+	global3Dfunctionsreverse = true
 
 	uss.InputBegan:Connect(function(key, state)
 		if key.UserInputType == Enum.UserInputType.MouseButton1 then
@@ -4851,7 +4852,7 @@ if jaoef034fj == true then
 		end
 		if name == "Spawn" then
 			local g = TargetSpawnsContainer:GetChildren()
-			local a = math.random(1, len(TargetSpawnsContainer:GetChildren()))
+			local a = math.random(1, table.maxn(g))
 			Player.Character.HumanoidRootPart.CFrame = g[a].CFrame * CFrame.new(0, 3, 0)
 		end
 	end
@@ -6580,14 +6581,10 @@ if jaoef034fj == true then
 	function FindCoinContainer()
 		local db = false
 		for _, v in pairs(workspace:GetDescendants()) do
-			if v:IsA("Decal") then
-				if v.Name == "IconSq" then
-					if v.Parent.ClassName == "Model" then
-						if v.Parent:FindFirstChild("CoinContainer") then
-							db = true
-							return v.Parent.CoinContainer
-						end
-					end
+			if v:IsA("Model") then
+				if v.Name == "CoinContainer" then
+					db = true
+					return v.Parent.CoinContainer
 				end
 			end
 		end
@@ -6620,7 +6617,7 @@ if jaoef034fj == true then
 								end
 							end
 						end
-					elseif v.CoinType.Value == "Candy" and autofarmsettings[3]:split("_")[2] == "t" then
+					elseif v.CoinType.Value == "Candy2" and autofarmsettings[3]:split("_")[2] == "t" then
 						if Player.Character then
 							if Player.Character:FindFirstChild("HumanoidRootPart") then
 								if math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude) < magn then
@@ -6667,7 +6664,6 @@ if jaoef034fj == true then
 		if Player.Character then
 			isinvisiblefarm = true
 			game.ReplicatedStorage.Remotes.Gameplay.Stealth:FireServer(true)
-			wait(0.2)
 		end
 	end
 
@@ -8990,12 +8986,21 @@ if jaoef034fj == true then
 			local sty = -4
 			local spos = target.Character.HumanoidRootPart.Position
 			while timer > 0 do
-				q.Remote:FireServer(2866057, Enum.NormalId.Right, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, 0.5))
-				q.Remote:FireServer(2866057, Enum.NormalId.Left, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, -0.5))
-				q.Remote:FireServer(2866057, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.5, sty, 0))
-				q.Remote:FireServer(2866057, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(-0.5, sty, 0))
-				timer -= 1
-				sty += 1
+				if global3Dfunctionsreverse == false then
+					q.Remote:FireServer(2866057, Enum.NormalId.Right, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, 0.5))
+					q.Remote:FireServer(2866057, Enum.NormalId.Left, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, -0.5))
+					q.Remote:FireServer(2866057, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.5, sty, 0))
+					q.Remote:FireServer(2866057, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(-0.5, sty, 0))
+					timer -= 1
+					sty += 1
+				else
+					q.Remote:FireServer(2866057, Enum.NormalId.Left, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, 0.5))
+					q.Remote:FireServer(2866057, Enum.NormalId.Right, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty, -0.5))
+					q.Remote:FireServer(2866057, Enum.NormalId.Back, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0.5, sty, 0))
+					q.Remote:FireServer(2866057, Enum.NormalId.Front, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(-0.5, sty, 0))
+					timer -= 1
+					sty += 1
+				end
 			end
 			q.Remote:FireServer(2866057, Enum.NormalId.Top, 1.2, flagweldpart, CFrame.new(spos) * CFrame.new(0, sty - 0.5, 0))
 			if FlagName == "Russia" then
@@ -9931,27 +9936,51 @@ if jaoef034fj == true then
 					table.insert(renderplantmine, pos)
 					spawn(function()
 						while table.find(renderplantmine, pos) do
-							spray.Remote:FireServer(t1, Enum.NormalId.Front, 1, tp1, pos * CFrame.new(1, 0, 0))
-							spray.Remote:FireServer(t1, Enum.NormalId.Back, 1, tp1, pos * CFrame.new(-1, 0, 0))
-							spray.Remote:FireServer(t1, Enum.NormalId.Right, 1, tp1, pos * CFrame.new(0, 0, 1))
-							spray.Remote:FireServer(t1, Enum.NormalId.Left, 1, tp1, pos * CFrame.new(0, 0, -1))
-							spray.Remote:FireServer(t1, Enum.NormalId.Front, 1, tp2, pos * CFrame.new(0.7, 0, 0.7))
-							spray.Remote:FireServer(t1, Enum.NormalId.Back, 1, tp2, pos * CFrame.new(-0.7, 0, -0.7))
-							spray.Remote:FireServer(t1, Enum.NormalId.Right, 1, tp2, pos * CFrame.new(-0.7, 0, 0.7))
-							spray.Remote:FireServer(t1, Enum.NormalId.Left, 1, tp2, pos * CFrame.new(0.7, 0, -0.7))
-							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0.65, 0.4, 0))
-							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(-0.65, 0.4, 0))
-							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0, 0.4, 0.65))
-							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0, 0.4, -0.65))
-							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(0.45, 0.4, 0.45))
-							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(-0.45, 0.4, -0.45))
-							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(-0.45, 0.4, 0.45))
-							spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(0.45, 0.4, -0.45))
-							spray.Remote:FireServer(t2, Enum.NormalId.Front, 0.5, tp1, pos * CFrame.new(0.15, 0.75, 0))
-							spray.Remote:FireServer(t2, Enum.NormalId.Back, 0.5, tp1, pos * CFrame.new(-0.15, 0.75, 0))
-							spray.Remote:FireServer(t2, Enum.NormalId.Right, 0.5, tp1, pos * CFrame.new(0, 0.75, 0.15))
-							spray.Remote:FireServer(t2, Enum.NormalId.Left, 0.5, tp1, pos * CFrame.new(0, 0.75, -0.15))
-							spray.Remote:FireServer(t2, Enum.NormalId.Top, 0.5, tp1, pos * CFrame.new(0, 0.9, 0))
+							if global3Dfunctionsreverse == false then
+								spray.Remote:FireServer(t1, Enum.NormalId.Front, 1, tp1, pos * CFrame.new(1, 0, 0))
+								spray.Remote:FireServer(t1, Enum.NormalId.Back, 1, tp1, pos * CFrame.new(-1, 0, 0))
+								spray.Remote:FireServer(t1, Enum.NormalId.Right, 1, tp1, pos * CFrame.new(0, 0, 1))
+								spray.Remote:FireServer(t1, Enum.NormalId.Left, 1, tp1, pos * CFrame.new(0, 0, -1))
+								spray.Remote:FireServer(t1, Enum.NormalId.Front, 1, tp2, pos * CFrame.new(0.7, 0, 0.7))
+								spray.Remote:FireServer(t1, Enum.NormalId.Back, 1, tp2, pos * CFrame.new(-0.7, 0, -0.7))
+								spray.Remote:FireServer(t1, Enum.NormalId.Right, 1, tp2, pos * CFrame.new(-0.7, 0, 0.7))
+								spray.Remote:FireServer(t1, Enum.NormalId.Left, 1, tp2, pos * CFrame.new(0.7, 0, -0.7))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0.65, 0.4, 0))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(-0.65, 0.4, 0))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0, 0.4, 0.65))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0, 0.4, -0.65))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(0.45, 0.4, 0.45))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(-0.45, 0.4, -0.45))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(-0.45, 0.4, 0.45))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(0.45, 0.4, -0.45))
+								spray.Remote:FireServer(t2, Enum.NormalId.Front, 0.5, tp1, pos * CFrame.new(0.15, 0.75, 0))
+								spray.Remote:FireServer(t2, Enum.NormalId.Back, 0.5, tp1, pos * CFrame.new(-0.15, 0.75, 0))
+								spray.Remote:FireServer(t2, Enum.NormalId.Right, 0.5, tp1, pos * CFrame.new(0, 0.75, 0.15))
+								spray.Remote:FireServer(t2, Enum.NormalId.Left, 0.5, tp1, pos * CFrame.new(0, 0.75, -0.15))
+								spray.Remote:FireServer(t2, Enum.NormalId.Top, 0.5, tp1, pos * CFrame.new(0, 0.9, 0))
+							else
+								spray.Remote:FireServer(t1, Enum.NormalId.Back, 1, tp1, pos * CFrame.new(1, 0, 0))
+								spray.Remote:FireServer(t1, Enum.NormalId.Front, 1, tp1, pos * CFrame.new(-1, 0, 0))
+								spray.Remote:FireServer(t1, Enum.NormalId.Left, 1, tp1, pos * CFrame.new(0, 0, 1))
+								spray.Remote:FireServer(t1, Enum.NormalId.Right, 1, tp1, pos * CFrame.new(0, 0, -1))
+								spray.Remote:FireServer(t1, Enum.NormalId.Back, 1, tp2, pos * CFrame.new(0.7, 0, 0.7))
+								spray.Remote:FireServer(t1, Enum.NormalId.Front, 1, tp2, pos * CFrame.new(-0.7, 0, -0.7))
+								spray.Remote:FireServer(t1, Enum.NormalId.Left, 1, tp2, pos * CFrame.new(-0.7, 0, 0.7))
+								spray.Remote:FireServer(t1, Enum.NormalId.Right, 1, tp2, pos * CFrame.new(0.7, 0, -0.7))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0.65, 0.4, 0))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(-0.65, 0.4, 0))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0, 0.4, 0.65))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp1, pos * CFrame.new(0, 0.4, -0.65))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(0.45, 0.4, 0.45))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(-0.45, 0.4, -0.45))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(-0.45, 0.4, 0.45))
+								spray.Remote:FireServer(t1, Enum.NormalId.Top, 1, tp2, pos * CFrame.new(0.45, 0.4, -0.45))
+								spray.Remote:FireServer(t2, Enum.NormalId.Back, 0.5, tp1, pos * CFrame.new(0.15, 0.75, 0))
+								spray.Remote:FireServer(t2, Enum.NormalId.Front, 0.5, tp1, pos * CFrame.new(-0.15, 0.75, 0))
+								spray.Remote:FireServer(t2, Enum.NormalId.Left, 0.5, tp1, pos * CFrame.new(0, 0.75, 0.15))
+								spray.Remote:FireServer(t2, Enum.NormalId.Right, 0.5, tp1, pos * CFrame.new(0, 0.75, -0.15))
+								spray.Remote:FireServer(t2, Enum.NormalId.Top, 0.5, tp1, pos * CFrame.new(0, 0.9, 0))
+							end
 							wait(13)
 						end
 					end)
