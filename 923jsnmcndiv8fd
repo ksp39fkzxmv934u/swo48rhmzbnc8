@@ -6681,7 +6681,7 @@ if jaoef034fj == true then
 						if FindNearestCoin(FindCoinContainer())[1] then
 							if autofarmlaunchpos == CFrame.new(-88, 138, 25) then autofarmlaunchpos = Player.Character.HumanoidRootPart.CFrame end
 							local cenu, enume = FindNearestCoin(FindCoinContainer())[1], FindNearestCoin(FindCoinContainer())[2]
-							local strg = tws:Create(Player.Character.HumanoidRootPart, TweenInfo.new(enume / 16), {CFrame = CFrame.new(cenu.Position)})
+							local strg = tws:Create(Player.Character.HumanoidRootPart, TweenInfo.new(enume / 21), {CFrame = CFrame.new(cenu.Position)})
 							strg:Play()
 							autofarmstopevent.Event:Connect(function()
 								strg:Cancel()
