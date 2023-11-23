@@ -112,10 +112,10 @@ if jaoef034fj == true then
 	useblockballc4name = {}
 	sprayfinddebug = nil
 	breakthrowingplayername = nil
-	--FlWlPr = Vector3.new(-120, 135, 21)
-	--SkWlPr = Vector3.new(-116, 135, 13)
-	FlWlPr = Vector3.new(-121, 135, 22)
-	SkWlPr = Vector3.new(-117, 135, 13)
+	FlWlPr = Vector3.new(-120, 135, 21)
+	SkWlPr = Vector3.new(-116, 135, 13)
+	--FlWlPr = Vector3.new(-121, 135, 22)
+	--SkWlPr = Vector3.new(-117, 135, 13)
 	function OVector(vector)
 		local cx = {tostring(vector.X),tostring(vector.Y),tostring(vector.Z)}
 		local rhf = {}
@@ -132,7 +132,7 @@ if jaoef034fj == true then
 			SkyWeldPart = i348uwsey
 		end
 	end
-	global3Dfunctionsreverse = true
+	global3Dfunctionsreverse = false
 
 	uss.InputBegan:Connect(function(key, state)
 		if key.UserInputType == Enum.UserInputType.MouseButton1 then
