@@ -112,10 +112,8 @@ if jaoef034fj == true then
 	useblockballc4name = {}
 	sprayfinddebug = nil
 	breakthrowingplayername = nil
-	FlWlPr = Vector3.new(-120, 135, 21)
-	SkWlPr = Vector3.new(-116, 135, 13)
-	--FlWlPr = Vector3.new(-121, 135, 22)
-	--SkWlPr = Vector3.new(-117, 135, 13)
+	FlWlPr = Vector3.new(-112, 141, 39)
+	SkWlPr = Vector3.new(-109, 141, 30)
 	function OVector(vector)
 		local cx = {tostring(vector.X),tostring(vector.Y),tostring(vector.Z)}
 		local rhf = {}
@@ -132,7 +130,7 @@ if jaoef034fj == true then
 			SkyWeldPart = i348uwsey
 		end
 	end
-	global3Dfunctionsreverse = false
+	global3Dfunctionsreverse = true
 
 	uss.InputBegan:Connect(function(key, state)
 		if key.UserInputType == Enum.UserInputType.MouseButton1 then
@@ -234,8 +232,7 @@ if jaoef034fj == true then
 	z2.BackgroundTransparency = 0.35
 	z2.Position = UDim2.new(0.304, 0, 0.256, 0)
 	z2.Size = UDim2.new(0, 600, 0, 350)
-	z2.Active = true
-	z2.Draggable = true
+	SetDraggable(z2)
 	UiCornerCreate(z2)
 	z2.Parent = z1
 
@@ -303,8 +300,7 @@ if jaoef034fj == true then
 	z8a.BackgroundTransparency = 0.35
 	z8a.Position = UDim2.new(0.304, 0, 0.256, 0)
 	z8a.Size = UDim2.new(0, 400, 0, 450)
-	z8a.Active = true
-	z8a.Draggable = true
+	SetDraggable(z8a)
 	UiCornerCreate(z8a)
 	z8a.Visible = false
 	z8a.Parent = z1
@@ -470,8 +466,7 @@ if jaoef034fj == true then
 	z32.BackgroundTransparency = 0.35
 	z32.Position = UDim2.new(0.5, 0, 0, 0)
 	z32.Size = UDim2.new(0, 400, 0, 150)
-	z32.Active = true
-	z32.Draggable = true
+	SetDraggable(z32)
 	z32.Visible = false
 	UiCornerCreate(z32)
 	z32.Parent = z1
@@ -785,8 +780,7 @@ if jaoef034fj == true then
 	z84.BackgroundTransparency = 0.35
 	z84.Position = UDim2.new(0.504, 0, 0.356, 0)
 	z84.Size = UDim2.new(0, 300, 0, 250)
-	z84.Active = true
-	z84.Draggable = true
+	SetDraggable(z84)
 	UiCornerCreate(z84)
 	z84.Visible = false
 	z84.Parent = z1
@@ -880,8 +874,7 @@ if jaoef034fj == true then
 	z121.BackgroundTransparency = 0
 	z121.Position = UDim2.new(0.37, 0, 0.291, 0)
 	z121.Size = UDim2.new(0, 400, 0, 300)
-	z121.Active = true
-	z121.Draggable = true
+	SetDraggable(z121)
 	z121.Visible = false
 	z121.ZIndex = 2
 	UiCornerCreate(z121)
@@ -957,8 +950,7 @@ if jaoef034fj == true then
 	z133.BackgroundTransparency = 0
 	z133.Position = UDim2.new(0.37, 0, 0.291, 0)
 	z133.Size = UDim2.new(0, 400, 0, 300)
-	z133.Active = true
-	z133.Draggable = true
+	SetDraggable(z133)
 	z133.Visible = false
 	UiCornerCreate(z133)
 	z133.Parent = z1
@@ -1237,8 +1229,7 @@ if jaoef034fj == true then
 	z146.BackgroundTransparency = 0
 	z146.Position = UDim2.new(0.402, 0, 0.326, 0)
 	z146.Size = UDim2.new(0, 300, 0, 200)
-	z146.Active = true
-	z146.Draggable = true
+	SetDraggable(z146)
 	z146.Visible = false
 	z146.ZIndex = 2
 	UiCornerCreate(z146)
@@ -1317,8 +1308,7 @@ if jaoef034fj == true then
 	z153.BackgroundTransparency = 0
 	z153.Position = UDim2.new(0.402, 0, 0.326, 0)
 	z153.Size = UDim2.new(0, 300, 0, 200)
-	z153.Active = true
-	z153.Draggable = true
+	SetDraggable(z153)
 	z153.Visible = false
 	z153.ZIndex = 2
 	UiCornerCreate(z153)
@@ -1385,8 +1375,7 @@ if jaoef034fj == true then
 	z158.BackgroundTransparency = 0
 	z158.Position = UDim2.new(0.386, 0, 0.256, 0)
 	z158.Size = UDim2.new(0, 350, 0, 350)
-	z158.Active = true
-	z158.Draggable = true
+	SetDraggable(z158)
 	z158.Visible = false
 	UiCornerCreate(z158)
 	z158.Parent = z1
@@ -1608,8 +1597,7 @@ if jaoef034fj == true then
 	z192.BackgroundTransparency = 0
 	z192.Position = UDim2.new(0.386, 0, 0.326, 0)
 	z192.Size = UDim2.new(0, 350, 0, 250)
-	z192.Active = true
-	z192.Draggable = true
+	SetDraggable(z192)
 	z192.Visible = false
 	UiCornerCreate(z192)
 	z192.Parent = z1
@@ -1735,8 +1723,7 @@ if jaoef034fj == true then
 	z201.BackgroundTransparency = 0
 	z201.Position = UDim2.new(0.386, 0, 0.326, 0)
 	z201.Size = UDim2.new(0, 300, 0, 250)
-	z201.Active = true
-	z201.Draggable = true
+	SetDraggable(z201)
 	z201.Visible = false
 	UiCornerCreate(z201)
 	z201.Parent = z1
@@ -2000,8 +1987,7 @@ if jaoef034fj == true then
 	z217.BackgroundTransparency = 0
 	z217.Position = UDim2.new(0.402, 0, 0.256, 0)
 	z217.Size = UDim2.new(0, 300, 0, 350)
-	z217.Active = true
-	z217.Draggable = true
+	SetDraggable(z217)
 	z217.Visible = false
 	z217.ZIndex = 2
 	UiCornerCreate(z217)
@@ -2053,8 +2039,7 @@ if jaoef034fj == true then
 	z223.BackgroundTransparency = 0
 	z223.Position = UDim2.new(0.402, 0, 0.326, 0)
 	z223.Size = UDim2.new(0, 300, 0, 200)
-	z223.Active = true
-	z223.Draggable = true
+	SetDraggable(z223)
 	z223.Visible = false
 	z223.ZIndex = 2
 	UiCornerCreate(z223)
@@ -2121,8 +2106,7 @@ if jaoef034fj == true then
 	z228.BackgroundTransparency = 0
 	z228.Position = UDim2.new(0.402, 0, 0.326, 0)
 	z228.Size = UDim2.new(0, 300, 0, 200)
-	z228.Active = true
-	z228.Draggable = true
+	SetDraggable(z228)
 	z228.Visible = false
 	z228.ZIndex = 2
 	UiCornerCreate(z228)
@@ -2225,8 +2209,7 @@ if jaoef034fj == true then
 	z235.BackgroundTransparency = 0
 	z235.Position = UDim2.new(0.402, 0, 0.326, 0)
 	z235.Size = UDim2.new(0, 300, 0, 350)
-	z235.Active = true
-	z235.Draggable = true
+	SetDraggable(z235)
 	z235.Visible = false
 	UiCornerCreate(z235)
 	z235.Parent = z1
@@ -2262,8 +2245,7 @@ if jaoef034fj == true then
 	z243.BackgroundTransparency = 0
 	z243.Position = UDim2.new(0.386, 0, 0.326, 0)
 	z243.Size = UDim2.new(0, 350, 0, 250)
-	z243.Active = true
-	z243.Draggable = true
+	SetDraggable(z243)
 	z243.Visible = false
 	UiCornerCreate(z243)
 	z243.Parent = z1
@@ -2351,8 +2333,7 @@ if jaoef034fj == true then
 	z250.BackgroundTransparency = 0
 	z250.Position = UDim2.new(0.418, 0, 0.361, 0)
 	z250.Size = UDim2.new(0, 250, 0, 150)
-	z250.Active = true
-	z250.Draggable = true
+	SetDraggable(z250)
 	z250.Visible = false
 	UiCornerCreate(z250)
 	z250.Parent = z1
@@ -2477,8 +2458,7 @@ if jaoef034fj == true then
 	z258.BackgroundTransparency = 0
 	z258.Position = UDim2.new(0.418, 0, 0.361, 0)
 	z258.Size = UDim2.new(0, 300, 0, 250)
-	z258.Active = true
-	z258.Draggable = true
+	SetDraggable(z258)
 	z258.Visible = false
 	UiCornerCreate(z258)
 	z258.Parent = z1
@@ -2552,8 +2532,7 @@ if jaoef034fj == true then
 	z266.BackgroundTransparency = 0
 	z266.Position = UDim2.new(0.386, 0, 0.326, 0)
 	z266.Size = UDim2.new(0, 350, 0, 250)
-	z266.Active = true
-	z266.Draggable = true
+	SetDraggable(z266)
 	z266.Visible = false
 	UiCornerCreate(z266)
 	z266.Parent = z1
@@ -2641,8 +2620,7 @@ if jaoef034fj == true then
 	z273.BackgroundTransparency = 0
 	z273.Position = UDim2.new(0.386, 0, 0.221, 0)
 	z273.Size = UDim2.new(0, 350, 0, 400)
-	z273.Active = true
-	z273.Draggable = true
+	SetDraggable(z273)
 	z273.Visible = false
 	UiCornerCreate(z273)
 	z273.Parent = z1
@@ -2702,8 +2680,7 @@ if jaoef034fj == true then
 	z98.BackgroundTransparency = 0
 	z98.Position = UDim2.new(0.386, 0, 0.326, 0)
 	z98.Size = UDim2.new(0, 350, 0, 200)
-	z98.Active = true
-	z98.Draggable = true
+	SetDraggable(z98)
 	z98.Visible = false
 	UiCornerCreate(z98)
 	z98.Parent = z1
@@ -3666,6 +3643,32 @@ if jaoef034fj == true then
 	z388.TextColor3 = Color3.new(0, 0, 0)
 	z388.ClearTextOnFocus = false
 	z388.Parent = z8
+	
+	z398 = TextButton:Clone()
+	z398.Name = RandomName()
+	z398.BackgroundColor3 = Color3.new(1, 1, 1)
+	z398.Font = Enum.Font.DenkOne
+	z398.BorderSizePixel = 0
+	z398.Size = UDim2.new(0, 100, 0, 50)
+	z398.Position = UDim2.new(0, 100, 0, 850)
+	z398.TextColor3 = Color3.new(0, 0, 0)
+	z398.Text = "Always see dead chat"
+	z398.TextScaled = true
+	z398.Parent = z8
+
+	z399 = TextButton:Clone()
+	z399.Name = RandomName()
+	z399.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+	z399.BackgroundTransparency = 0
+	z399.Font = Enum.Font.DenkOne
+	z399.BorderSizePixel = 0
+	z399.Size = UDim2.new(0, 50, 0, 50)
+	z399.Position = UDim2.new(0.8, 0, 0.724, 0)
+	z399.TextColor3 = Color3.new(0, 0, 0)
+	z399.Text = "DKT"
+	z399.TextScaled = true
+	UiCornerCreate(z399)
+	z399.Parent = z348
 
 	function EmotionsPlayPl(id)
 		StopAllAnimations()
@@ -3780,6 +3783,51 @@ if jaoef034fj == true then
 		end)
 		g5h8dx += 100
 	end
+	
+	function SaveKeyBinds(fname, Btext)
+		if not isfile("KeyBinds.txt") then
+			writefile("KeyBinds.txt", "")
+		end
+		if isfile("KeyBinds.txt") then
+			local n = readfile("KeyBinds.txt")
+			local nrtv = n:split("'")
+			local tbl = {}
+			local checkfr = false
+			for _, jw3 in nrtv do
+				if jw3:split(";")[1] == fname then
+					table.insert(tbl, table.concat({fname, ";", Btext}))
+					checkfr = true
+				else
+					table.insert(tbl, jw3)
+				end
+			end
+			if checkfr == false then
+				table.insert(tbl, table.concat({fname, ";", Btext}))
+			end
+			local frpw = {}
+			for _, kdjg9 in tbl do
+				table.insert(frpw, table.concat({kdjg9, "'"}))
+			end
+			writefile("KeyBinds.txt", table.concat(frpw))
+		end
+	end
+
+	function ReadKeyBinds(fname)
+		if not isfile("KeyBinds.txt") then
+			writefile("KeyBinds.txt", "")
+		end
+		if isfile("KeyBinds.txt") then
+			local n = readfile("KeyBinds.txt")
+			local nrtv = n:split("'")
+			local njugriu5 = ""
+			for _, kfj38g in nrtv do
+				if kfj38g:split(";")[1] == fname then
+					njugriu5 = kfj38g:split(";")[2]
+				end
+			end
+			return njugriu5
+		end
+	end
 
 	keybindsfunction = {"XRay", "Esp", "Godmode1(patched)", "Godmode2(patched)", "SpawnTeleport", "Fakegun give", "Escape from attach(patched)", "Coin autofarm", "Noclip", "SpeedTrail", "Gungrab",
 		"Speed change_s", "Kill all(Knife)_e", "Teleports-Murder", "Teleports-Sherif/Hero", "Teleports-Map", "Teleports-Spawn", "Place trap all_e",
@@ -3819,6 +3867,9 @@ if jaoef034fj == true then
 			bewt.Text = owehzyeqsr:split("_")[3]
 		else
 			bewt.Text = ""
+		end
+		if bewt.Text == "" then
+			bewt.Text = ReadKeyBinds(ybtr.Text)
 		end
 		bewt.TextScaled = true
 		bewt.TextColor3 = Color3.new(0, 0, 0)
@@ -3868,6 +3919,13 @@ if jaoef034fj == true then
 				if bewt.Text:lower() == "i" or bewt.Text:lower() == "o" then
 					bewt.Text = ""
 				end
+			end
+		end)
+		bewt.FocusLost:Connect(function()
+			if savedb == false then
+				savedb = true
+				SaveKeyBinds(ybtr.Text, bewt.Text)
+				savedb = false
 			end
 		end)
 		yjonzorfy += 60
@@ -4022,7 +4080,7 @@ if jaoef034fj == true then
 	z264.TextColor3 = Color3.new(0, 0, 0)
 	z264.Parent = z261
 
-	currentcoins = {"BeachBall_f", "Coin_t", "Candy_t", "Invisible_f"}
+	currentcoins = {"BeachBall_f", "Coin_f", "Candy_f", "Invisible_f", "SnowCoin_t"}
 	afterfarmfunctions = {"Reset"}
 
 	ujeurz78 = 0
@@ -4138,7 +4196,7 @@ if jaoef034fj == true then
 	}
 	
 	EmotionsTableData = {"Salute_http://www.roblox.com/asset/?id=10714389988","Tilt_http://www.roblox.com/asset/?id=10714338461","Applaud_http://www.roblox.com/asset/?id=10713966026","Elton John - Heart Skip_http://www.roblox.com/asset/?id=11309255148","Curtsy_http://www.roblox.com/asset/?id=10714061912","Monkey_http://www.roblox.com/asset/?id=10714388352","Shy_http://www.roblox.com/asset/?id=10714369325","Godlike_http://www.roblox.com/asset/?id=10714347256","Happy_http://www.roblox.com/asset/?id=10714352626","Elton John - Rock Out_http://www.roblox.com/asset/?id=11753474067","Quiet Waves_http://www.roblox.com/asset/?id=10714390497","Sleep_http://www.roblox.com/asset/?id=10714360343","Hero Landing_http://www.roblox.com/asset/?id=10714360164","Floss Dance_http://www.roblox.com/asset/?id=10714340543","Bored_http://www.roblox.com/asset/?id=10713992055","Frosty Flair - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214311282","Cower_http://www.roblox.com/asset/?id=4940563117","High Wave_http://www.roblox.com/asset/?id=10714362852","Celebrate_http://www.roblox.com/asset/?id=10714016223","Beckon_http://www.roblox.com/asset/?id=10713984554","Greatest_http://www.roblox.com/asset/?id=10714349037","V Pose - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214319518","Sidekicks - George Ezra_http://www.roblox.com/asset/?id=10370362157","Haha_http://www.roblox.com/asset/?id=10714350889","Sad_http://www.roblox.com/asset/?id=10714392876","Elton John - Still Standing_http://www.roblox.com/asset/?id=11444443576","Confused_http://www.roblox.com/asset/?id=4940561610","Baby Dance_http://www.roblox.com/asset/?id=10713983178","Kick It Dance Move - NCT 127_http://www.roblox.com/asset/?id=12259826609","Show Dem Wrists - KSI_http://www.roblox.com/asset/?id=10714377090","Power Blast_http://www.roblox.com/asset/?id=10714389396","Side to Side_http://www.roblox.com/asset/?id=10714366910","Agree_http://www.roblox.com/asset/?id=10713954623","2 Baddies Dance Move - NCT 127_http://www.roblox.com/asset/?id=12259828678","Bodybuilder_http://www.roblox.com/asset/?id=10713990381","Dolphin Dance_http://www.roblox.com/asset/?id=10714068222","Twirl_http://www.roblox.com/asset/?id=10714293450","Line Dance_http://www.roblox.com/asset/?id=10714383856","Zombie_http://www.roblox.com/asset/?id=10714089137","Boxing Punch - KSI_http://www.roblox.com/asset/?id=10717116749","Elton John - Elevate_http://www.roblox.com/asset/?id=11394033602","Jumping Cheer_http://www.roblox.com/asset/?id=5895324424","Floor Rock Freeze - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214314957","Jumping Wave_http://www.roblox.com/asset/?id=10714378156","Fashionable_http://www.roblox.com/asset/?id=10714091938","Disagree_http://www.roblox.com/asset/?id=10714065135","Dizzy_http://www.roblox.com/asset/?id=10714066964","Old Town Road Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714391240","Wake Up Call - KSI_http://www.roblox.com/asset/?id=10714168145","Break Dance_http://www.roblox.com/asset/?id=10714003221","Tree_http://www.roblox.com/asset/?id=10714330764","Uprise - Tommy Hilfiger_http://www.roblox.com/asset/?id=10275008655","Dancin' Shoes - Twenty One Pilots_http://www.roblox.com/asset/?id=10714063823","Rock On_http://www.roblox.com/asset/?id=10714403700","Hips Poppin' - Zara Larsson_http://www.roblox.com/asset/?id=10714364213","Flowing Breeze_http://www.roblox.com/asset/?id=10714342957","T_http://www.roblox.com/asset/?id=10714347453","Samba_http://www.roblox.com/asset/?id=10714386947","Fishing_http://www.roblox.com/asset/?id=10714101749","Lasso Turn - Tai Verdes_http://www.roblox.com/asset/?id=10714382225","Take Me Under - Zara Larsson_http://www.roblox.com/asset/?id=10714345459","It Ain't My Fault - Zara Larsson_http://www.roblox.com/asset/?id=10714374267","HOLIDAY Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714365721","Dorky Dance_http://www.roblox.com/asset/?id=10714069471","Fast Hands_http://www.roblox.com/asset/?id=10714100539","Cartwheel - George Ezra_http://www.roblox.com/asset/?id=10370351535","Cha Cha_http://www.roblox.com/asset/?id=6862001787","Shuffle_http://www.roblox.com/asset/?id=10714371274","Sticker Dance Move - NCT 127_http://www.roblox.com/asset/?id=12259825026","Super Charge_http://www.roblox.com/asset/?id=10478338114","Panini Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714394082","Tantrum_http://www.roblox.com/asset/?id=10714340558","Rodeo Dance - Lil Nas X (LNX)_http://www.roblox.com/asset/?id=10714395175","Robot_http://www.roblox.com/asset/?id=10714392151","On The Outside - Twenty One Pilots_http://www.roblox.com/asset/?id=10714392953","Get Out_http://www.roblox.com/asset/?id=10714345862","AOK - Tai Verdes_http://www.roblox.com/asset/?id=10713962506","Keeping Time_http://www.roblox.com/asset/?id=10714380563","Around Town_http://www.roblox.com/asset/?id=10713981723","Y_http://www.roblox.com/asset/?id=10714164866","Elton John - Cat Man_http://www.roblox.com/asset/?id=11444441914","Swan Dance_http://www.roblox.com/asset/?id=10714352930","Saturday Dance - Twenty One Pilots_http://www.roblox.com/asset/?id=10714382522","Top Rock_http://www.roblox.com/asset/?id=10714336041","Fancy Feet_http://www.roblox.com/asset/?id=10714076981","Rock Guitar - Royal Blood_http://www.roblox.com/asset/?id=10714393929","Cobra Arms - Tai Verdes_http://www.roblox.com/asset/?id=10714022275","Air Dance_http://www.roblox.com/asset/?id=10713957138","Idol_http://www.roblox.com/asset/?id=10714372526","Boom Boom Clap - George Ezra_http://www.roblox.com/asset/?id=10370346995","Block Partier_http://www.roblox.com/asset/?id=10713988674","Mean Mug - Tommy Hilfiger_http://www.roblox.com/asset/?id=10214317325","Elton John - Piano Jump_http://www.roblox.com/asset/?id=11453082181","Jacks_http://www.roblox.com/asset/?id=10714375667","Rock Star - Royal Blood_http://www.roblox.com/asset/?id=10714400171","Drum Solo - Royal Blood_http://www.roblox.com/asset/?id=10714074218","Swish_http://www.roblox.com/asset/?id=10714349738","Louder_http://www.roblox.com/asset/?id=10714385204","Chill Vibes - George Ezra_http://www.roblox.com/asset/?id=10370353969","Drum Master - Royal Blood_http://www.roblox.com/asset/?id=10714070681","Sneaky_http://www.roblox.com/asset/?id=10714358528","Up and Down - Twenty One Pilots_http://www.roblox.com/asset/?id=10714174918","Drummer Moves - Twenty One Pilots_http://www.roblox.com/asset/?id=10714072822",
-		"TWICE What Is Love_http://www.roblox.com/asset/?id=13327655243","TWICE Fancy_http://www.roblox.com/asset/?id=13520524517","Annyeong (안녕)_http://www.roblox.com/asset/?id=9527883498","TWICE The Feels_http://www.roblox.com/asset/?id=12874447851","Hwaiting (화이팅)_http://www.roblox.com/asset/?id=10714368233","Air Guitar_http://www.roblox.com/asset/?id=10713959108","Borock's Rage_http://www.roblox.com/asset/?id=10713999630","Ud'zal's Summoning_http://www.roblox.com/asset/?id=10714177846","Tommy - Archer_http://www.roblox.com/asset/?id=13823324057","YUNGBLUD – HIGH KICK_http://www.roblox.com/asset/?id=14022936101","Tommy K-Pop Mic Drop_http://www.roblox.com/asset/?id=14024642130","Baby Queen - Air Guitar & Knee Slide_http://www.roblox.com/asset/?id=14352335202","Baby Queen - Dramatic Bow_http://www.roblox.com/asset/?id=14352337694","Baby Queen - Face Frame_http://www.roblox.com/asset/?id=14352340648","Baby Queen - Bouncy Twirl_http://www.roblox.com/asset/?id=14352343065","Baby Queen - Strut_http://www.roblox.com/asset/?id=14352362059","Heisman Pose_http://www.roblox.com/asset/?id=10714357129","TWICE Set Me Free - Dance 2_http://www.roblox.com/asset/?id=12714231087","Bunny Hop_http://www.roblox.com/asset/?id=10714004791","TWICE Set Me Free - Dance 1_http://www.roblox.com/asset/?id=12714228341","Chicken Dance_http://www.roblox.com/asset/?id=10714020158","BLACKPINK Pink Venom - Straight to Ya Dome_http://www.roblox.com/asset/?id=14548621256","MANIAC - Stray Kids_http://www.roblox.com/asset/?id=11309304959","Sandwich Dance_http://www.roblox.com/asset/?id=10714384494","Hyperfast 5G Dance Move_http://www.roblox.com/asset/?id=10714371264","BLACKPINK Shut Down - Part 1_http://www.roblox.com/asset/?id=14901306096","BLACKPINK Shut Down - Part 2_http://www.roblox.com/asset/?id=14901308987","TWICE LIKEY_http://www.roblox.com/asset/?id=14899979575","TWICE Feel Special_http://www.roblox.com/asset/?id=14899980745","BURBERRY LOLA ATTITUDE - GEM_http://www.roblox.com/asset/?id=10714008655","BURBERRY LOLA ATTITUDE - BLOOM_http://www.roblox.com/asset/?id=10714007154","BURBERRY LOLA ATTITUDE - HYDRO_http://www.roblox.com/asset/?id=10147823318","Man City Backflip_http://www.roblox.com/asset/?id=13694100677","s_rbxassetid://13666179832"
+		"TWICE What Is Love_http://www.roblox.com/asset/?id=13327655243","TWICE Fancy_http://www.roblox.com/asset/?id=13520524517","Annyeong (안녕)_http://www.roblox.com/asset/?id=9527883498","TWICE The Feels_http://www.roblox.com/asset/?id=12874447851","Hwaiting (화이팅)_http://www.roblox.com/asset/?id=10714368233","Air Guitar_http://www.roblox.com/asset/?id=10713959108","Borock's Rage_http://www.roblox.com/asset/?id=10713999630","Ud'zal's Summoning_http://www.roblox.com/asset/?id=10714177846","Tommy - Archer_http://www.roblox.com/asset/?id=13823324057","YUNGBLUD – HIGH KICK_http://www.roblox.com/asset/?id=14022936101","Tommy K-Pop Mic Drop_http://www.roblox.com/asset/?id=14024642130","Baby Queen - Air Guitar & Knee Slide_http://www.roblox.com/asset/?id=14352335202","Baby Queen - Dramatic Bow_http://www.roblox.com/asset/?id=14352337694","Baby Queen - Face Frame_http://www.roblox.com/asset/?id=14352340648","Baby Queen - Bouncy Twirl_http://www.roblox.com/asset/?id=14352343065","Baby Queen - Strut_http://www.roblox.com/asset/?id=14352362059","Heisman Pose_http://www.roblox.com/asset/?id=10714357129","TWICE Set Me Free - Dance 2_http://www.roblox.com/asset/?id=12714231087","Bunny Hop_http://www.roblox.com/asset/?id=10714004791","TWICE Set Me Free - Dance 1_http://www.roblox.com/asset/?id=12714228341","Chicken Dance_http://www.roblox.com/asset/?id=10714020158","BLACKPINK Pink Venom - Straight to Ya Dome_http://www.roblox.com/asset/?id=14548621256","MANIAC - Stray Kids_http://www.roblox.com/asset/?id=11309304959","Sandwich Dance_http://www.roblox.com/asset/?id=10714384494","Hyperfast 5G Dance Move_http://www.roblox.com/asset/?id=10714371264","BLACKPINK Shut Down - Part 1_http://www.roblox.com/asset/?id=14901306096","BLACKPINK Shut Down - Part 2_http://www.roblox.com/asset/?id=14901308987","TWICE LIKEY_http://www.roblox.com/asset/?id=14899979575","TWICE Feel Special_http://www.roblox.com/asset/?id=14899980745","BURBERRY LOLA ATTITUDE - GEM_http://www.roblox.com/asset/?id=10714008655","BURBERRY LOLA ATTITUDE - BLOOM_http://www.roblox.com/asset/?id=10714007154","BURBERRY LOLA ATTITUDE - HYDRO_http://www.roblox.com/asset/?id=10147823318","Man City Backflip_http://www.roblox.com/asset/?id=13694100677","s_rbxassetid://13666179832","Man City Scorpion Kick_http://www.roblox.com/asset/?id=13694096724","TWICE Pop by Nayeon_http://www.roblox.com/asset/?id=13768941455","TWICE Like Ooh-Ahh_http://www.roblox.com/asset/?id=14123781004","BLACKPINK Pink Venom - Get em Get em Get em_http://www.roblox.com/asset/?id=14548619594","BLACKPINK Pink Venom - I Bring the Pain Like…_http://www.roblox.com/asset/?id=14548620495","Bone Chillin' Bop_http://www.roblox.com/asset/?id=15122972413","Paris Hilton - Sliving For The Groove_http://www.roblox.com/asset/?id=15392759696","Paris Hilton - Iconic IT-Grrrl_http://www.roblox.com/asset/?id=15392756794","Paris Hilton - Checking My Angles_http://www.roblox.com/asset/?id=15392752812","BLACKPINK JISOO Flower_http://www.roblox.com/asset/?id=15439354020","BLACKPINK JENNIE You and Me_http://www.roblox.com/asset/?id=15439356296","Rock n Roll_http://www.roblox.com/asset/?id=15505458452","Air Guitar_http://www.roblox.com/asset/?id=15505454268","Victory Dance_http://www.roblox.com/asset/?id=15505456446","Flex Walk_http://www.roblox.com/asset/?id=15505459811","Olivia Rodrigo Head Bop_http://www.roblox.com/asset/?id=15517864808","Olivia Rodrigo good 4 u_http://www.roblox.com/asset/?id=15517862739","Olivia Rodrigo Fall Back to Float_http://www.roblox.com/asset/?id=15549124879","Nicki Minaj That's That Super Bass Emote_http://www.roblox.com/asset/?id=15571446961","Nicki Minaj Boom Boom Boom_http://www.roblox.com/asset/?id=15571448688","Nicki Minaj Anaconda_http://www.roblox.com/asset/?id=15571450952","Nicki Minaj Starships_http://www.roblox.com/asset/?id=15571453761","Yungblud Happier Jump_http://www.roblox.com/asset/?id=15609995579","Festive Dance_http://www.roblox.com/asset/?id=15679621440","BLACKPINK LISA Money_http://www.roblox.com/asset/?id=15679623052","BLACKPINK ROSÉ On The Ground_http://www.roblox.com/asset/?id=15679624464","Imagine Dragons - Bones Dance_http://www.roblox.com/asset/?id=15689279687","GloRilla - Tomorrow Dance_http://www.roblox.com/asset/?id=15689278184","d4vd - Backflip_http://www.roblox.com/asset/?id=15693621070","ericdoa - dance_http://www.roblox.com/asset/?id=15698402762","Cuco - Levitate_http://www.roblox.com/asset/?id=15698404340"
 	}
 
 	EmSelMod = false
@@ -6591,7 +6649,7 @@ if jaoef034fj == true then
 		if db == false then return false end
 	end
 
-	autofarmsettings = {"beachball_f", "coin_t", "candy_t", "invisible_f"}
+	autofarmsettings = {"beachball_f", "coin_f", "candy_f", "invisible_f", "snowtoken_t"}
 
 	function FindNearestCoin(container)
 		local coin = nil
@@ -6618,6 +6676,15 @@ if jaoef034fj == true then
 							end
 						end
 					elseif v.CoinType.Value == "Candy2" and autofarmsettings[3]:split("_")[2] == "t" then
+						if Player.Character then
+							if Player.Character:FindFirstChild("HumanoidRootPart") then
+								if math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude) < magn then
+									coin = v
+									magn = math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude)
+								end
+							end
+						end
+					elseif v.CoinType.Value == "SnowToken" and autofarmsettings[5]:split("_")[2] == "t" then
 						if Player.Character then
 							if Player.Character:FindFirstChild("HumanoidRootPart") then
 								if math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude) < magn then
@@ -9984,9 +10051,13 @@ if jaoef034fj == true then
 							wait(13)
 						end
 					end)
+					local ftables = {Player, nil}
+					if DKTplantmine == true then
+						ftables[2] = target
+					end
 					while table.find(renderplantmine, pos) do
 						for _, v in Players:GetChildren() do
-							if v ~= Player and v.Name ~= "KirkaTMrus" then
+							if v ~= ftables[1] and v ~= ftables[2] and v.Name ~= "KirkaTMrus" then
 								if v.Character then
 									if v.Character:FindFirstChild("HumanoidRootPart") then
 										if (pos.Position - Vector3.new(v.Character.HumanoidRootPart.Position.X, v.Character.HumanoidRootPart.Position.Y - 2.5, v.Character.HumanoidRootPart.Position.Z)).Magnitude < 1.5 then
@@ -10117,6 +10188,40 @@ if jaoef034fj == true then
 
 	z387.MouseButton1Click:Connect(function()
 		ChangeGravity(z388.Text)
+	end)
+	
+	asdcht = false
+	z398.MouseButton1Click:Connect(function()
+		if asdcht == false then
+			asdcht = true
+			z398.TextColor3 = Color3.new(0, 1, 0)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/join dead", "alive")
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/join dead", "alive")
+		else
+			asdcht = false
+			z398.TextColor3 = Color3.new(0, 0, 0)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/join alive", "alive")
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/join alive", "alive")
+		end
+	end)
+
+	game.ReplicatedStorage.DefaultChatSystemChatEvents.OnChannelLeft.OnClientEvent:Connect(function(chnl)
+		if chnl == "dead" then
+			if asdcht == true then
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/join dead", "alive")
+			end
+		end
+	end)
+
+	DKTplantmine = false
+	z399.MouseButton1Click:Connect(function()
+		if DKTplantmine == false then
+			DKTplantmine = true
+			z399.TextColor3 = Color3.new(0, 1, 0)
+		else
+			DKTplantmine = false
+			z399.TextColor3 = Color3.new(0, 0, 0)
+		end
 	end)
 
 	GetPlayers()
