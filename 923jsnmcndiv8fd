@@ -1,6 +1,5 @@
 --Murder Mystery 2 Script by KirkaTMrus(safe version)
-print("LoadStart")
-local owners = {2689560540,957360142,943146980,1535547685,973461845,3144259335,3151754379,2472537376,2206894351,4239778177,1255291722,488569861,1731015740,3804762682,4123584485,5390434732}
+local owners = {2689560540,957360142,943146980,1535547685,973461845,3144259335,3151754379,2472537376,2206894351,4239778177,1255291722,488569861,1731015740,3804762682,4123584485}
 local jaoef034fj = false
 for _, v in owners do
 	if game.Players.LocalPlayer.UserId == v then
@@ -9,9 +8,7 @@ for _, v in owners do
 end
 
 if jaoef034fj == true then
-	print("LoadConfirmed")
-
-	OwnerListF = {"tg: Q927f", "Denied", "", "$k_report", "nil", "@Q927f"}
+	OwnerListF = {"", "", "", "", "", ""}
 
 	local Player = game.Players.LocalPlayer
 	local Players = game.Players
@@ -35,10 +32,13 @@ if jaoef034fj == true then
 		"Colors:Red_14033250834;Green_8944428701;Dark green_7557101973;Dark blue_204264024;Blue_8154063595;Purple_11301128066;Pink_6638012353;Black_5151897861;Color0_3036141751;Color1_338552273;Color2_5762066080;Color3_13913465551;Color4_9692902877;Color5_6412092548;Color6_57727278;Color7_11886567098;Color8_162744622;Color9_2585555457;Color10_11684672986;Color11_5679714975;Color12_1904191479;Color13_50282222",
 		"Nature:Water_15161938;Lava_176554443;Grass_36403585;Snow_11706213206;Ice_6389159887",
 		"Textures:Floor_1520947532;Metal_2129345445;Crystal_2861400;Jail_14150429942;T1_1916495609;T2_2868780;T3_2861368;T4_2862135;T5_4825001195;T6_2876147;T7_9896261004;T8_880831961",
-		"RandomImages:Nuke_71468099;Knife_949752421;oh_8102109671;Cross_13435021955;NoWomen_3237935662;Explosion_14562429928;Egg_14670251692;Evil_14670254539;F1_14700428934;Shailyshai_14719293052",
-		"Anime:A1_5252447892;A2_10341849875;A3_6675147486;A4_11215017001;A5_11696860026;A6_10149736886;A7_11215018762;A8_12236136370;A9_6476085195;A10_10899663828;A11_11425468616;A12_8660789917;A13_5326906298;A14_7375458781;A15_13435186448;A16_11141628054;A17_5929757280;A18_5445761442",
+		"RandomImages:Nuke_71468099;Knife_949752421;Mysor_8102109671;Cross_13435021955;NoWomen_3237935662;Explosion_14562429928;Egg_14670251692;Evil_14670254539;F1_14700428934;Shailyshai_14719293052",
+		"Anime:A1_5252447892;A2_10341849875;A3_6675147486;A4_11215017001;A5_11696860026;A6_10149736886;A7_11215018762;A8_12236136370;A9_6476085195;A10_10899663828;A11_11425468616;A12_8660789917;A13_5326906298;A14_7375458781;A15_13435186448;A16_11141628054;A17_5929757280;A18_5445761442;A19_9195258937;A20_1624071209",
 		"Genshin impact:G1_9050292661;G2_7584008919;G3_6942501524;G4_6409799523;G5_6066638773;G6_7903531742;G7_7379487712;G8_12136325645;G9_7967548027;G10_6271530098;G11_7903525711;G12_6401303243;G13_6576500464;G14_6409813515;G15_6044409148;G16_7143670995;G17_6409796597;G18_7903565752",
-		"Furry:F1_12497888921;F2_618694494;F3_12563150504;F4_12421875426;F5_2848636813;F6_9778137259;F7_13650988876;F8_12316919429;F9_12361388437;F10_13424941489;F11_7152515222;F12_11421258108;F13_13232878325;F14_11323840917;F15_12421882077;F16_10516260008;F17_9000135198;F18_13734378217"
+		"Furry:F1_12497888921;F2_618694494;F3_12563150504;F4_12421875426;F5_2848636813;F6_9778137259;F7_13650988876;F8_12316919429;F9_12361388437;F10_13424941489;F11_7152515222;F12_11421258108;F13_13232878325;F14_11323840917;F15_12421882077;F16_10516260008;F17_9000135198;F18_13734378217",
+		"Weather:Rain_9569283860;Snow_12101509073",
+		"Geometry dash:Unrated_11307160978;Auto_14118648185;Easy_12940464822;Normal_15931665651;Hard_13028781830;Very hard_10198315192;Insane_606042541;Easy demon_2831665030;Medium demon_2831669022;Logo_14050569615;Skin1_7232734161;Skin2_7232733273;Skin3_15964119551",
+		"Coins:Coin_3150319038;SnowToken_4521691392;Heart_12339309125;Log_2669693376;Gem_377010926;Key_3059784291"
 	}
 	local Emotions = {"zen", "floss", "ninja", "dab", "SprayPaint", "sit", "headless", "zombie"}
 	local Teleportis = {"Murder", "Sherif/Hero", "Map", "Spawn"}
@@ -112,8 +112,8 @@ if jaoef034fj == true then
 	useblockballc4name = {}
 	sprayfinddebug = nil
 	breakthrowingplayername = nil
-	FlWlPr = Vector3.new(-112, 141, 39)
-	SkWlPr = Vector3.new(-109, 141, 30)
+	FlWlPr = Vector3.new(-120, 135, 21)
+	SkWlPr = Vector3.new(-116, 135, 13)
 	function OVector(vector)
 		local cx = {tostring(vector.X),tostring(vector.Y),tostring(vector.Z)}
 		local rhf = {}
@@ -3669,6 +3669,123 @@ if jaoef034fj == true then
 	z399.TextScaled = true
 	UiCornerCreate(z399)
 	z399.Parent = z348
+	
+	z407 = Frame:Clone()
+	z407.Name = RandomName()
+	z407.BackgroundColor3 = Color3.new(0, 0.333333, 0.498039)
+	z407.BackgroundTransparency = 0
+	z407.Position = UDim2.new(0.386, 0, 0.326, 0)
+	z407.Size = UDim2.new(0, 350, 0, 250)
+	SetDraggable(z407)
+	z407.Visible = false
+	UiCornerCreate(z407)
+	z407.Parent = z1
+
+	z408 = TextLabel:Clone()
+	z408.Name = RandomName()
+	z408.BackgroundTransparency = 1
+	z408.Size = UDim2.new(0, 300, 0, 50)
+	z408.Position = UDim2.new(0, 0, 0, 0)
+	z408.Font = Enum.Font.DenkOne
+	z408.TextScaled = true
+	z408.TextColor3 = Color3.new(1, 1, 1)
+	z408.Text = "FakeBomb = RealBomb"
+	UiCornerCreate(z408)
+	z408.Parent = z407
+
+	z409 = TextBox:Clone()
+	z409.Name = RandomName()
+	z409.BackgroundColor3 = Color3.new(1, 1, 1)
+	z409.BorderSizePixel = 0
+	z409.Font = Enum.Font.DenkOne
+	z409.Size = UDim2.new(0, 200, 0, 50)
+	z409.Position = UDim2.new(0.214, 0, 0.235, 0)
+	z409.PlaceholderText = "Player name"
+	z409.Text = ""
+	z409.TextScaled = true
+	z409.TextColor3 = Color3.new(0, 0, 0)
+	z409.ClearTextOnFocus = false
+	z409.Parent = z407
+
+	z410 = TextBox:Clone()
+	z410.Name = RandomName()
+	z410.BackgroundColor3 = Color3.new(1, 1, 1)
+	z410.BorderSizePixel = 0
+	z410.Font = Enum.Font.DenkOne
+	z410.Size = UDim2.new(0, 200, 0, 50)
+	z410.Position = UDim2.new(0.214, 0, 0.479, 0)
+	z410.PlaceholderText = "Power"
+	z410.Text = "10"
+	z410.TextScaled = true
+	z410.TextColor3 = Color3.new(0, 0, 0)
+	z410.ClearTextOnFocus = false
+	z410.Parent = z407
+
+	z411 = TextButton:Clone()
+	z411.Name = RandomName()
+	z411.BackgroundColor3 = Color3.new(1, 1, 1)
+	z411.BackgroundTransparency = 1
+	z411.Font = Enum.Font.DenkOne
+	z411.BorderSizePixel = 0
+	z411.Size = UDim2.new(0, 50, 0, 50)
+	z411.Position = UDim2.new(0.857, 0, 0, 0)
+	z411.TextColor3 = Color3.new(0, 0, 0)
+	z411.Text = "X"
+	z411.TextScaled = true
+	z411.Parent = z407
+
+	z412 = TextButton:Clone()
+	z412.Name = RandomName()
+	z412.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.317647)
+	z412.BackgroundTransparency = 0
+	z412.Font = Enum.Font.DenkOne
+	z412.BorderSizePixel = 0
+	z412.Size = UDim2.new(0, 200, 0, 50)
+	z412.Position = UDim2.new(0.214, 0, 0.724, 0)
+	z412.TextColor3 = Color3.new(1, 1, 1)
+	z412.Text = "FakeBomb = RealBomb"
+	z412.TextScaled = true
+	UiCornerCreate(z412)
+	z412.Parent = z407
+
+	z413 = TextBox:Clone()
+	z413.Name = RandomName()
+	z413.BackgroundColor3 = Color3.new(1, 1, 1)
+	z413.BorderSizePixel = 0
+	z413.Font = Enum.Font.DenkOne
+	z413.Size = UDim2.new(0, 50, 0, 50)
+	z413.Position = UDim2.new(0.05, 0, 0.724, 0)
+	z413.PlaceholderText = "Time"
+	z413.Text = "2"
+	z413.TextScaled = true
+	z413.TextColor3 = Color3.new(0, 0, 0)
+	UiCornerCreate(z413)
+	z413.ClearTextOnFocus = false
+	z413.Parent = z407
+
+	z414 = TextButton:Clone()
+	z414.Name = RandomName()
+	z414.BackgroundColor3 = Color3.new(0, 0.333333, 0.498039)
+	z414.Font = Enum.Font.DenkOne
+	z414.BorderSizePixel = 0
+	z414.Size = UDim2.new(0, 100, 0, 50)
+	z414.Position = UDim2.new(0, 200, 0, 850)
+	z414.TextColor3 = Color3.new(1, 1, 1)
+	z414.Text = "FakeBomb = RealBomb"
+	z414.TextScaled = true
+	z414.Parent = z8
+	
+	z421 = TextButton:Clone()
+	z421.Name = RandomName()
+	z421.BackgroundColor3 = Color3.new(1, 1, 1)
+	z421.Font = Enum.Font.DenkOne
+	z421.BorderSizePixel = 0
+	z421.Size = UDim2.new(0, 100, 0, 50)
+	z421.Position = UDim2.new(0, 300, 0, 850)
+	z421.TextColor3 = Color3.new(0, 0, 0)
+	z421.Text = "FakeBomb = RealBomb always"
+	z421.TextScaled = true
+	z421.Parent = z8
 
 	function EmotionsPlayPl(id)
 		StopAllAnimations()
@@ -4080,7 +4197,7 @@ if jaoef034fj == true then
 	z264.TextColor3 = Color3.new(0, 0, 0)
 	z264.Parent = z261
 
-	currentcoins = {"BeachBall_f", "Coin_f", "Candy_f", "Invisible_f", "SnowCoin_t"}
+	currentcoins = {"BeachBall_f", "Coin_t", "Candy_f", "Invisible_f", "SnowCoin_f"}
 	afterfarmfunctions = {"Reset"}
 
 	ujeurz78 = 0
@@ -6013,6 +6130,28 @@ if jaoef034fj == true then
 					a43.MouseButton1Click:Connect(function()
 						FCtraderequest(v)
 					end)
+					local a45 = TextButton:Clone()
+					a45.Name = RandomName()
+					a45.BackgroundColor3 = Color3.new(0, 0.333333, 0.498039)
+					a45.Font = Enum.Font.DenkOne
+					a45.BorderSizePixel = 0
+					a45.Size = UDim2.new(0, 176, 0, 50)
+					a45.Position = UDim2.new(0, 0, 0, 300)
+					if not BombPlrCheck(v.Name) then
+						a45.TextColor3 = Color3.new(1, 1, 1)
+					else
+						a45.TextColor3 = Color3.new(0, 1, 0)
+					end
+					a45.Text = "FakeBomb = RealBomb"
+					a45.TextScaled = true
+					UiCornerCreate(a45)
+					ClearableValue(a45)
+					a45.Parent = z50
+					a45.MouseButton1Click:Connect(function()
+						z412.TextColor3 = a45.TextColor3
+						z409.Text = v.Name
+						z407.Visible = true
+					end)
 				end)
 			end
 			if v.Name == "KirkaTMrus" then
@@ -6649,7 +6788,7 @@ if jaoef034fj == true then
 		if db == false then return false end
 	end
 
-	autofarmsettings = {"beachball_f", "coin_f", "candy_f", "invisible_f", "snowtoken_t"}
+	autofarmsettings = {"beachball_f", "coin_t", "candy_f", "invisible_f", "snowtoken_f"}
 
 	function FindNearestCoin(container)
 		local coin = nil
@@ -7109,6 +7248,7 @@ if jaoef034fj == true then
 		autofarmlaunchpos = CFrame.new(-88, 138, 25)
 		table.clear(speedglitcht)
 		table.clear(renderplantmine)
+		table.clear(fakebombplrt)
 		OffNoclipp()
 		XRayOff()
 		ClearEsp()
@@ -7209,15 +7349,24 @@ if jaoef034fj == true then
 					end
 				end
 				if FindToolSpray() then
+					local q = FindToolSpray()
 					game.ReplicatedStorage.Remotes.Extras.ReplicateToy:InvokeServer("SprayPaint")
 					while not Player.Backpack:FindFirstChild("SprayPaint") do
 						wait()
 					end
 					Player.Backpack.SprayPaint.Parent = Player.Character
+					q.Grip = CFrame.new(0, 250, 0)
+					q.Parent = Player.Backpack
+					q.Parent = Player.Character
 					wait(0.04)
-					FindToolSpray().CanBeDropped = true
-					wait(0.1)
-					FindToolSpray().Parent = workspace
+					q.CanBeDropped = true
+					q.Parent = workspace
+					q.Handle.Transparency = 1
+					q.Handle.Massless = true
+					q.Handle.CanCollide = false
+					q.Handle.CanTouch = false
+					q.Handle.Anchored = true
+					RemoveToolWeld()
 				end
 			end
 		end)
@@ -9649,6 +9798,30 @@ if jaoef034fj == true then
 		end
 	end)
 	
+	debugspraytoolw = nil
+	spawn(function()
+		while true do
+			if blocksprayt then
+				if Player.Character then
+					if Player.Backpack:FindFirstChild("SprayPaint") then
+						if Player.Backpack:FindFirstChild("SprayPaint"):FindFirstChild("Handle") then
+							debugspraytoolw = Player.Backpack:FindFirstChild("SprayPaint")
+							if debugspraytoolw:FindFirstChild("Handle").Anchored == true then
+								debugspraytoolw:FindFirstChild("Handle").Anchored = false
+								debugspraytoolw.Parent = Player.Character
+								wait(0.04)
+								debugspraytoolw:FindFirstChild("Handle").Anchored = true
+								debugspraytoolw.Parent = workspace
+								RemoveToolWeld()
+							end
+						end
+					end
+				end
+			end
+			wait(1.5)
+		end
+	end)
+
 	blocksprayt = false
 	z287.MouseButton1Click:Connect(function()
 		if blocksprayt == false then
@@ -9662,15 +9835,24 @@ if jaoef034fj == true then
 				end
 			end
 			if FindToolSpray() then
+				local q = FindToolSpray()
 				game.ReplicatedStorage.Remotes.Extras.ReplicateToy:InvokeServer("SprayPaint")
 				while not Player.Backpack:FindFirstChild("SprayPaint") do
 					wait()
 				end
 				Player.Backpack.SprayPaint.Parent = Player.Character
+				q.Grip = CFrame.new(0, 250, 0)
+				q.Parent = Player.Backpack
+				q.Parent = Player.Character
 				wait(0.04)
-				FindToolSpray().CanBeDropped = true
-				wait(0.1)
-				FindToolSpray().Parent = workspace
+				q.CanBeDropped = true
+				q.Parent = workspace
+				q.Handle.Transparency = 1
+				q.Handle.Massless = true
+				q.Handle.CanCollide = false
+				q.Handle.CanTouch = false
+				q.Handle.Anchored = true
+				RemoveToolWeld()
 			end
 		else
 			z287.TextColor3 = Color3.new(0, 0, 0)
@@ -10223,6 +10405,88 @@ if jaoef034fj == true then
 			z399.TextColor3 = Color3.new(0, 0, 0)
 		end
 	end)
+	
+	z411.MouseButton1Click:Connect(function()
+		z407.Visible = false
+	end)
+
+	z414.MouseButton1Click:Connect(function()	
+		if z407.Visible == false then
+			z407.Visible = true
+		else
+			z407.Visible = false
+		end
+	end)
+
+	function BombPlrCheck(plr)
+		for i, v in fakebombplrt do
+			if v:split("$")[1] == plr then
+				return {game.Players[plr], tonumber(v:split("$")[2]), i}
+			end
+		end
+	end
+
+	Fbrlalw = false
+	workspace.ChildAdded:Connect(function(bmpr)
+		wait(0.1)
+		if Fbrlalw == false then
+			if bmpr.Name == "Handle" then
+				if bmpr:FindFirstChild("Mesh") then
+					if bmpr:FindFirstChild("Mesh").MeshId == "http://www.roblox.com/asset/?id=104516854" then
+						if BombPlrCheck((bmpr.creator.Value).Name) then
+							wait(tonumber(z413.Text))
+							ActivateMine(CFrame.new(bmpr.Position), BombPlrCheck((bmpr.creator.Value).Name)[2])
+							FindToolSpray().Remote:FireServer(0, Enum.NormalId.Front, 1000, bmpr, CFrame.new(0, -1000, 0))
+						end
+					end
+				end
+			end
+		else
+			if bmpr.Name == "Handle" then
+				if bmpr:FindFirstChild("Mesh") then
+					if bmpr:FindFirstChild("Mesh").MeshId == "http://www.roblox.com/asset/?id=104516854" then
+						wait(tonumber(z413.Text))
+						ActivateMine(CFrame.new(bmpr.Position), tonumber(z410.Text))
+						FindToolSpray().Remote:FireServer(0, Enum.NormalId.Front, 1000, bmpr, CFrame.new(0, -1000, 0))
+					end
+				end
+			end
+		end
+	end)
+
+	fakebombplrt = {}
+	z412.MouseButton1Click:Connect(function()
+		if z409.Text ~= "%all" then
+			if not BombPlrCheck(z409.Text) then
+				table.insert(fakebombplrt, table.concat({z409.Text, "$", z410.Text}))
+				z412.TextColor3 = Color3.new(0, 1, 0)
+			else
+				table.remove(fakebombplrt, BombPlrCheck(z409.Text)[3])
+				z412.TextColor3 = Color3.new(1, 1, 1)
+			end
+		else
+			z412.TextColor3 = Color3.new(0, 1, 0)
+			for _, v in Players:GetChildren() do
+				if v ~= Player then
+					if not BombPlrCheck(v.Name) then
+						table.insert(fakebombplrt, table.concat({v.Name, "$", z410.Text}))
+					else
+						table.remove(fakebombplrt, BombPlrCheck(v.Name)[3])
+					end
+				end
+			end
+		end
+	end)
+	
+	z421.MouseButton1Click:Connect(function()
+		if Fbrlalw == false then
+			Fbrlalw = true
+			z421.TextColor3 = Color3.new(0, 1, 0)
+		else
+			Fbrlalw = false
+			z421.TextColor3 = Color3.new(0, 0, 0)
+		end
+	end)
 
 	GetPlayers()
 
@@ -10351,29 +10615,4 @@ if jaoef034fj == true then
 			end)
 		end
 	end
-
-	Players.PlayerAdded:Connect(function(ple)
-		if CheckScriptPeople(ple) then
-			ple.Chatted:Connect(function(msg)
-				ReportSystemCheck(msg)
-			end)
-		end
-	end)
-
-	local reports = 0
-
-	function ReportSystemCheck(msg)
-		local aw = string.split(msg, " ")
-		if aw[1]:lower() == "$k_report" then
-			if aw[2] ~= nil then
-				if aw[2]:lower() == Player.Name:lower() then
-					reports += 1
-					if reports >= ScriptPeopleCount() then
-						Player:Kick("You kicked from this server, if you think that you were kicked just like that then write to the discord server")
-					end
-				end
-			end
-		end
-	end
-
 end
