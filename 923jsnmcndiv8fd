@@ -6135,8 +6135,8 @@ if jaoef034fj == true then
 					a45.BackgroundColor3 = Color3.new(0, 0.333333, 0.498039)
 					a45.Font = Enum.Font.DenkOne
 					a45.BorderSizePixel = 0
-					a45.Size = UDim2.new(0, 176, 0, 50)
-					a45.Position = UDim2.new(0, 0, 0, 300)
+					a45.Size = UDim2.new(0, 88, 0, 50)
+					a45.Position = UDim2.new(0, 88, 0, 300)
 					if not BombPlrCheck(v.Name) then
 						a45.TextColor3 = Color3.new(1, 1, 1)
 					else
