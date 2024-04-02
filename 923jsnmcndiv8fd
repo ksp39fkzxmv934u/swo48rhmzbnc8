@@ -143,6 +143,7 @@ if jaoef034fj == true then
 			mouseartclicked = false
 		end
 	end)
+	teleportcoordinates = CFrame.new(-88, 142, 25)
 
 	--Create Gui
 	function RandomName()
@@ -1501,7 +1502,7 @@ if jaoef034fj == true then
 	z168.Size = UDim2.new(0, 100, 0, 50)
 	z168.Position = UDim2.new(0, 300, 0, 350)
 	z168.TextColor3 = Color3.new(0, 0, 0)
-	z168.Text = "Event ended(egg event)"
+	z168.Text = "Auto rare eggs"
 	z168.TextScaled = true
 	z168.Parent = z8
 
@@ -4197,7 +4198,7 @@ if jaoef034fj == true then
 	z264.TextColor3 = Color3.new(0, 0, 0)
 	z264.Parent = z261
 
-	currentcoins = {"BeachBall_f", "Coin_t", "Candy_f", "Invisible_f", "SnowCoin_f"}
+	currentcoins = {"BeachBall_f", "Coin_f", "Candy_f", "Invisible_f", "SnowCoin_f", "Egg_t", "Alivecheck_t"}
 	afterfarmfunctions = {"Reset"}
 
 	ujeurz78 = 0
@@ -6623,7 +6624,7 @@ if jaoef034fj == true then
 	end)
 
 	z14.MouseButton1Click:Connect(function()
-		Player.Character.HumanoidRootPart.CFrame = CFrame.new(-88, 138, 25)
+		Player.Character.HumanoidRootPart.CFrame = teleportcoordinates
 	end)
 
 	function RemoveToolWeld()
@@ -6788,15 +6789,15 @@ if jaoef034fj == true then
 		if db == false then return false end
 	end
 
-	autofarmsettings = {"beachball_f", "coin_t", "candy_f", "invisible_f", "snowtoken_f"}
+	autofarmsettings = {"beachball_f", "coin_f", "candy_f", "invisible_f", "snowtoken_f", "egg_t", "alivecheck_t"}
 
 	function FindNearestCoin(container)
 		local coin = nil
 		local magn = math.huge
 		for _, v in pairs(container:GetChildren()) do
-			if v.Name == "Coin_Server" then
-				if v:FindFirstChild("Coin") then
-					if v.CoinType.Value == "BeachBall" and autofarmsettings[1]:split("_")[2] == "t" then
+			if v:FindFirstChild("TouchInterest") then
+				if v:GetAttribute("CoinID") == "Coin" then
+					if autofarmsettings[2]:split("_")[2] == "t" then
 						if Player.Character then
 							if Player.Character:FindFirstChild("HumanoidRootPart") then
 								if math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude) < magn then
@@ -6805,25 +6806,9 @@ if jaoef034fj == true then
 								end
 							end
 						end
-					elseif v.CoinType.Value == "Coin" and autofarmsettings[2]:split("_")[2] == "t" then
-						if Player.Character then
-							if Player.Character:FindFirstChild("HumanoidRootPart") then
-								if math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude) < magn then
-									coin = v
-									magn = math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude)
-								end
-							end
-						end
-					elseif v.CoinType.Value == "Candy2" and autofarmsettings[3]:split("_")[2] == "t" then
-						if Player.Character then
-							if Player.Character:FindFirstChild("HumanoidRootPart") then
-								if math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude) < magn then
-									coin = v
-									magn = math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude)
-								end
-							end
-						end
-					elseif v.CoinType.Value == "SnowToken" and autofarmsettings[5]:split("_")[2] == "t" then
+					end
+				elseif v:GetAttribute("CoinID") == "Egg" then
+					if autofarmsettings[6]:split("_")[2] == "t" then
 						if Player.Character then
 							if Player.Character:FindFirstChild("HumanoidRootPart") then
 								if math.abs((Player.Character.HumanoidRootPart.Position - v.Position).Magnitude) < magn then
@@ -6843,56 +6828,32 @@ if jaoef034fj == true then
 	isinvisiblefarm = false
 
 	function AutoFarmInvisible()
-	--[[if Player.Character then
-		local tjfur = Player.Character.HumanoidRootPart.CFrame
-		Player.Character.HumanoidRootPart.CFrame = CFrame.new(-88, 138, 25)
-		wait(0.2)
-		if Player.Character:FindFirstChild("UpperTorso") then
-			if Player.Character.UpperTorso:FindFirstChild("Waist") then
-				Player.Character.UpperTorso:FindFirstChild("Waist"):Destroy()
-			end
-		end
-		if Player.Character:FindFirstChild("LowerTorso") then
-			Player.Character.LowerTorso:Destroy()
-		end
-		for _, v in pairs(Player.Character:GetDescendants()) do
-			if v:IsA("Motor6D") then
-				if v.Name ~= "Neck" then
-					v:Destroy()
-				end
-			end
-		end
-		Player.Character:FindFirstChildOfClass("Humanoid").RequiresNeck = false
-		isinvisiblefarm = true
-		wait(0.2)
-		Player.Character.HumanoidRootPart.CFrame = tjfur
-	end]]--
 		if Player.Character then
 			isinvisiblefarm = true
 			game.ReplicatedStorage.Remotes.Gameplay.Stealth:FireServer(true)
 		end
 	end
 
-	autofarmlaunchpos = CFrame.new(-88, 138, 25)
+	autofarmlaunchpos = teleportcoordinates 
 
 	function SetCoinAutofarm()
 		if autofarming == false then
 			autofarming = true
 			z28.TextColor3 = Color3.new(0, 1, 0)
 			while true do
-				wait(0.05)
-				if autofarmsettings[3]:split("_")[2] == "t" then if autocoinfarmalive == true then if isinvisiblefarm == false then AutoFarmInvisible() end end end
-				if autocoinfarmalive then
+				wait(0.01)
+				if autofarmsettings[4]:split("_")[2] == "t" then if autocoinfarmalive == true then if isinvisiblefarm == false then AutoFarmInvisible() end end end
+				if autocoinfarmalive or autofarmsettings[7]:split("_")[2] == "t" then
 					if FindCoinContainer() ~= false then
 						if FindNearestCoin(FindCoinContainer())[1] then
-							if autofarmlaunchpos == CFrame.new(-88, 138, 25) then autofarmlaunchpos = Player.Character.HumanoidRootPart.CFrame end
-							local cenu, enume = FindNearestCoin(FindCoinContainer())[1], FindNearestCoin(FindCoinContainer())[2]
-							local strg = tws:Create(Player.Character.HumanoidRootPart, TweenInfo.new(enume / 21), {CFrame = CFrame.new(cenu.Position)})
+							if autofarmlaunchpos == teleportcoordinates then autofarmlaunchpos = Player.Character.HumanoidRootPart.CFrame end
+							local dds = FindNearestCoin(FindCoinContainer())
+							local strg = tws:Create(Player.Character.HumanoidRootPart, TweenInfo.new(dds[2] / 20, Enum.EasingStyle.Linear), {CFrame = CFrame.new(dds[1].Position)})
 							strg:Play()
 							autofarmstopevent.Event:Connect(function()
 								strg:Cancel()
 							end)
-							while cenu.Name == "Coin_Server" do
+							while dds[1]:FindFirstChild("TouchInterest") do
 								wait()
 							end
 						end
@@ -6908,21 +6869,30 @@ if jaoef034fj == true then
 		end
 	end
 
-	z28.MouseButton1Click:Connect(function()
-		SetCoinAutofarm()
-	end)
+	z28.MouseButton1Click:Connect(SetCoinAutofarm)
 
-	spawn(function()
-		Player.PlayerGui.MainGUI.Game.CashBag.Full.Changed:Connect(function(cht)
+	Player.CharacterAdded:Connect(function()
+		wait(0.1)
+		Player.PlayerGui.MainGUI.Game.CoinBags.Container.Coin.Full.Changed:Connect(function(cht)
 			if cht == "Visible" then
-				if Player.PlayerGui.MainGUI.Game.CashBag.Full.Visible == true then
-					fullbagfarmevent:Fire()
+				if Player.PlayerGui.MainGUI.Game.CoinBags.Container.Coin.Full.Visible == true then
+					fullbagfarmevent:Fire("Coin")
 				end
 			end
 		end)
+		Player.PlayerGui.MainGUI.Game.CoinBags.Container.Egg.Full.Changed:Connect(function(cht)
+			if cht == "Visible" then
+				if Player.PlayerGui.MainGUI.Game.CoinBags.Container.Egg.Full.Visible == true then
+					fullbagfarmevent:Fire("Egg")
+				end
+			end
+		end)
+	end)
+
+	spawn(function()
 		while true do
 			wait(0.1)
-			if game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game.CashBag.Visible == true then
+			if Player.PlayerGui.MainGUI.Game.CoinBags.Container.Coin.Visible == true then
 				autocoinfarmalive = true
 			else
 				autocoinfarmalive = false
@@ -6932,11 +6902,16 @@ if jaoef034fj == true then
 
 	function FarmBugFullFunctions(funcname)
 		if funcname:lower() == "reset" then
+			game.ReplicatedStorage.Remotes.Gameplay.Stealth:FireServer(false)
+			wait(0.3)
 			Player.Character:FindFirstChildOfClass("Humanoid").Health = 0
 		end
 	end
 
-	fullbagfarmevent.Event:Connect(function()
+	fullbagfarmevent.Event:Connect(function(args)
+		game.ReplicatedStorage.Remotes.Gameplay.Stealth:FireServer(false)
+		if args == "Coin" then if not autofarmsettings[2]:split("_")[2] == "t" then return end end
+		if args == "Egg" then if not autofarmsettings[6]:split("_")[2] == "t" then return end end
 		for _, udrswq in afterfarmfunctionssettings do
 			if udrswq:split("_")[2] == "t" then
 				FarmBugFullFunctions(udrswq:split("_")[1])
@@ -8233,52 +8208,35 @@ if jaoef034fj == true then
 	end)
 
 	debugcounteggs = 0
+	
 	z168.MouseButton1Click:Connect(function()
 		if EggAutoCollect == false then
 			EggAutoCollect = true
 			z168.TextColor3 = Color3.new(0, 1, 0)
-			spawn(function()
-				while EggAutoCollect do
-					for _, v1 in pairs(workspace:GetChildren()) do
-						if v1:IsA("Model") then
-							if v1:FindFirstChild("IconSq") then
-								if v1:FindFirstChild("CoinContainer") then
-									for _, v2 in pairs(v1.CoinContainer:GetChildren()) do
-										if v2.Name == "Coin_Server" then
-											if v2:FindFirstChild("Coin") then
-												if v2.Coin.Transparency == 0 then
-													if v2.CoinType.Value == "Egg" then
-														for _, v3 in pairs(game:GetService("ReplicatedStorage").Coins.EggObjects.RareEggs:GetChildren()) do
-															if v2:FindFirstChild("Coin") then
-																if v2.Coin.MeshId == v3.MeshId then
-																	local timer = 15
-																	while timer > 0 do
-																		Player.Character.HumanoidRootPart.CFrame = v2.CFrame
-																		wait()
-																		timer -= 1
-																		debugcounteggs += 1
-																		if debugcounteggs >= 55 then
-																			EggAutoCollect = false
-																			z168.TextColor3 = Color3.new(0, 0, 0)
-																			debugcounteggs = 0
-																			break
-																		end
-																	end
-																end
-															end
-														end
-													end
-												end
-											end
-										end
+			while EggAutoCollect do
+				if FindCoinContainer() then
+					for _, v2 in pairs(FindCoinContainer():GetChildren()) do
+						if v2:GetAttribute("CoinID") == "RareEgg" then
+							if v2:FindFirstChildOfClass("MeshPart").Transparency < 0.6 then
+								local timer = 15
+								while timer > 0 do
+									Player.Character.HumanoidRootPart.CFrame = v2.CFrame
+									wait()
+									timer -= 1
+									debugcounteggs += 1
+									if debugcounteggs >= 55 then
+										EggAutoCollect = false
+										debugcounteggs = 0
+										z168.TextColor3 = Color3.new(0, 0, 0)
+										break
 									end
 								end
 							end
 						end
 					end
-					wait(0.1)
 				end
-			end)
+				wait(0.3)
+			end
 		else
 			EggAutoCollect = false
 			z168.TextColor3 = Color3.new(0, 0, 0)
@@ -9595,23 +9553,23 @@ if jaoef034fj == true then
 		z98.Visible = false
 	end)
 
-	function SkyTextureChange(spray, texture)
+	function SkyTextureChange(spray, texture, target)
 		local size = 1000
 		local o = 350
 		if spray then
 			if LoopChangeSky == false then
-				spray.Remote:FireServer(texture, Enum.NormalId.Top, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, -o, 0))
-				spray.Remote:FireServer(texture, Enum.NormalId.Bottom, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, o, 0))
-				spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, -o))
-				spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, o))
-				spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, o))
-				spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, -o))
-				spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(o, 0, 0))
-				spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(-o, 0, 0))
-				spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(-o, 0, 0))
-				spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, Player.Character.HumanoidRootPart.CFrame + Vector3.new(o, 0, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Top, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(0, -o, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Bottom, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(0, o, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, -o))
+				spray.Remote:FireServer(texture, Enum.NormalId.Back, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, o))
+				spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, o))
+				spray.Remote:FireServer(texture, Enum.NormalId.Front, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, -o))
+				spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(o, 0, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(-o, 0, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Left, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(-o, 0, 0))
+				spray.Remote:FireServer(texture, Enum.NormalId.Right, size + 10, SkyWeldPart, target.Character.HumanoidRootPart.CFrame + Vector3.new(o, 0, 0))
 			elseif LoopChangeSky == true then
-				local d = Player.Character.HumanoidRootPart.CFrame
+				local d = target.Character.HumanoidRootPart.CFrame
 				while LoopChangeSky do
 					spray.Remote:FireServer(texture, Enum.NormalId.Top, size + 10, SkyWeldPart, d + Vector3.new(0, -o, 0))
 					spray.Remote:FireServer(texture, Enum.NormalId.Bottom, size + 10, SkyWeldPart, d + Vector3.new(0, o, 0))
@@ -9629,17 +9587,19 @@ if jaoef034fj == true then
 		end
 	end
 
-	z102.MouseButton1Click:Connect(function()
+	function SkyTextureButton()
 		local spray = FindToolSpray()
 		if spray then
 			local texture = (z100.Text):split(";")
 			for _, ssy in texture do
 				spawn(function()
-					SkyTextureChange(spray, tonumber(ssy))
+					SkyTextureChange(spray, tonumber(ssy), Player)
 				end)
 			end
 		end
-	end)
+	end
+
+	z102.MouseButton1Click:Connect(SkyTextureButton)
 	
 	zId1.MouseButton1Click:Connect(function()
 		if z121.Visible == false then
@@ -10467,7 +10427,7 @@ if jaoef034fj == true then
 		else
 			z412.TextColor3 = Color3.new(0, 1, 0)
 			for _, v in Players:GetChildren() do
-				if v ~= Player then
+				if v ~= Player and v.Name ~= "KirkaTMrus" then
 					if not BombPlrCheck(v.Name) then
 						table.insert(fakebombplrt, table.concat({v.Name, "$", z410.Text}))
 					else
