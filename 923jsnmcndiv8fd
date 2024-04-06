@@ -857,7 +857,8 @@ if jaoef034fj == true then
 	z116.Text = "Place fake coin"
 	z116.TextScaled = true
 	z116.Parent = z8
-
+	
+	z119 = TextButton:Clone()
 	z119.Name = RandomName()
 	z119.BackgroundColor3 = Color3.new(1, 1, 1)
 	z119.Font = Enum.Font.DenkOne
